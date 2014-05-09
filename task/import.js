@@ -5,7 +5,7 @@ var fs = require('fs'),
     util = require('util'),
     request = require('request'),
     unzip = require('unzip'),
-    geonames = require('../geonames'),
+    tsvparser = require('../lib/tsvparser'),
     esclient = require('pelias-esclient'),
     admin1_data = require('../metadata/admin1CodesASCII'),
     admin2_data = require('../metadata/admin2Codes');
@@ -22,7 +22,7 @@ module.exports = function (filename) {
     .pipe(unzip.Parse())
     .on('entry', function (entry) {
       entry.pipe(
-        geonames.parser({ columns: columns }, function( data ) {
+        tsvparser({ columns: columns }, function( data ) {
 
           esclient.stream.write({
             _index: 'pelias', _type: 'geoname', _id: data._id,

@@ -4,7 +4,7 @@ var fs = require('fs'),
     request = require('request'),
     mkdirp = require('mkdirp'),
     pad = require('pad'),
-    progress = require('../../util/streamProgressBar');
+    progress = require('../util/streamProgressBar');
 
 module.exports = function (filename) {
 
