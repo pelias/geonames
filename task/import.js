@@ -51,7 +51,7 @@ module.exports = function (filename) {
 
 function selectSource(filename) {
 
-  var localFileName = util.format( 'geonames/data/%s.zip', filename );
+  var localFileName = util.format( 'data/%s.zip', filename );
   var remoteFilePath = util.format( 'http://download.geonames.org/export/dump/%s.zip', filename );
 
   if( fs.existsSync( localFileName ) ){
