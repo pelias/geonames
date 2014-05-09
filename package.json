@@ -1,0 +1,46 @@
+{
+  "name": "pelias-geonames",
+  "author": "mapzen",
+  "version": "0.0.0",
+  "description": "Open-source geo-coder & reverse geo-coder",
+  "homepage": "https://github.com/mapzen/pelias-geonames",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "bin": {
+    "geonames": "./bin/pelias-geonames"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mapzen/pelias-geonames.git"
+  },
+  "keywords": [
+    "pelias",
+    "geonames",
+    "geocoder",
+    "osm",
+    "maps"
+  ],
+  "bugs": {
+    "url": "https://github.com/mapzen/pelias-geonames/issues"
+  },
+  "engines": {
+    "node": ">=0.10.26",
+    "npm": ">=1.4.3",
+    "elasticsearch": ">=1.1.1"
+  },
+  "dependencies": {
+    "pelias-esclient": "0.0.1",
+    "csv": "^0.3.7",
+    "unzip": "^0.1.9",
+    "request": "^2.34.0",
+    "mkdirp": "^0.4.0",
+    "commander-plus": "0.0.6",
+    "pad": "0.0.4",
+    "cli-table": "^0.3.0",
+    "JSONStream": "^0.7.3",
+    "progress-stream": "^0.4.0",
+    "progress": "^1.1.5"
+  }
+}
