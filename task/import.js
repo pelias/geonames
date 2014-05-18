@@ -39,7 +39,9 @@ module.exports = function (filename) {
               suggest: {
                 input: data.name,
                 output: data.name,
-                payload: {}
+                payload: {
+                  type: 'geoname'
+                }
               }
             }
           });
