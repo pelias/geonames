@@ -41,7 +41,8 @@ module.exports = function (filename) {
                 output: data.name,
                 payload: {
                   type: 'geoname'
-                }
+                },
+                weight: 1
               }
             }
           });
