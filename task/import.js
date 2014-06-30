@@ -5,7 +5,7 @@ var fs = require('fs'),
     util = require('util'),
     request = require('request'),
     unzip = require('../lib/patched-unzip'),
-    tsvparser = require('../lib/tsvparser'),
+    tsvparser = require('../lib/newparser'),
     esclient = require('pelias-esclient')(),
     admin1_data = require('../metadata/admin1CodesASCII'),
     admin2_data = require('../metadata/admin2Codes'),
@@ -19,60 +19,115 @@ var columns = [
   'admin4_code', 'population','elevation','dem','timezone','modification_date'
 ];
 
+var transform = require('stream-transform');
+
+var transformer = transform(function(data, callback){
+
+  if( !data.name ) return callback( null, null );
+
+  var record = {
+    name: data.name,
+    // alternate_names: alternate_names(data),
+    // country_code: data.country_code,
+    admin0: country_name(data.country_code),
+    // admin1_code: data.admin1_code,
+    admin1: admin1_name(data),
+    // admin2_code: data.admin2_code,
+    admin2: admin2_name(data),
+    // population: data.population,
+    center_point: { lat: data.latitude, lon: data.longitude },
+    suggest: {
+      input: [],
+      payload: {
+        type: 'geoname'
+      }
+    }
+  }
+
+  // inputs
+  record.suggest.input = alternate_names(data);
+  if( -1 == record.suggest.input.indexOf( data.name ) ){
+    record.suggest.input.unshift( data.name );
+  }
+
+  // payload
+  record.suggest.payload.name = record.name;
+  record.suggest.payload.geo = record.center_point.lon + ',' + record.center_point.lat;
+  
+  if( record.admin2 && record.admin2.length ){
+    record.suggest.payload.admin2 = record.admin2;
+  }
+  if( record.admin1 && record.admin1.length ){
+    record.suggest.payload.admin1 = record.admin1;
+  }
+  if( record.admin0 && record.admin0.length ){
+    record.suggest.payload.admin0 = record.admin0;
+  }
+
+  return callback( null, {
+    _index: 'pelias', _type: 'geoname', _id: data._id,
+    data: record
+  });
+
+}, {parallel: 1});
+
+// var parser = tsvparser({ columns: columns }, function( data ) {
+
+//   var record = {
+//     name: data.name,
+//     // alternate_names: alternate_names(data),
+//     // country_code: data.country_code,
+//     admin0: country_name(data.country_code),
+//     // admin1_code: data.admin1_code,
+//     admin1: admin1_name(data),
+//     // admin2_code: data.admin2_code,
+//     admin2: admin2_name(data),
+//     // population: data.population,
+//     center_point: { lat: data.latitude, lon: data.longitude },
+//     suggest: {
+//       input: [],
+//       payload: {
+//         type: 'geoname'
+//       }
+//     }
+//   }
+
+//   // inputs
+//   record.suggest.input = alternate_names(data);
+//   if( -1 == record.suggest.input.indexOf( data.name ) ){
+//     record.suggest.input.unshift( data.name );
+//   }
+
+//   // payload
+//   record.suggest.payload.name = record.name;
+//   record.suggest.payload.geo = record.center_point.lon + ',' + record.center_point.lat;
+  
+//   if( record.admin2 && record.admin2.length ){
+//     record.suggest.payload.admin2 = record.admin2;
+//   }
+//   if( record.admin1 && record.admin1.length ){
+//     record.suggest.payload.admin1 = record.admin1;
+//   }
+//   if( record.admin0 && record.admin0.length ){
+//     record.suggest.payload.admin0 = record.admin0;
+//   }
+
+//   esclient.stream.write({
+//     _index: 'pelias', _type: 'geoname', _id: data._id,
+//     data: record
+//   });
+
+// });
+
 module.exports = function (filename) {
 
   selectSource(filename)
     .pipe(unzip.Parse())
     .on('entry', function (entry) {
-      entry.pipe(
-        tsvparser({ columns: columns }, function( data ) {
-
-          var record = {
-            name: data.name,
-            // alternate_names: alternate_names(data),
-            // country_code: data.country_code,
-            admin0: country_name(data.country_code),
-            // admin1_code: data.admin1_code,
-            admin1: admin1_name(data),
-            // admin2_code: data.admin2_code,
-            admin2: admin2_name(data),
-            // population: data.population,
-            center_point: { lat: data.latitude, lon: data.longitude },
-            suggest: {
-              input: [],
-              payload: {
-                type: 'geoname'
-              }
-            }
-          }
-
-          // inputs
-          record.suggest.input = alternate_names(data);
-          if( -1 == record.suggest.input.indexOf( data.name ) ){
-            record.suggest.input.unshift( data.name );
-          }
-
-          // payload
-          record.suggest.payload.name = record.name;
-          record.suggest.payload.geo = record.center_point.lon + ',' + record.center_point.lat;
-          
-          if( record.admin2 && record.admin2.length ){
-            record.suggest.payload.admin2 = record.admin2;
-          }
-          if( record.admin1 && record.admin1.length ){
-            record.suggest.payload.admin1 = record.admin1;
-          }
-          if( record.admin0 && record.admin0.length ){
-            record.suggest.payload.admin0 = record.admin0;
-          }
-
-          esclient.stream.write({
-            _index: 'pelias', _type: 'geoname', _id: data._id,
-            data: record
-          });
-
-        })
-      )
+      entry
+        .pipe( tsvparser({ columns: columns }) )
+        .pipe( transformer )
+        .pipe( esclient.stream )
     })
 }
 
