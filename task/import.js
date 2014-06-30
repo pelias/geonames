@@ -6,9 +6,12 @@ var fs = require('fs'),
     request = require('request'),
     unzip = require('unzip'),
     tsvparser = require('../lib/tsvparser'),
-    esclient = require('pelias-esclient'),
+    esclient = require('pelias-esclient')(),
     admin1_data = require('../metadata/admin1CodesASCII'),
-    admin2_data = require('../metadata/admin2Codes');
+    admin2_data = require('../metadata/admin2Codes'),
+    country_info = require('../metadata/countryInfo');
+
+esclient.livestats();
 
 var columns = [
   '_id','name','asciiname','alternatenames','latitude','longitude','feature_class',
@@ -29,12 +32,13 @@ module.exports = function (filename) {
             data: {
               name: data.name,
               alternate_names: alternate_names(data),
-              country_code: data.country_code,
-              admin1_code: data.admin1_code,
+              // country_code: data.country_code,
+              country_name: country_name(data.country_code),
+              // admin1_code: data.admin1_code,
               admin1_name: admin1_name(data),
-              admin2_code: data.admin2_code,
+              // admin2_code: data.admin2_code,
               admin2_name: admin2_name(data),
-              population: data.population,
+              // population: data.population,
               center_point: { lat: data.latitude, lon: data.longitude },
               suggest: {
                 input: data.name,
@@ -88,4 +92,11 @@ function alternate_names(data) {
   if ('string' == typeof data.alternatenames) {
     return data.alternatenames.split(',');
   }
+}
+
+function country_name(cc) {
+  if( country_info.hasOwnProperty(cc) ){
+    return country_info[cc].Country;
+  }
+  return null;
 }
