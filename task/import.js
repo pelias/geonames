@@ -4,7 +4,7 @@
 var fs = require('fs'),
     util = require('util'),
     request = require('request'),
-    unzip = require('unzip'),
+    unzip = require('../lib/patched-unzip'),
     tsvparser = require('../lib/tsvparser'),
     esclient = require('pelias-esclient')(),
     admin1_data = require('../metadata/admin1CodesASCII'),
@@ -27,28 +27,48 @@ module.exports = function (filename) {
       entry.pipe(
         tsvparser({ columns: columns }, function( data ) {
 
-          esclient.stream.write({
-            _index: 'pelias', _type: 'geoname', _id: data._id,
-            data: {
-              name: data.name,
-              alternate_names: alternate_names(data),
-              // country_code: data.country_code,
-              country_name: country_name(data.country_code),
-              // admin1_code: data.admin1_code,
-              admin1_name: admin1_name(data),
-              // admin2_code: data.admin2_code,
-              admin2_name: admin2_name(data),
-              // population: data.population,
-              center_point: { lat: data.latitude, lon: data.longitude },
-              suggest: {
-                input: data.name,
-                output: data.name,
-                payload: {
-                  type: 'geoname'
-                },
-                weight: 1
+          var record = {
+            name: data.name,
+            // alternate_names: alternate_names(data),
+            // country_code: data.country_code,
+            admin0: country_name(data.country_code),
+            // admin1_code: data.admin1_code,
+            admin1: admin1_name(data),
+            // admin2_code: data.admin2_code,
+            admin2: admin2_name(data),
+            // population: data.population,
+            center_point: { lat: data.latitude, lon: data.longitude },
+            suggest: {
+              input: [],
+              payload: {
+                type: 'geoname'
               }
             }
+          }
+
+          // inputs
+          record.suggest.input = alternate_names(data);
+          if( -1 == record.suggest.input.indexOf( data.name ) ){
+            record.suggest.input.unshift( data.name );
+          }
+
+          // payload
+          record.suggest.payload.name = record.name;
+          record.suggest.payload.geo = record.center_point.lon + ',' + record.center_point.lat;
+          
+          if( record.admin2 && record.admin2.length ){
+            record.suggest.payload.admin2 = record.admin2;
+          }
+          if( record.admin1 && record.admin1.length ){
+            record.suggest.payload.admin1 = record.admin1;
+          }
+          if( record.admin0 && record.admin0.length ){
+            record.suggest.payload.admin0 = record.admin0;
+          }
+
+          esclient.stream.write({
+            _index: 'pelias', _type: 'geoname', _id: data._id,
+            data: record
           });
 
         })
@@ -92,6 +112,7 @@ function alternate_names(data) {
   if ('string' == typeof data.alternatenames) {
     return data.alternatenames.split(',');
   }
+  return [];
 }
 
 function country_name(cc) {
