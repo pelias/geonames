@@ -12,13 +12,6 @@ program
   .option('-m, --meta', 'download & update geonames metadata files')
   .parse(process.argv);
 
-// if( program.foo ){
-//   program.prompt('name: ', function(name){
-//     console.log('hi %s', name);
-//     process.stdin.destroy();
-//   });
-// }
-
 if( program.countrycodes ){
   var task = require('../task/countrycodes');
   task();
