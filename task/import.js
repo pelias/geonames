@@ -23,10 +23,10 @@ var transform = require('stream-transform');
 
 var transformer = transform(function(data, callback){
 
-  if( !data.name ) return callback( null, null );
-
   var record = {
-    name: data.name,
+    name: {
+      default: data.name.trim()
+    },
     // alternate_names: alternate_names(data),
     // country_code: data.country_code,
     admin0: country_name(data.country_code),
@@ -46,36 +46,49 @@ var transformer = transform(function(data, callback){
 
   // inputs
   record.suggest.input = alternate_names(data);
-  if( -1 == record.suggest.input.indexOf( data.name ) ){
-    record.suggest.input.unshift( data.name );
+  if( -1 == record.suggest.input.indexOf( record.name.default ) ){
+    record.suggest.input.unshift( record.name.default );
   }
 
   // payload
-  record.suggest.payload.name = record.name;
+  var adminParts = [];
+  record.suggest.payload.id = data._id;
+  record.suggest.payload.name = record.name.default;
   record.suggest.payload.geo = record.center_point.lon + ',' + record.center_point.lat;
   
   if( record.admin2 && record.admin2.length ){
     record.suggest.payload.admin2 = record.admin2;
+    adminParts.push( record.admin2 );
   }
   if( record.admin1 && record.admin1.length ){
     record.suggest.payload.admin1 = record.admin1;
+    adminParts.push( record.admin1 );
   }
   if( record.admin0 && record.admin0.length ){
     record.suggest.payload.admin0 = record.admin0;
+    adminParts.push( record.admin0 );
   }
+
+  // add admin info to input values
+  // so they are: "name admin2 admin1 admin0"
+  // instead of simply: "name"
+  record.suggest.input = record.suggest.input.map( function( name ){
+    return [ name ].concat( adminParts ).join(' ').trim();
+  });
 
   return callback( null, {
     _index: 'pelias', _type: 'geoname', _id: data._id,
     data: record
   });
 
-}, {parallel: 100}); // @todo experiment with this setting
+}); // @todo experiment with this setting
 
 module.exports = function (filename) {
 
   selectSource(filename)
     .pipe(unzip.Parse())
     .on('entry', function (entry) {
+      if( entry.props.path.match('readme') ) return;
       entry
         .pipe( tsvparser({ columns: columns }) )
         .pipe( transformer )
@@ -117,7 +130,9 @@ function admin2_name(data) {
 
 function alternate_names(data) {
   if ('string' == typeof data.alternatenames) {
-    return data.alternatenames.split(',');
+    return data.alternatenames.split(',').filter( function( val ){
+      return val;
+    });
   }
   return [];
 }
