@@ -1,6 +1,4 @@
 
-// @todo: currently only imports first file it finds in the .zip, needs to be smarter
-
 var fs = require('fs'),
     util = require('util'),
     request = require('request'),
@@ -81,14 +79,14 @@ var transformer = transform(function(data, callback){
     data: record
   });
 
-}); // @todo experiment with this setting
+});
 
 module.exports = function (filename) {
 
   selectSource(filename)
     .pipe(unzip.Parse())
     .on('entry', function (entry) {
-      if( entry.props.path.match('readme') ) return;
+      if( entry.props.path.match('readme') ) return; // skip readme files
       entry
         .pipe( tsvparser({ columns: columns }) )
         .pipe( transformer )
