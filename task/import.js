@@ -1,7 +1,8 @@
 
 var fs = require('fs'),
     util = require('util'),
-    request = require('request'),
+    request = require('request')
+    transform = require('stream-transform'),
     unzip = require('../lib/patched-unzip'),
     tsvparser = require('../lib/newparser'),
     esclient = require('pelias-esclient')(),
@@ -16,8 +17,6 @@ var columns = [
   'feature_code','country_code','cc2','admin1_code','admin2_code','admin3_code',
   'admin4_code', 'population','elevation','dem','timezone','modification_date'
 ];
-
-var transform = require('stream-transform');
 
 var transformer = transform(function(data, callback){
 
@@ -36,41 +35,38 @@ var transformer = transform(function(data, callback){
     center_point: { lat: data.latitude, lon: data.longitude },
     suggest: {
       input: [],
+      output: '',
       payload: {
-        type: 'geoname'
+        id: 'geoname/' + data._id
       }
     }
   }
 
   // inputs
-  record.suggest.input = alternate_names(data);
-  if( -1 == record.suggest.input.indexOf( record.name.default ) ){
-    record.suggest.input.unshift( record.name.default );
-  }
+  record.suggest.input.unshift( record.name.default );
+  var altnames = alternate_names(data);
+  altnames.forEach( function( name ){
+    if( -1 == record.suggest.input.indexOf( name ) ){
+      record.suggest.input.push( name );
+    }
+  });
 
   // payload
   var adminParts = [];
-  record.suggest.payload.id = data._id;
-  record.suggest.payload.name = record.name.default;
   record.suggest.payload.geo = record.center_point.lon + ',' + record.center_point.lat;
   
   if( record.admin2 && record.admin2.length ){
-    record.suggest.payload.admin2 = record.admin2;
     adminParts.push( record.admin2 );
-  }
-  if( record.admin1 && record.admin1.length ){
-    record.suggest.payload.admin1 = record.admin1;
-    adminParts.push( record.admin1 );
-  }
-  if( record.admin0 && record.admin0.length ){
-    record.suggest.payload.admin0 = record.admin0;
-    adminParts.push( record.admin0 );
   }
 
   // add admin info to input values
   // so they are: "name admin2 admin1 admin0"
   // instead of simply: "name"
-  record.suggest.input = record.suggest.input.map( function( name ){
+  record.suggest.input = record.suggest.input.map( function( name, i ){
+    // Set output to the default name
+    if( i === 0 ){
+      record.suggest.output = [ name ].concat( adminParts ).join(', ').trim();
+    }
     return [ name ].concat( adminParts ).join(' ').trim();
   });
 
