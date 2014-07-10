@@ -58,6 +58,12 @@ var transformer = transform(function(data, callback){
   if( record.admin2 && record.admin2.length ){
     adminParts.push( record.admin2 );
   }
+  else if( record.admin1 && record.admin1.length ){
+    adminParts.push( record.admin1 );
+  }
+  if( record.admin0 && record.admin0.length ){
+    adminParts.push( record.admin0 );
+  }
 
   // add admin info to input values
   // so they are: "name admin2 admin1 admin0"
