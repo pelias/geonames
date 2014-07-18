@@ -10,6 +10,8 @@ var fs = require('fs'),
     admin2_data = require('../metadata/admin2Codes'),
     country_info = require('../metadata/countryInfo');
 
+var prefixes = [ 'the' ];
+
 esclient.livestats();
 
 var columns = [
@@ -43,12 +45,27 @@ var transformer = transform(function(data, callback){
   }
 
   // inputs
-  record.suggest.input.unshift( record.name.default );
-  var altnames = alternate_names(data);
-  altnames.forEach( function( name ){
-    if( -1 == record.suggest.input.indexOf( name ) ){
-      record.suggest.input.push( name );
+  record.suggest.input.unshift( record.name.default.toLowerCase() );
+  record.suggest.input = record.suggest.input.concat( alternate_names( data ) );
+
+  // allow users to exclude certain common prefixes
+  // we search for names beginning with known prefixes
+  // and followed by a space.
+  // If one is found then we add a copy of that name
+  // sans the prefix to the list of inputs
+  for( var x=0; x<record.suggest.input.length; x++ ){
+    var input = record.suggest.input[x];
+    for( var y=0; y<prefixes.length; y++ ){
+      var prefix = prefixes[y];
+      if( input.substr( 0, prefix.length+1 ) == prefix+' ' ){
+        record.suggest.input.push( input.substr( prefix.length+1 ) );
+      }
     }
+  }
+
+  // de-dupe inputs
+  record.suggest.input = record.suggest.input.filter( function( input, pos ) {
+    return record.suggest.input.indexOf( input ) == pos;
   });
 
   // payload
@@ -65,16 +82,19 @@ var transformer = transform(function(data, callback){
     adminParts.push( record.admin0 );
   }
 
+  // set output
+  record.suggest.output = [ record.name.default ].concat( adminParts ).join(', ').trim();
+
   // add admin info to input values
   // so they are: "name admin2 admin1 admin0"
   // instead of simply: "name"
-  record.suggest.input = record.suggest.input.map( function( name, i ){
-    // Set output to the default name
-    if( i === 0 ){
-      record.suggest.output = [ name ].concat( adminParts ).join(', ').trim();
-    }
-    return [ name ].concat( adminParts ).join(' ').trim();
-  });
+  // record.suggest.input = record.suggest.input.map( function( name, i ){
+  //   // Set output to the default name
+  //   if( i === 0 ){
+  //     record.suggest.output = [ name ].concat( adminParts ).join(', ').trim();
+  //   }
+  //   return [ name ].concat( adminParts ).join(' ').trim();
+  // });
 
   return callback( null, {
     _index: 'pelias', _type: 'geoname', _id: data._id,
@@ -132,6 +152,8 @@ function alternate_names(data) {
   if ('string' == typeof data.alternatenames) {
     return data.alternatenames.split(',').filter( function( val ){
       return val;
+    }).map( function( val ){
+      return val.toLowerCase();
     });
   }
   return [];
