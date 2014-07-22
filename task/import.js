@@ -96,8 +96,10 @@ var transformer = transform(function(data, callback){
   //   return [ name ].concat( adminParts ).join(' ').trim();
   // });
 
+  // @todo: find a better way of avoiding key conflicts from the denormalize mget
+  // ie: better than prefixing 'gn' to each id
   return callback( null, {
-    _index: 'pelias', _type: 'geoname', _id: data._id,
+    _index: 'pelias', _type: 'geoname', _id: 'gn'+data._id,
     data: record
   });
 
