@@ -39,7 +39,7 @@ var transformer = transform(function(data, callback){
       input: [],
       output: '',
       payload: {
-        id: 'geoname/' + data._id
+        id: 'geoname/gn' + data._id
       }
     }
   }
