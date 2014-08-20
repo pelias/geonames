@@ -1,4 +1,5 @@
 {
+"CountryCode":{"CountryCode":"CountryCode","TimeZoneId":"TimeZoneId","GMT_offset":"GMT offset 1. Jan 2014","DST_offset":"DST offset 1. Jul 2014","rawOffset":"rawOffset (independant of DST)"},
 "CI":{"CountryCode":"CI","TimeZoneId":"Africa/Abidjan","GMT_offset":"0.0","DST_offset":"0.0","rawOffset":"0.0"},
 "GH":{"CountryCode":"GH","TimeZoneId":"Africa/Accra","GMT_offset":"0.0","DST_offset":"0.0","rawOffset":"0.0"},
 "ET":{"CountryCode":"ET","TimeZoneId":"Africa/Addis_Ababa","GMT_offset":"3.0","DST_offset":"3.0","rawOffset":"3.0"},
