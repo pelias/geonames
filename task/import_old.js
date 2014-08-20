@@ -3,9 +3,9 @@ var fs = require('fs'),
     util = require('util'),
     request = require('request')
     transform = require('stream-transform'),
-    unzip = require('../lib/patched-unzip'),
+    unzip = require('unzip'),
     tsvparser = require('../lib/newparser'),
-    esclient = require('pelias-esclient')({ throttle: 20 }),
+    esclient = require('pelias-esclient')({ throttle: 10 }),
     admin1_data = require('../metadata/admin1CodesASCII'),
     admin2_data = require('../metadata/admin2Codes'),
     country_info = require('../metadata/countryInfo');
@@ -71,7 +71,7 @@ var transformer = transform(function(data, callback){
   // payload
   var adminParts = [];
   record.suggest.payload.geo = record.center_point.lon + ',' + record.center_point.lat;
-  
+
   if( record.admin2 && record.admin2.length ){
     adminParts.push( record.admin2 );
   }
