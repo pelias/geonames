@@ -1,6 +1,7 @@
 
 var fs = require('fs'),
     util = require('util'),
+    request = require('request'),
     path = require('path');
 
 var admin1_data = require('../metadata/admin1CodesASCII'),
