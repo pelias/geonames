@@ -5,7 +5,9 @@ var geonames = require('geonames-stream'),
     esclient = require('pelias-esclient')({ throttle: 20 }),
     Backend = require('geopipes-elasticsearch-backend'),
     elasticsearch = new Backend( esclient, 'pelias', 'geoname' ),
-    resolvers = require('./resolvers');
+    resolvers = require('./resolvers'),
+    propStream = require('prop-stream'),
+    schema = require('pelias-schema');
 
 function mapper( data, enc, next ){
 
@@ -38,11 +40,15 @@ module.exports = function( filename ){
   // show es stats
   esclient.livestats();
 
+  // remove any props not in the geonames mapping
+  var allowedProperties = Object.keys( schema.mappings.geoname.properties ).concat( [ 'id', 'type' ] );
+
   // run import pipeline
   resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
     .pipe( through.obj( mapper ) )
     .pipe( suggester.pipeline )
+    .pipe( propStream.whitelist( allowedProperties ) )
     .pipe( elasticsearch.createPullStream() );
     // .pipe( geonames.stringify )
     // .pipe( process.stdout );
