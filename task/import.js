@@ -13,7 +13,9 @@ function mapper( data, enc, next ){
 
   var record = {
     id: data._id,
-    type: 'geoname',
+    _meta: {
+      type: 'geoname'
+    },
     name: {
       default: data.name.trim()
     },
