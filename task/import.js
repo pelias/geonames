@@ -29,9 +29,10 @@ function mapper( data, enc, next ){
   };
 
   // alternate names
-  data.alternatenames.forEach( function( name, i ){
-    record.name[ 'alt'+i ] = name;
-  });
+  // @see https://github.com/mapzen/pelias-geonames/issues/5
+  // data.alternatenames.forEach( function( name, i ){
+  //   record.name[ 'alt'+i ] = name;
+  // });
 
   this.push(record);
   next();
