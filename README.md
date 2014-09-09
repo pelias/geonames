@@ -12,7 +12,7 @@ npm install
 ### usage
 
 ```bash
-peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames
+$> ./bin/pelias-geonames
 
   Usage: pelias-geonames [options]
 
@@ -33,25 +33,25 @@ For development it's fastest and easiest to just use the data from your local re
 Eg. To just load data specific to `New Zealand` you can run:
 
 ```bash
-peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames -i nz
+$> ./bin/pelias-geonames -i nz
 streaming datafile from: http://download.geonames.org/export/dump/NZ.zip
 ```
 
 You can download and use a cached copy of the geonames data for imports instead:
 
 ```bash
-peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames -d nz
+$> ./bin/pelias-geonames -d nz
 downloading datafile from: http://download.geonames.org/export/dump/NZ.zip
  data/NZ.zip           [===================] 100% 0.0s
 
-peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames -i nz
+$> ./bin/pelias-geonames -i nz
 reading datafile from disk at: data/NZ.zip
 ```
 
 For a `production` database where you need the entire world, use:
 
 ```bash
-peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames -i all
+$> ./bin/pelias-geonames -i all
 streaming datafile from: http://download.geonames.org/export/dump/allCountries.zip
 ```
 
@@ -60,7 +60,7 @@ streaming datafile from: http://download.geonames.org/export/dump/allCountries.z
 To get a list of all available ISO country codes:
 
 ```bash
-peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames -c
+$> ./bin/pelias-geonames -c
 ┌─────┬──────────────────────────────────────────────┬──────────────────────┬───────────┬───────────┐
 │ ISO │ Country                                      │ Capital              │ Continent │ geonameid │
 │ AD  │ Andorra                                      │ Andorra la Vella     │ EU        │           │
@@ -74,7 +74,7 @@ peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames -c
 The metadata shipped with the repo can get out-of-date, to pull the latest metadata:
 
 ```bash
-peter@manta:/var/www/pelias-geonames$ ./bin/pelias-geonames -m
+$> ./bin/pelias-geonames -m
  timeZones.txt                  [===================] 100% 0.0s
  countryInfo.txt                [===================] 100% 0.0s
  featureCodes_en.txt            [===================] 100% 0.0s
