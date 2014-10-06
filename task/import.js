@@ -2,7 +2,7 @@
 var geonames = require('geonames-stream'),
     suggester = require('pelias-suggester-pipeline'),
     through = require('through2'),
-    esclient = require('pelias-esclient')({ throttle: 10 }),
+    esclient = require('pelias-esclient')({ throttle: 10, maxThrottle: 50 }),
     Backend = require('geopipes-elasticsearch-backend'),
     elasticsearch = new Backend( esclient, 'pelias', 'geoname' ),
     resolvers = require('./resolvers'),
