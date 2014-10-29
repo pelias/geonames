@@ -4,13 +4,17 @@ var fs = require('fs'),
     request = require('request'),
     path = require('path');
 
+// use datapath setting from your config file
+var settings = require('pelias-config').generate();
+var basepath = settings.imports.geonames.datapath;
+
 var admin1_data = require('../metadata/admin1CodesASCII'),
     admin2_data = require('../metadata/admin2Codes'),
     country_info = require('../metadata/countryInfo');
 
 module.exports.selectSource = function(filename) {
 
-  var localFileName = util.format( 'data/%s.zip', filename );
+  var localFileName = util.format( '%s/%s.zip', basepath, filename );
   var remoteFilePath = util.format( 'http://download.geonames.org/export/dump/%s.zip', filename );
 
   if( fs.existsSync( localFileName ) ){
