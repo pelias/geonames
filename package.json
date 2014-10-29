@@ -39,6 +39,7 @@
     "geopipes-elasticsearch-backend": "0.0.4",
     "mkdirp": "^0.4.0",
     "pad": "0.0.4",
+    "pelias-config": "latest",
     "pelias-esclient": "0.0.26",
     "pelias-schema": "latest",
     "pelias-suggester-pipeline": "0.0.9",
