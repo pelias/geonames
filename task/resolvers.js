@@ -12,16 +12,17 @@ var admin1_data = require('../metadata/admin1CodesASCII'),
     admin2_data = require('../metadata/admin2Codes'),
     country_info = require('../metadata/countryInfo');
 
-module.exports.selectSource = function(filename) {
+module.exports.selectSource = function(filename,ext) {
 
   var localFileName = util.format( '%s/%s.zip', basepath, filename );
   var remoteFilePath = util.format( 'http://download.geonames.org/export/dump/%s.zip', filename );
+  var opts = ext ? { encoding: 'utf8' } : {};
 
   if( fs.existsSync( localFileName ) ){
-    console.log( 'reading datafile from disk at:', localFileName );
-    return fs.createReadStream( localFileName );
+    console.error( 'reading datafile from disk at:', localFileName );
+    return fs.createReadStream( localFileName, opts );
   } else {
-    console.log( 'streaming datafile from:', remoteFilePath );
+    console.error( 'streaming datafile from:', remoteFilePath );
     return request.get( remoteFilePath );
   }
 };

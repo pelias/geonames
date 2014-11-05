@@ -18,7 +18,7 @@ module.exports = function (filename) {
   mkdirp( 'data', function( error ){
 
     if( error ){ return console.error( error ); }
-    console.log( 'downloading datafile from:', remoteFilePath );
+    console.error( 'downloading datafile from:', remoteFilePath );
 
     request.get( remoteFilePath )
       .pipe( progress( pad( localFileName, 30 ) ) )
