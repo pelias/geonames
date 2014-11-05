@@ -4,7 +4,8 @@ var geonames = require('geonames-stream'),
     through = require('through2'),
     resolvers = require('./resolvers'),
     propStream = require('prop-stream'),
-    schema = require('pelias-schema');
+    schema = require('pelias-schema'),
+    dbclient = require('pelias-dbclient')();
 
 function mapper( data, enc, next ){
 
@@ -82,5 +83,5 @@ resolvers.selectSource( filename )
 
       next();
     }))
-    .pipe( require('dbclient')() );
+    .pipe( dbclient );
 };
