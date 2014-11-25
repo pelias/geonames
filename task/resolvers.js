@@ -62,3 +62,10 @@ module.exports.country_name = function(cc) {
   }
   return null;
 };
+
+module.exports.alpha3 = function(cc) {
+  if( country_info.hasOwnProperty(cc) ){
+    return country_info[cc].ISO3;
+  }
+  return null;
+};

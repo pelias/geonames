@@ -18,6 +18,7 @@ function mapper( data, enc, next ){
       name: {
         default: data.name.trim()
       },
+      alpha3: resolvers.alpha3(data.country_code),
       admin0: resolvers.country_name(data.country_code),
       admin1: resolvers.admin1_name(data),
       admin2: resolvers.admin2_name(data),
