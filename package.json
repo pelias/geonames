@@ -48,6 +48,7 @@
     "prop-stream": "0.0.0",
     "request": "^2.34.0",
     "through2": "^0.6.1",
-    "unzip": "^0.1.9"
+    "unzip": "^0.1.9",
+    "precommit-hook": "1.0.7"
   }
 }
