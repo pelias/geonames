@@ -11,8 +11,6 @@ var fs = require('fs'),
     request = require('request'),
     JSONStream = require('JSONStream'),
     through = require('through2'),
-    pad = require('pad'),
-    progress = require('../util/streamProgressBar'),
     metafiles = require('./metafiles');
 
 // tsv parser
@@ -21,7 +19,6 @@ var parser = function( columns )
 {
   var options = {
     delimiter: '\t',
-    // comment: '#',
     quote: false,
     trim: true,
     columns: columns
@@ -43,7 +40,6 @@ var download = function( filename )
   // Download metadata file
   var download = request
     .get( source );
-    // .pipe( progress( pad( filename, 30 ) ) );
 
   // Save original .txt file to disk (dev only)
   if( process.env.NODE_ENV === 'development' ){
