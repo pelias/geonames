@@ -23,7 +23,6 @@ module.exports = function (filename) {
     request.get( remoteFilePath )
       .pipe( progress( pad( localFileName, 30 ) ) )
       .pipe( fs.createWriteStream( localFileName ) );
-    
   });
 
-}
+};

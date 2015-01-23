@@ -10,7 +10,7 @@ var settings = {
 };
 
 module.exports = function(title, options){
-  
+
   var bar = new ProgressBar(' ' + title + ' [:bar] :percent :etas', settings);
 
   var stat = progress({time:1000}, function(str){
@@ -19,4 +19,4 @@ module.exports = function(title, options){
   });
 
   return stat;
-}
+};

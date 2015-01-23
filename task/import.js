@@ -1,11 +1,11 @@
 
 var geonames = require('geonames-stream'),
-    suggester = require('pelias-suggester-pipeline'),
-    through = require('through2'),
-    resolvers = require('./resolvers'),
-    propStream = require('prop-stream'),
-    schema = require('pelias-schema'),
-    dbclient = require('pelias-dbclient')();
+  suggester = require('pelias-suggester-pipeline'),
+  through = require('through2'),
+  resolvers = require('./resolvers'),
+  propStream = require('prop-stream'),
+  schema = require('pelias-schema'),
+  dbclient = require('pelias-dbclient')();
 
 function mapper( data, enc, next ){
 
@@ -28,12 +28,6 @@ function mapper( data, enc, next ){
       }
     };
 
-    // alternate names
-    // @see https://github.com/mapzen/pelias-geonames/issues/5
-    // data.alternatenames.forEach( function( name, i ){
-    //   record.name[ 'alt'+i ] = name;
-    // });
-
     this.push(record);
   } catch( e ){
     console.error( 'mapper failure', e );
@@ -48,30 +42,15 @@ module.exports = function( filename ){
   // remove any props not in the geonames mapping
   var allowedProperties = Object.keys( schema.mappings.geoname.properties ).concat( [ 'id', 'type' ] );
 
-  var counts = {};
-  var countStream = function( key, showIds ){
-    return through.obj( function( item, enc, next ){
-      if( !counts.hasOwnProperty( key ) ){ counts[key] = 0; }
-      ++counts[key];
-      console.log( 'counts', counts );
-      this.push( item );
-      next();
-    });
-  };
-
-  var devnull = through.obj( function( item, enc, next ){
-    next();
-  });
-
   // run import pipeline
-resolvers.selectSource( filename )
+  resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
     .pipe( through.obj( mapper ) )
     .pipe( suggester.pipeline )
     .pipe( propStream.whitelist( allowedProperties ) )
     .pipe( propStream.blacklist( ['tags'] ) )
     .pipe( through.obj( function( item, enc, next ){
-      
+
       var id = item.id;
       delete item.id;
 

@@ -33,10 +33,8 @@
   "dependencies": {
     "JSONStream": "^0.7.3",
     "cli-table": "^0.3.0",
-    "commander-plus": "0.0.6",
     "csv-parse": "0.0.5",
     "geonames-stream": "^2.0.2",
-    "geopipes-elasticsearch-backend": "0.0.4",
     "mkdirp": "^0.4.0",
     "pad": "0.0.4",
     "pelias-config": "latest",
@@ -48,6 +46,6 @@
     "prop-stream": "0.0.0",
     "request": "^2.34.0",
     "through2": "^0.6.1",
-    "unzip": "^0.1.9"
+    "precommit-hook": "1.0.7"
   }
 }
