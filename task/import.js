@@ -3,64 +3,58 @@ var geonames = require('geonames-stream'),
   suggester = require('pelias-suggester-pipeline'),
   through = require('through2'),
   resolvers = require('./resolvers'),
-  propStream = require('prop-stream'),
-  schema = require('pelias-schema'),
-  dbclient = require('pelias-dbclient')();
+  dbclient = require('pelias-dbclient')(),
+  model = require( 'pelias-model' );
 
 function mapper( data, enc, next ){
-
+  var record;
   try {
-    var record = {
-      id: data._id,
-      _meta: {
-        type: 'geoname'
-      },
-      name: {
-        default: data.name.trim()
-      },
-      alpha3: resolvers.alpha3(data.country_code),
-      admin0: resolvers.country_name(data.country_code),
-      admin1: resolvers.admin1_name(data),
-      admin2: resolvers.admin2_name(data),
-      center_point: {
+    record = new model.Document( 'geoname', data._id )
+      .setName( 'default', data.name.trim() )
+      .setCentroid({
         lat: data.latitude,
         lon: data.longitude
-      }
-    };
+      });
 
-    this.push(record);
+    try {
+      record.setAlpha3( resolvers.alpha3(data.country_code) );
+    } catch( err ){}
+
+    try {
+      record.setAdmin( 'admin0', resolvers.country_name( data.country_code ) );
+    } catch( err ){}
+
+    try {
+      record.setAdmin( 'admin1', resolvers.admin1_name( data ) );
+    } catch( err ){}
+
+    try {
+      record.setAdmin( 'admin2', resolvers.admin2_name( data ) );
+    } catch( err ){}
   } catch( e ){
-    console.error( 'mapper failure', e );
-    process.exit(1);
-  } finally {
-    next();
+    console.error(
+      'Failed to create a Document from:', data, 'Exception:', e
+    );
   }
+
+  if( record !== undefined ){
+    this.push( record );
+  }
+  next();
 }
 
 module.exports = function( filename ){
-
-  // remove any props not in the geonames mapping
-  var allowedProperties = Object.keys( schema.mappings.geoname.properties ).concat( [ 'id', 'type' ] );
-
-  // run import pipeline
   resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
     .pipe( through.obj( mapper ) )
     .pipe( suggester.pipeline )
-    .pipe( propStream.whitelist( allowedProperties ) )
-    .pipe( propStream.blacklist( ['tags'] ) )
     .pipe( through.obj( function( item, enc, next ){
-
-      var id = item.id;
-      delete item.id;
-
       this.push({
         _index: 'pelias',
-        _type: 'geoname',
-        _id: id,
+        _type: item.getType(),
+        _id: item.getId(),
         data: item
       });
-
       next();
     }))
     .pipe( dbclient );
