@@ -31,6 +31,11 @@ function mapper( data, enc, next ){
     try {
       record.setAdmin( 'admin2', resolvers.admin2_name( data ) );
     } catch( err ){}
+
+    try {
+      record.setPopulation( parseInt(data.population, 10) );
+    } catch( err ){}
+    
   } catch( e ){
     console.error(
       'Failed to create a Document from:', data, 'Exception:', e
