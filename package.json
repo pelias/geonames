@@ -41,7 +41,7 @@
     "pelias-config": "latest",
     "pelias-dbclient": "0.0.0",
     "pelias-model": "git://github.com/pelias/model#multiplier",
-    "pelias-suggester-pipeline": "2.0.1",
+    "pelias-suggester-pipeline": "git://github.com/pelias/suggester-pipeline#using-model-weights",
     "progress": "^1.1.5",
     "progress-stream": "^0.4.0",
     "request": "^2.34.0",
