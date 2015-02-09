@@ -33,7 +33,10 @@ function mapper( data, enc, next ){
     } catch( err ){}
 
     try {
-      record.setPopulation( parseInt(data.population, 10) );
+      var population = parseInt(data.population, 10);
+      if (population) {
+        record.setPopulation( population );
+      }
     } catch( err ){}
     
   } catch( e ){
