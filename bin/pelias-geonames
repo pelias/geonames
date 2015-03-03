@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 var program = require('commander-plus'),
-    countryInfo = require('../metadata/countryInfo');
+    countryInfo = require('../metadata/countryInfo'),
+    logger = require( 'pelias-logger' ).get( 'geonames' );
 
 program
   .version('0.0.0')
@@ -39,7 +40,7 @@ else {
 }
 
 function error( message ){
-  console.error( '\n  ' + message + '\n' );
+  logger.error( '\n  ' + message + '\n' );
   process.exit( 1 );
 }
 

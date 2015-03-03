@@ -4,7 +4,8 @@ var fs = require('fs'),
     request = require('request'),
     mkdirp = require('mkdirp'),
     pad = require('pad'),
-    progress = require('../util/streamProgressBar');
+    progress = require('../util/streamProgressBar'),
+    logger = require( 'pelias-logger' ).get( 'geonames' );
 
 // use datapath setting from your config file
 var settings = require('pelias-config').generate();
@@ -17,8 +18,11 @@ module.exports = function (filename) {
 
   mkdirp( 'data', function( error ){
 
-    if( error ){ return console.error( error ); }
-    console.error( 'downloading datafile from:', remoteFilePath );
+    if( error ){
+      logger.error( error );
+      return;
+    }
+    logger.info( 'downloading datafile from:', remoteFilePath );
 
     request.get( remoteFilePath )
       .pipe( progress( pad( localFileName, 30 ) ) )
