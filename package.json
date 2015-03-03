@@ -46,6 +46,7 @@
     "progress-stream": "^0.4.0",
     "request": "^2.34.0",
     "through2": "^0.6.1",
-    "precommit-hook": "1.0.7"
+    "precommit-hook": "1.0.7",
+    "pelias-admin-lookup": "^2.x.x"
   }
 }
