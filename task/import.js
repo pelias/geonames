@@ -4,7 +4,9 @@ var geonames = require('geonames-stream'),
   through = require('through2'),
   resolvers = require('./resolvers'),
   dbclient = require('pelias-dbclient')(),
-  model = require( 'pelias-model' );
+  model = require( 'pelias-model' ),
+  peliasAdminLookup = require( 'pelias-admin-lookup' ),
+  logger = require( 'pelias-logger' ).get( 'geonames' );
 
 function mapper( data, enc, next ){
   var record;
@@ -38,9 +40,9 @@ function mapper( data, enc, next ){
         record.setPopulation( population );
       }
     } catch( err ){}
-    
+
   } catch( e ){
-    console.error(
+    logger.warn(
       'Failed to create a Document from:', data, 'Exception:', e
     );
   }
@@ -56,6 +58,7 @@ module.exports = function( filename ){
     .pipe( geonames.pipeline )
     .pipe( through.obj( mapper ) )
     .pipe( suggester.pipeline )
+    .pipe( peliasAdminLookup.stream() )
     .pipe( through.obj( function( item, enc, next ){
       this.push({
         _index: 'pelias',

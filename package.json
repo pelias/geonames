@@ -39,13 +39,15 @@
     "mkdirp": "^0.4.0",
     "pad": "0.0.4",
     "pelias-config": "latest",
-    "pelias-dbclient": "0.0.0",
+    "pelias-dbclient": "^0.x.x",
     "pelias-model": "0.0.1",
     "pelias-suggester-pipeline": "2.0.2",
+    "pelias-logger": "0.0.4",
     "progress": "^1.1.5",
     "progress-stream": "^0.4.0",
     "request": "^2.34.0",
     "through2": "^0.6.1",
-    "precommit-hook": "1.0.7"
+    "precommit-hook": "1.0.7",
+    "pelias-admin-lookup": "^2.x.x"
   }
 }
