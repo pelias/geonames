@@ -1,7 +1,7 @@
 {
   "name": "pelias-geonames",
   "author": "mapzen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Open-source geo-coder & reverse geo-coder",
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
@@ -41,7 +41,7 @@
     "pelias-config": "latest",
     "pelias-dbclient": "^0.x.x",
     "pelias-model": "0.0.1",
-    "pelias-suggester-pipeline": "2.0.2",
+    "pelias-suggester-pipeline": "^2.x.x",
     "pelias-logger": "0.0.4",
     "progress": "^1.1.5",
     "progress-stream": "^0.4.0",
