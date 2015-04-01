@@ -6,7 +6,8 @@
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "import": "./bin/pelias-geonames"
   },
   "bin": {
     "geonames": "./bin/pelias-geonames"
