@@ -19,6 +19,11 @@ function mapper( data, enc, next ){
       });
 
     try {
+      record.setMeta( 'fcode', data.feature_code );
+    }
+    catch ( err ) {}
+
+    try {
       record.setAlpha3( resolvers.alpha3(data.country_code) );
     } catch( err ){}
 
@@ -53,12 +58,39 @@ function mapper( data, enc, next ){
   next();
 }
 
+var adminValueFilter = (function (){
+  var fcodeAdminFilter = {
+    ADM1: [ 'neighborhood', 'locality', 'local_admin', 'admin2' ],
+    ADM2: [ 'neighborhood', 'locality', 'local_admin' ]
+  };
+  var noNeighborhoods = [
+    'PPL', 'STM', 'LK', 'ISL', 'VAL', 'ADM4', 'ADM3', 'WAD', 'AREA', 'CAPE',
+    'PPLA3', 'MTS', 'FRST', 'RVN', 'ISLET', 'COVE', 'PPLA2', 'SWMP', 'HDLD',
+    'SLP', 'CLF', 'AIRF', 'PPLF', 'GRGE', 'PPLA', 'CNYN'
+  ];
+  noNeighborhoods.forEach( function ( code ){
+    fcodeAdminFilter[ code ] = [ 'neighborhood' ];
+  });
+
+  return through.obj( function write( data, _, next ){
+    var fcode = data.getMeta( 'fcode' );
+    if( fcode in fcodeAdminFilter ){
+      fcodeAdminFilter[ fcode ].forEach( function ( adminName ){
+        data.delAdmin( adminName );
+      });
+    }
+    this.push( data );
+    next();
+  });
+})();
+
 module.exports = function( filename ){
   resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
     .pipe( through.obj( mapper ) )
     .pipe( suggester.pipeline )
     .pipe( peliasAdminLookup.stream() )
+    .pipe( adminValueFilter )
     .pipe( through.obj( function( item, enc, next ){
       this.push({
         _index: 'pelias',
