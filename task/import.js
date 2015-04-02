@@ -58,26 +58,25 @@ function mapper( data, enc, next ){
   next();
 }
 
-var adminValueFilter = (function (){
-  var fcodeAdminFilter = {
+var adminLookupDontSet = (function (){
+  var fcodeAdminDontSet = {
     ADM1: [ 'neighborhood', 'locality', 'local_admin', 'admin2' ],
-    ADM2: [ 'neighborhood', 'locality', 'local_admin' ]
+    ADM2: [ 'neighborhood', 'locality', 'local_admin' ],
+    CONT: [ 'neighborhood', 'locality', 'local_admin', 'admin2', 'admin1', 'admin0' ]
   };
   var noNeighborhoods = [
     'PPL', 'STM', 'LK', 'ISL', 'VAL', 'ADM4', 'ADM3', 'WAD', 'AREA', 'CAPE',
     'PPLA3', 'MTS', 'FRST', 'RVN', 'ISLET', 'COVE', 'PPLA2', 'SWMP', 'HDLD',
-    'SLP', 'CLF', 'AIRF', 'PPLF', 'GRGE', 'PPLA', 'CNYN'
+    'SLP', 'CLF', 'AIRF', 'PPLF', 'GRGE', 'PPLA', 'CNYN', 'BDG'
   ];
   noNeighborhoods.forEach( function ( code ){
-    fcodeAdminFilter[ code ] = [ 'neighborhood' ];
+    fcodeAdminDontSet[ code ] = [ 'neighborhood' ];
   });
 
   return through.obj( function write( data, _, next ){
     var fcode = data.getMeta( 'fcode' );
-    if( fcode in fcodeAdminFilter ){
-      fcodeAdminFilter[ fcode ].forEach( function ( adminName ){
-        data.delAdmin( adminName );
-      });
+    if( fcode in fcodeAdminDontSet ){
+      data.setMeta( 'adminLookup', {dontSet: fcodeAdminDontSet[ fcode ]} );
     }
     this.push( data );
     next();
@@ -89,8 +88,8 @@ module.exports = function( filename ){
     .pipe( geonames.pipeline )
     .pipe( through.obj( mapper ) )
     .pipe( suggester.pipeline )
+    .pipe( adminLookupDontSet )
     .pipe( peliasAdminLookup.stream() )
-    .pipe( adminValueFilter )
     .pipe( through.obj( function( item, enc, next ){
       this.push({
         _index: 'pelias',
