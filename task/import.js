@@ -67,7 +67,7 @@ var adminLookupDontSet = (function (){
   var noNeighborhoods = [
     'PPL', 'STM', 'LK', 'ISL', 'VAL', 'ADM4', 'ADM3', 'WAD', 'AREA', 'CAPE',
     'PPLA3', 'MTS', 'FRST', 'RVN', 'ISLET', 'COVE', 'PPLA2', 'SWMP', 'HDLD',
-    'SLP', 'CLF', 'AIRF', 'PPLF', 'GRGE', 'PPLA', 'CNYN', 'BDG'
+    'SLP', 'CLF', 'AIRF', 'PPLF', 'GRGE', 'PPLA', 'CNYN', 'BDG', 'PPLC', 'PPLX'
   ];
   noNeighborhoods.forEach( function ( code ){
     fcodeAdminDontSet[ code ] = [ 'neighborhood' ];
