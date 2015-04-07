@@ -5,6 +5,7 @@ var geonames = require('geonames-stream'),
   resolvers = require('./resolvers'),
   dbclient = require('pelias-dbclient')(),
   model = require( 'pelias-model' ),
+  peliasConfig = require( 'pelias-config' ).generate(),
   peliasAdminLookup = require( 'pelias-admin-lookup' ),
   logger = require( 'pelias-logger' ).get( 'geonames' );
 
@@ -54,11 +55,16 @@ function mapper( data, enc, next ){
 }
 
 module.exports = function( filename ){
-  resolvers.selectSource( filename )
+  var pipeline = resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
     .pipe( through.obj( mapper ) )
-    .pipe( suggester.pipeline )
-    .pipe( peliasAdminLookup.stream() )
+    .pipe( suggester.pipeline );
+
+  if( peliasConfig.imports.geonames.adminLookup ){
+    pipeline = pipeline.pipe( peliasAdminLookup.stream() );
+  }
+
+  pipeline
     .pipe( through.obj( function( item, enc, next ){
       this.push({
         _index: 'pelias',
