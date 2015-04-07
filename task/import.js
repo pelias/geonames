@@ -58,6 +58,15 @@ function mapper( data, enc, next ){
   next();
 }
 
+/**
+ * Sets values inside Documents' `_meta` objects to indicate that
+ * `peliasAdminLookup` shouldn't set certain admin values, depending on their
+ * `fcodes`, or feature codes (as documented here:
+ * http://www.geonames.org/export/codes.html). This should prevent records for
+ * cities/continents/etc. from getting 'neighborhood' names set, which would
+ * happen because the corresponding point would likely intersect some
+ * neighborhood polygon all the way down.
+ */
 var adminLookupDontSet = (function (){
   var fcodeAdminDontSet = {
     ADM1: [ 'neighborhood', 'locality', 'local_admin', 'admin2' ],
