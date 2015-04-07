@@ -81,3 +81,25 @@ $> ./bin/pelias-geonames -m
  admin1CodesASCII.txt           [===================] 100% 0.0s
  admin2Codes.txt                [===================] 100% 0.0s
 ```
+
+### pelias-config
+The importer can be configured from your local `pelias-config` in the `imports.geonames` object:
+
+```javascript
+{
+	"imports": {
+		"geonames": {
+			"datapath": "/path/to/geonames/data",
+			"adminLookup": true
+		}
+	}
+}
+```
+
+The following are all *optional*:
+
+  * `datapath`: the path to geonames data. Defaults to a directory inside the importer.
+  * `adminLookup` - some GeoNames data doesn't have a full administrative hierarchy (ie, country, state,
+  county, etc. names), but you can optionally create it via the
+  [`pelias/admin-lookup`](https://github.com/pelias/admin-lookup) plugin; just set this property to `true`.  Consult
+  the `admin-lookup` README for setup documentation (namely just downloading the Quattroshapes dataset).
