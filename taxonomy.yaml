@@ -1,0 +1,667 @@
+ADM1:
+ADM1H:
+ADM2:
+ADM2H:
+ADM3:
+ADM3H:
+ADM4:
+ADM4H:
+ADM5:
+ADMD:
+ADMDH:
+LTER:
+PCL:
+PCLD:
+PCLF:
+PCLH:
+PCLI:
+PCLIX:
+PCLS:
+PRSH: religion
+TERR:
+ZN:
+ZNB:
+AIRS: "transport:air"
+ANCH: transport:sea
+BAY: natural:water
+BAYS: natural:water
+BGHT: natural:water
+BNK: natural:water
+BNKR: natural:water
+BNKX: natural:water
+BOG: natural:water
+CAPG: natural
+CHN: natural:water
+CHNL: natural:water
+CHNM: natural:water
+CHNN: natural:water
+CNFL: natural:water
+CNL: natural:water
+CNLA: natural:water
+CNLB: natural:water
+CNLD: natural:water
+CNLI: natural:water
+CNLN: natural:water
+CNLQ: natural:water
+CNLSB: natural:water
+CNLX: natural:water
+COVE: natural:water
+CRKT: natural:water
+CRNT: natural:water
+CUTF: natural:water
+DCK: transport:sea
+DCKB: transport:sea
+DOMG: natural
+DPRG: natural
+DTCH: natural:water
+DTCHD: natural:water
+DTCHI: natural:water
+DTCHM: natural:water
+ESTY: natural:water
+FISH: recreation, natural:water
+FJD: natural:water
+FJDS: natural:water
+FLLS: natural:water
+FLLSX: natural
+FLTM: natural
+FLTT: natural
+GLCR: natural
+GULF: natural:water
+GYSR: natural:water
+HBR: natural:water, transport:sea
+HBRX: natural:water, transport:sea
+INLT: natural:water
+INLTQ: natural
+LBED: natural
+LGN: natural:water
+LGNS: natural:water
+LGNX: natural:water
+LK: natural:water
+LKC: natural:water
+LKI: natural:water
+LKN: natural:water
+LKNI: natural:water
+LKO: natural:water
+LKOI: natural:water
+LKS: natural:water
+LKSB: natural:water
+LKSC: natural:water
+LKSI: natural:water
+LKSN: natural:water
+LKSNI: natural:water
+LKX: natural:water
+MFGN: natural:water
+MGV: natural:water
+MOOR: natural:water
+MRSH: natural:water
+MRSHN: natural:water
+NRWS: natural:water
+OCN: natural:water
+OVF: natural:water
+PND: natural:water
+PNDI: natural:water
+PNDN: natural:water
+PNDNI: natural:water
+PNDS: natural:water
+PNDSF: natural:water
+PNDSI: natural:water
+PNDSN: natural:water
+POOL: natural:water
+POOLI: natural:water
+RCH: natural
+RDGG: natural
+RDST: natural
+RF: natural:water
+RFC: natural:water
+RFX: natural:water
+RPDS: natural:water
+RSV: natural:water
+RSVI: natural:water
+RSVT: natural:water
+RVN: natural
+SBKH: natural
+SD: natural:water
+SEA: natural:water
+SHOL: natural:water
+SILL: natural:water
+SPNG: natural:water
+SPNS: natural:water
+SPNT: natural:water
+STM: natural:water
+STMA: natural:water
+STMB: natural:water
+STMC: natural:water
+STMD: natural:water
+STMH: natural:water
+STMI: natural:water
+STMIX: natural:water
+STMM: natural:water
+STMQ: natural
+STMS: natural:water
+STMSB: natural:water
+STMX: natural:water
+STRT: natural:water
+SWMP: natural:water
+SYSI: natural:water
+TNLC: natural:water
+WAD: natural
+WADB: natural
+WADJ: natural
+WADM: natural
+WADS: natural
+WADX: natural
+WHRL: natural:water
+WLL: natural:water
+WLLQ: natural:water
+WLLS: natural:water
+WTLD: natural:water
+WTLDI: natural:water
+WTRC: natural:water
+WTRH: natural:water
+AGRC:
+AMUS: entertainment
+AREA: natural
+BSND: natural:water
+BSNP: natural:water
+BTL: historic
+CLG: natural
+CMN: natural
+CNS:
+COLF: natural
+CONT:
+CST: natural
+CTRB: professional
+DEVH:
+FLD: natural
+FLDI: natural
+GASF: natural
+GRAZ: natural
+GVL: natural
+INDS:
+LAND: natural
+LCTY:
+MILB: government:military
+MNA:
+MVA: government:military
+NVB: government:military
+OAS: natural:water
+OILF: natural
+PEAT: natural
+PRK: natural, recreation
+PRT: natural:water, industry, transport:sea
+QCKS: natural
+RES: natural
+RESA: natural, industry
+RESF: natural
+RESH: natural, recreation
+RESN: natural
+RESP: natural
+RESV: natural
+RESW: natural
+RGN: natural
+RGNE: professional, industry
+RGNH: natural, historic
+RGNL: natural:water
+RNGA: government:military, natural
+SALT:  natural
+SNOW: natural
+TRB: natural
+PPL:
+PPLA:
+PPLA2:
+PPLA3:
+PPLA4:
+PPLC:
+PPLCH: historic
+PPLF:
+PPLG:
+PPLH: historic
+PPLL:
+PPLQ:
+PPLR:
+PPLS:
+PPLW:
+PPLX:
+STLMT:
+CSWY:
+OILP: industry
+PRMN: recreation
+PTGE: transport:sea, natural:water
+RD:
+RDA:
+RDB:
+RDCUT:
+RDJCT:
+RJCT:
+RR: transport:rail
+RRQ:
+RTE:
+RYD: transport:rail
+ST:
+STKR:
+TNL:
+TNLN:
+TNLRD:
+TNLRR:
+TNLS:
+TRL:
+ADMF: government
+AGRF: industry:agriculture
+AIRB: transport:air:airport
+AIRF: transport:air:airport
+AIRH: transport:air:airport
+AIRP: transport:air:airport
+AIRQ: transport:air
+AMTH: recreation
+ANS: historic
+AQC: academic
+ARCH:
+ASTR: academic
+ASYL: health
+ATHF: recreation
+ATM:
+BANK: professional
+BCN: transport
+BDG:
+BDGQ:
+BLDG:
+BLDO: professional
+BP:
+BRKS: government:military
+BRKW:
+BSTN: industry:agriculture
+BTYD:
+BUR:
+BUSTN: transport:bus
+BUSTP: transport:bus
+CARN:
+CAVE:
+CH: religion
+CMP: accomodation, recreation
+CMPL: industry, accomodation
+CMPLA: industry, accomodation
+CMPMN: industry, accomodation
+CMPO: industry, accomodation
+CMPQ:
+CMPRF: accomodation
+CMTY:
+COMC: professional, industry
+CRRL:
+CSNO: entertainment
+CSTL: historic, landmark
+CSTM: professional
+CTHSE: professional
+CTRA: academic
+CTRCM: recreation
+CTRF: industry, professional
+CTRM: health
+CTRR: religion
+CTRS: industry, academic
+CVNT: accomodation, religion
+DAM:
+DAMQ: agriculture
+DAMSB:
+DARY:
+DCKD: industry
+DCKY: industry
+DIKE:
+DIP: government
+DPOF: industry
+EST: agriculture
+ESTO: agriculture
+ESTR: agriculture
+ESTSG: agriculture
+ESTT: agriculture
+ESTX: agriculture
+FCL:
+FNDY: industry
+FRM: agriculture
+FRMQ: agriculture
+FRMS: agriculture
+FRMT: agriculture
+FT: government:military
+FY: transport:sea
+GATE:
+GDN:
+GHAT:
+GHSE: accomodation
+GOSP: industry
+GOVL: government
+GRVE:
+HERM: accomodation, religion
+HLT: accomodation
+HMSD:
+HSE:
+HSEC:
+HSP: health
+HSPC: health
+HSPD: health
+HSPL: health
+HSTS: historic
+HTL: accomodation
+HUT:
+HUTS:
+INSM: government:military
+ITTR: academic
+JTY:
+LDNG: transport:sea
+LEPC:
+LIBR: academic
+LNDF:
+LOCK:
+LTHSE:
+MALL: retail
+MAR: natural:water
+MFG: industry
+MFGB: industry
+MFGC: industry
+MFGCU: industry
+MFGLM: industry
+MFGM: industry
+MFGPH: industry
+MFGQ: industry
+MFGSG: industry
+MKT: retail
+ML: industry
+MLM: industry
+MLO: industry
+MLSG: industry
+MLSGQ: industry
+MLSW: industry
+MLWND: industry
+MLWTR: industry
+MN: industry
+MNAU: industry
+MNC: industry
+MNCR: industry
+MNCU: industry
+MNFE: industry
+MNMT: landmark
+MNN: industry
+MNQ: industry
+MNQR: industry
+MOLE: industry
+MSQE: religion
+MSSN: religion
+MSSNQ:
+MSTY: religion
+MTRO: transport:rail
+MUS: academic, entertainment
+NOV: religion
+NSY: health
+OBPT: recreation
+OBS: recreation, academic
+OBSR: industry, academic
+OILJ: industry
+OILQ: industry
+OILR: industry
+OILT: industry
+OILW: industry
+OPRA: entertainment
+PAL: landmark
+PGDA: landmark, historic
+PIER: transport:sea, industry
+PKLT: industry
+PMPO: industry
+PMPW: industry
+PO: government, professional
+PP: government, professional
+PPQ:
+PRKGT:
+PRKHQ:
+PRN: government
+PRNJ: government
+PRNQ: government
+PS: industry
+PSH: industry
+PSTB: government
+PSTC: government
+PSTP: government:military
+PYR: historic, landmark
+PYRS: historic, landmark
+QUAY: natural:water
+RDCR:
+RECG: recreation, entertainment
+RECR: recreation, entertainment
+REST: food
+RET: retail
+RHSE: accomodation
+RKRY:
+RLG: religion
+RLGR: accomodation, religion
+RNCH: agriculture
+RSD: transport:rail
+RSGNL: transport:rail
+RSRT: recreation, accomodation
+RSTN: transport:rail
+RSTNQ: transport:rail
+RSTP: transport:rail
+RSTPQ: transport:rail
+RUIN: historic
+SCH: academic
+SCHA: academic, agriculture
+SCHC: academic
+SCHL: academic
+SCHM: academic, government:military
+SCHN: academic
+SCHT: academic
+SECP: academic, government
+SHPF: agriculture
+SHRN: religion
+SHSE: industry
+SLCE:
+SNTR: health
+SPA: recreation
+SPLY:
+SQR:
+STBL: agriculture
+STDM: entertainment, recreation
+STNB: academic
+STNC: government:military
+STNE: academic
+STNF: industry
+STNI: industry
+STNM: industry, academic
+STNR: industry
+STNS: industry
+STNW: industry
+STPS:
+SWT: industry
+THTR: entertainment
+TMB: historic
+TMPL: religion
+TNKD: agriculture
+TOWR:
+TRANT: transport
+TRIG:
+TRMO: industry
+TWO: professional
+UNIP: academic
+UNIV: academic
+USGE: government
+VETF: health
+WALL:
+WALLA: historic
+WEIR:
+WHRF:
+WRCK:
+WTRW: industry
+ZNF: professional
+ZOO: recreation
+ASPH: natural
+ATOL: natural
+BAR: natural:water
+BCH: natural:water
+BCHS: natural:water
+BDLD: natural
+BLDR: natural
+BLHL: natural
+BLOW: natural
+BNCH:
+BUTE: natural
+CAPE: natural
+CFT: natural
+CLDA: natural
+CLF: natural
+CNYN: natural
+CONE: natural
+CRDR: natural
+CRQ: natural
+CRQS: natural
+CRTR: natural
+CUET: natural
+DLTA: natural
+DPR: natural
+DSRT: natural
+DUNE: natural
+DVD: natural
+ERG: natural
+FAN: natural
+FORD: natural
+FSR: natural
+GAP: natural
+GRGE: natural
+HDLD: natural
+HLL: natural
+HLLS: natural
+HMCK: natural
+HMDA: natural
+INTF: natural
+ISL: natural
+ISLET: natural
+ISLF: natural
+ISLM: natural
+ISLS: natural
+ISLT: natural
+ISLX: natural
+ISTH: natural
+KRST: natural
+LAVA: natural
+LEV: natural:water
+MESA: natural
+MND: natural
+MRN: natural
+MT: natural
+MTS: natural
+NKM: natural
+NTK: natural
+NTKS: natural
+PAN: natural
+PANS: natural
+PASS: natural
+PEN: natural
+PENX: natural
+PK: natural
+PKS: natural
+PLAT: natural
+PLATX: natural
+PLDR: natural
+PLN: natural
+PLNX: natural
+PROM: natural
+PT: natural
+PTS: natural
+RDGB: natural
+RDGE: natural
+REG: natural
+RK: natural
+RKFL: natural
+RKS: natural
+SAND: natural
+SBED: natural
+SCRP: natural
+SDL: natural
+SHOR: natural
+SINK: natural
+SLID: natural
+SLP: natural
+SPIT: natural
+SPUR: natural
+TAL: natural
+TRGD: natural
+TRR: natural
+UPLD: natural
+VAL: natural
+VALG: natural
+VALS: natural
+VALX: natural
+VLC: natural
+APNU: natural
+ARCU: natural
+ARRU: natural
+BDLU: natural
+BKSU: natural
+BNKU: natural
+BSNU: natural
+CDAU: natural
+CNSU: natural
+CNYU: natural
+CRSU: natural
+DEPU: natural
+EDGU: natural
+ESCU: natural
+FANU: natural
+FLTU: natural
+FRZU: natural
+FURU: natural
+GAPU: natural
+GLYU: natural
+HLLU: natural
+HLSU: natural
+HOLU: natural
+KNLU: natural
+KNSU: natural
+LDGU: natural
+LEVU: natural:water
+MESU: natural
+MNDU: natural
+MOTU: natural
+MTU: natural
+PKSU: natural
+PKU: natural
+PLNU: natural
+PLTU: natural
+PNLU: natural
+PRVU: natural
+RDGU: natural
+RDSU: natural
+RFSU: natural:water
+RFU: natural:water
+RISU: natural
+SCNU: natural
+SCSU: natural
+SDLU: natural
+SHFU: natural
+SHLU: natural
+SHSU: natural
+SHVU: natural
+SILU: natural
+SLPU: natural
+SMSU: natural:water
+SMU: natural:water
+SPRU: natural
+TERU: natural
+TMSU: natural:water
+TMTU: natural:water
+TNGU: natural:water
+TRGU: natural:water
+TRNU: natural:water
+VALU: natural
+VLSU: natural
+BUSH: natural
+CULT: natural
+FRST: natural
+FRSTF: natural
+GRSLD: natural
+GRVC: natural
+GRVO: natural
+GRVP: natural
+GRVPN: natural
+HTH: natural
+MDW: natural
+OCH: natural
+SCRB: natural
+TREE: natural
+TUND: natural
+VIN: natural
+VINS: natural
