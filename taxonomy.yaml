@@ -1,28 +1,28 @@
-ADM1:
-ADM1H:
-ADM2:
-ADM2H:
-ADM3:
-ADM3H:
-ADM4:
-ADM4H:
-ADM5:
-ADMD:
-ADMDH:
-LTER:
-PCL:
-PCLD:
-PCLF:
-PCLH:
-PCLI:
-PCLIX:
-PCLS:
+ADM1: admin:admin1
+ADM1H: admin:admin1, historic
+ADM2: admin:admin2
+ADM2H: admin:admin2, historic
+ADM3: admin
+ADM3H: admin, historic
+ADM4: admin
+ADM4H: admin, historic
+ADM5: admin
+ADMD: admin
+ADMDH: admin, historic
+LTER: government:military, admin
+PCL: government
+PCLD: government
+PCLF: government
+PCLH: government
+PCLI: government
+PCLIX: government
+PCLS: government
 PRSH: religion
-TERR:
-ZN:
-ZNB:
-AIRS: "transport:air"
-ANCH: transport:sea
+TERR: admin
+ZN: admin
+ZNB: admin
+AIRS: natural:water, transport:air
+ANCH: natural:water, transport:sea
 BAY: natural:water
 BAYS: natural:water
 BGHT: natural:water
@@ -41,7 +41,7 @@ CNLA: natural:water
 CNLB: natural:water
 CNLD: natural:water
 CNLI: natural:water
-CNLN: natural:water
+CNLN: transport:sea, natural:water
 CNLQ: natural:water
 CNLSB: natural:water
 CNLX: natural:water
@@ -49,8 +49,8 @@ COVE: natural:water
 CRKT: natural:water
 CRNT: natural:water
 CUTF: natural:water
-DCK: transport:sea
-DCKB: transport:sea
+DCK: transport:sea, natural:water
+DCKB: transport:sea, natural:water
 DOMG: natural
 DPRG: natural
 DTCH: natural:water
@@ -108,9 +108,9 @@ PNDSI: natural:water
 PNDSN: natural:water
 POOL: natural:water
 POOLI: natural:water
-RCH: natural
+RCH: natural:water
 RDGG: natural
-RDST: natural
+RDST: natural:water, transport:sea
 RF: natural:water
 RFC: natural:water
 RFX: natural:water
@@ -119,10 +119,10 @@ RSV: natural:water
 RSVI: natural:water
 RSVT: natural:water
 RVN: natural
-SBKH: natural
+SBKH: natural:water
 SD: natural:water
 SEA: natural:water
-SHOL: natural:water
+SHOL: natural
 SILL: natural:water
 SPNG: natural:water
 SPNS: natural:water
@@ -145,11 +145,11 @@ SWMP: natural:water
 SYSI: natural:water
 TNLC: natural:water
 WAD: natural
-WADB: natural
-WADJ: natural
-WADM: natural
-WADS: natural
-WADX: natural
+WADB: natural:water
+WADJ: natural:water
+WADM: natural:water
+WADS: natural:water
+WADX: natural:water
 WHRL: natural:water
 WLL: natural:water
 WLLQ: natural:water
@@ -158,7 +158,7 @@ WTLD: natural:water
 WTLDI: natural:water
 WTRC: natural:water
 WTRH: natural:water
-AGRC:
+AGRC: industry:agriculture
 AMUS: entertainment
 AREA: natural
 BSND: natural:water
@@ -166,9 +166,9 @@ BSNP: natural:water
 BTL: historic
 CLG: natural
 CMN: natural
-CNS:
+CNS: government
 COLF: natural
-CONT:
+CONT: admin
 CST: natural
 CTRB: professional
 DEVH:
@@ -177,16 +177,16 @@ FLDI: natural
 GASF: natural
 GRAZ: natural
 GVL: natural
-INDS:
+INDS: industry
 LAND: natural
-LCTY:
+LCTY: admin
 MILB: government:military
-MNA:
+MNA: industry
 MVA: government:military
 NVB: government:military
 OAS: natural:water
 OILF: natural
-PEAT: natural
+PEAT: industry:agriculture
 PRK: natural, recreation
 PRT: natural:water, industry, transport:sea
 QCKS: natural
@@ -199,41 +199,41 @@ RESP: natural
 RESV: natural
 RESW: natural
 RGN: natural
-RGNE: professional, industry
+RGNE: professional, government, admin
 RGNH: natural, historic
 RGNL: natural:water
 RNGA: government:military, natural
 SALT:  natural
 SNOW: natural
 TRB: natural
-PPL:
-PPLA:
-PPLA2:
-PPLA3:
-PPLA4:
-PPLC:
-PPLCH: historic
-PPLF:
-PPLG:
+PPL: admin:city
+PPLA: admin:city
+PPLA2: admin:city
+PPLA3: admin:city
+PPLA4: admin:city
+PPLC: admin:city:capital
+PPLCH: historic, admin:city:capital
+PPLF: industry:agriculture, admin
+PPLG: admin
 PPLH: historic
-PPLL:
-PPLQ:
-PPLR:
-PPLS:
-PPLW:
-PPLX:
-STLMT:
+PPLL: admin
+PPLQ: admin
+PPLR: religion, admin
+PPLS: admin
+PPLW: admin
+PPLX: admin
+STLMT: admin
 CSWY:
 OILP: industry
 PRMN: recreation
-PTGE: transport:sea, natural:water
+PTGE: transport
 RD:
 RDA:
 RDB:
 RDCUT:
 RDJCT:
 RJCT:
-RR: transport:rail
+RR:
 RRQ:
 RTE:
 RYD: transport:rail
@@ -270,12 +270,12 @@ BP:
 BRKS: government:military
 BRKW:
 BSTN: industry:agriculture
-BTYD:
+BTYD: industry
 BUR:
 BUSTN: transport:bus
 BUSTP: transport:bus
-CARN:
-CAVE:
+CARN: natural
+CAVE: natural
 CH: religion
 CMP: accomodation, recreation
 CMPL: industry, accomodation
@@ -299,9 +299,9 @@ CTRR: religion
 CTRS: industry, academic
 CVNT: accomodation, religion
 DAM:
-DAMQ: agriculture
+DAMQ:
 DAMSB:
-DARY:
+DARY: agriculture
 DCKD: industry
 DCKY: industry
 DIKE:
@@ -347,7 +347,7 @@ JTY:
 LDNG: transport:sea
 LEPC:
 LIBR: academic
-LNDF:
+LNDF: industry
 LOCK:
 LTHSE:
 MALL: retail
@@ -380,7 +380,7 @@ MNMT: landmark
 MNN: industry
 MNQ: industry
 MNQR: industry
-MOLE: industry
+MOLE:
 MSQE: religion
 MSSN: religion
 MSSNQ:
@@ -388,7 +388,7 @@ MSTY: religion
 MTRO: transport:rail
 MUS: academic, entertainment
 NOV: religion
-NSY: health
+NSY:
 OBPT: recreation
 OBS: recreation, academic
 OBSR: industry, academic
@@ -398,7 +398,7 @@ OILR: industry
 OILT: industry
 OILW: industry
 OPRA: entertainment
-PAL: landmark
+PAL: landmark, historic
 PGDA: landmark, historic
 PIER: transport:sea, industry
 PKLT: industry
@@ -406,7 +406,7 @@ PMPO: industry
 PMPW: industry
 PO: government, professional
 PP: government, professional
-PPQ:
+PPQ: government, professional
 PRKGT:
 PRKHQ:
 PRN: government
@@ -419,7 +419,7 @@ PSTC: government
 PSTP: government:military
 PYR: historic, landmark
 PYRS: historic, landmark
-QUAY: natural:water
+QUAY: natural:water, industry
 RDCR:
 RECG: recreation, entertainment
 RECR: recreation, entertainment
@@ -430,13 +430,13 @@ RKRY:
 RLG: religion
 RLGR: accomodation, religion
 RNCH: agriculture
-RSD: transport:rail
-RSGNL: transport:rail
+RSD:
+RSGNL:
 RSRT: recreation, accomodation
 RSTN: transport:rail
 RSTNQ: transport:rail
-RSTP: transport:rail
-RSTPQ: transport:rail
+RSTP:
+RSTPQ:
 RUIN: historic
 SCH: academic
 SCHA: academic, agriculture
@@ -471,7 +471,7 @@ THTR: entertainment
 TMB: historic
 TMPL: religion
 TNKD: agriculture
-TOWR:
+TOWR: landmark
 TRANT: transport
 TRIG:
 TRMO: industry
