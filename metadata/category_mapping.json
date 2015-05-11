@@ -1,7 +1,7 @@
 {
   "SHSE": ["industry"],
   "RYD": ["transport:rail", "transport"],
-  "CSNO": ["entertainment"],
+  "CSNO": ["entertainment", "nightlife"],
   "SHSU": ["natural"],
   "WLL": ["natural:water", "natural"],
   "CRKT": ["natural:water", "natural"],
