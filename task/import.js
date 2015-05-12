@@ -50,12 +50,14 @@ function mapper( data, enc, next ){
 
     if( typeof data.feature_code === 'string' ){
       var featureCode = data.feature_code.toUpperCase();
-      var peliasCategories = categoryMapping[ featureCode ];
-      if( peliasCategories !== undefined ){
+      if( categoryMapping.hasOwnProperty( featureCode ) ){
+        var peliasCategories = categoryMapping[ featureCode ];
         peliasCategories.forEach( function ( category ){
           try {
             record.addCategory( category );
-          } catch ( ex ) {}
+          } catch ( ex ) {
+            logger.error( 'Failed to set category `%s` with exception `%s`.', category, ex);
+          }
         });
       }
     }
