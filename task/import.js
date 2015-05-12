@@ -7,6 +7,7 @@ var geonames = require('geonames-stream'),
   model = require( 'pelias-model' ),
   peliasConfig = require( 'pelias-config' ).generate(),
   peliasAdminLookup = require( 'pelias-admin-lookup' ),
+  categoryMapping = require( '../metadata/category_mapping.json' ),
   logger = require( 'pelias-logger' ).get( 'geonames' );
 
 function mapper( data, enc, next ){
@@ -46,6 +47,20 @@ function mapper( data, enc, next ){
         record.setPopulation( population );
       }
     } catch( err ){}
+
+    if( typeof data.feature_code === 'string' ){
+      var featureCode = data.feature_code.toUpperCase();
+      if( categoryMapping.hasOwnProperty( featureCode ) ){
+        var peliasCategories = categoryMapping[ featureCode ];
+        peliasCategories.forEach( function ( category ){
+          try {
+            record.addCategory( category );
+          } catch ( ex ) {
+            logger.error( 'Failed to set category `%s` with exception `%s`.', category, ex);
+          }
+        });
+      }
+    }
 
   } catch( e ){
     logger.warn(
