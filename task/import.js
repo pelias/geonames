@@ -1,6 +1,6 @@
 
 var geonames = require('geonames-stream'),
-  suggester = require('pelias-suggester-pipeline'),
+  // suggester = require('pelias-suggester-pipeline'),
   through = require('through2'),
   resolvers = require('./resolvers'),
   dbclient = require('pelias-dbclient')(),
@@ -111,8 +111,8 @@ var adminLookupDontSet = (function (){
 module.exports = function( filename ){
   var pipeline = resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
-    .pipe( through.obj( mapper ) )
-    .pipe( suggester.pipeline );
+    .pipe( through.obj( mapper ) );
+    // .pipe( suggester.pipeline );
 
   if( peliasConfig.imports.geonames.adminLookup ){
     pipeline = pipeline
