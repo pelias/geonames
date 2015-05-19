@@ -69,6 +69,7 @@ function mapper( data, enc, next ){
   }
 
   if( record !== undefined ){
+    record.shingle = record.name;
     this.push( record );
   }
   next();
