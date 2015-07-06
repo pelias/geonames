@@ -44,7 +44,6 @@
     "pelias-dbclient": "^0.x.x",
     "pelias-logger": "0.0.4",
     "pelias-model": "^0.3.0",
-    "pelias-suggester-pipeline": "^2.x.x",
     "precommit-hook": "1.0.7",
     "progress": "^1.1.5",
     "progress-stream": "^0.4.0",
