@@ -1,6 +1,5 @@
 
 var geonames = require('geonames-stream'),
-  suggester = require('pelias-suggester-pipeline'),
   through = require('through2'),
   resolvers = require('./resolvers'),
   dbclient = require('pelias-dbclient')(),
@@ -68,7 +67,11 @@ function mapper( data, enc, next ){
     );
   }
 
+  // copy 'name' object to 'phrase' in order
+  // to allow ES to create seperate indeces
+  // with different analysis techniques.
   if( record !== undefined ){
+    record.phrase = record.name;
     this.push( record );
   }
   next();
@@ -111,8 +114,7 @@ var adminLookupDontSet = (function (){
 module.exports = function( filename ){
   var pipeline = resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
-    .pipe( through.obj( mapper ) )
-    .pipe( suggester.pipeline );
+    .pipe( through.obj( mapper ) );
 
   if( peliasConfig.imports.geonames.adminLookup ){
     pipeline = pipeline
