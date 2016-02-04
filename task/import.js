@@ -1,8 +1,8 @@
 
 var geonames = require('geonames-stream'),
-  through = require('through2'),
   resolvers = require('./resolvers'),
   dbclient = require('pelias-dbclient')(),
+  model = require( 'pelias-model' ),
   peliasConfig = require( 'pelias-config' ).generate(),
   peliasAdminLookup = require( 'pelias-admin-lookup' ),
   adminLookupMetaStream = require('../lib/streams/adminLookupMetaStream');
@@ -21,14 +21,6 @@ module.exports = function( filename ){
   }
 
   pipeline
-    .pipe( through.obj( function( item, enc, next ){
-      this.push({
-        _index: 'pelias',
-        _type: item.getType(),
-        _id: item.getId(),
-        data: item
-      });
-      next();
-    }))
+    .pipe(model.createDocumentMapperStream())
     .pipe( dbclient );
 };
