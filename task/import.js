@@ -12,7 +12,7 @@ var geonames = require('geonames-stream'),
 function mapper( data, enc, next ){
   var record;
   try {
-    record = new model.Document( 'geoname', data._id )
+    record = new model.Document( 'geonames', 'venue', data._id )
       .setName( 'default', data.name.trim() )
       .setCentroid({
         lat: data.latitude,
