@@ -11,7 +11,7 @@ var peliasDocGenerator = require( '../lib/streams/peliasDocGenerator');
 module.exports = function( filename ){
   var pipeline = resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
-    .pipe( peliasDocGenerator.createPeliasDocGenerator() );
+    .pipe( peliasDocGenerator.create() );
 
   if( peliasConfig.imports.geonames.adminLookup ){
     pipeline = pipeline
