@@ -4,12 +4,11 @@ var peliasAdminLookup = require( 'pelias-admin-lookup' );
 var dbclient = require('pelias-dbclient');
 var model = require( 'pelias-model' );
 
-var resolvers = require('./resolvers');
 var adminLookupMetaStream = require('../lib/streams/adminLookupMetaStream');
 var peliasDocGenerator = require( '../lib/streams/peliasDocGenerator');
 
-module.exports = function( filename ){
-  var pipeline = resolvers.selectSource( filename )
+module.exports = function( sourceStream ){
+  var pipeline = sourceStream
     .pipe( geonames.pipeline )
     .pipe( peliasDocGenerator.create() );
 

@@ -20,8 +20,11 @@ if( program.countrycodes ){
 
 else if( program.import ){
   var isocode = validateISOCode( program.import );
+  var filename = isocode === 'ALL' ? 'allCountries' : isocode;
+  var source = resolvers.selectSource( filename );
+
   var task = require('../task/import');
-  task( isocode === 'ALL' ? 'allCountries' : isocode );
+  task( source );
 }
 
 else if( program.download ){
