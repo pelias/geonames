@@ -1,1 +1,1 @@
-require ('./peliasDocGeneratorTest.js');
+require ('./streams/peliasDocGeneratorTest.js');

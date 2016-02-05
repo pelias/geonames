@@ -1,6 +1,6 @@
 var tape = require('tape');
 var Document = require('pelias-model').Document;
-var peliasDocGenerator = require('../lib/stream/peliasDocGenerator');
+var peliasDocGenerator = require('../../lib/streams/peliasDocGenerator');
 var event_stream = require('event-stream');
 
 function test_stream(input, testedStream, callback) {
