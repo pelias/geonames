@@ -7,7 +7,9 @@ var model = require( 'pelias-model' );
 var adminLookupMetaStream = require('../lib/streams/adminLookupMetaStream');
 var peliasDocGenerator = require( '../lib/streams/peliasDocGenerator');
 
-module.exports = function( sourceStream ){
+module.exports = function( sourceStream, endStream ){
+  endStream = endStream || dbclient();
+
   var pipeline = sourceStream
     .pipe( geonames.pipeline )
     .pipe( peliasDocGenerator.create() );
@@ -20,5 +22,5 @@ module.exports = function( sourceStream ){
 
   pipeline
     .pipe(model.createDocumentMapperStream())
-    .pipe( dbclient() );
+    .pipe( endStream );
 };
