@@ -3,79 +3,10 @@ var geonames = require('geonames-stream'),
   through = require('through2'),
   resolvers = require('./resolvers'),
   dbclient = require('pelias-dbclient')(),
-  model = require( 'pelias-model' ),
   peliasConfig = require( 'pelias-config' ).generate(),
-  peliasAdminLookup = require( 'pelias-admin-lookup' ),
-  categoryMapping = require( '../metadata/category_mapping.json' ),
-  logger = require( 'pelias-logger' ).get( 'geonames' );
+  peliasAdminLookup = require( 'pelias-admin-lookup' );
 
-function mapper( data, enc, next ){
-  var record;
-  try {
-    record = new model.Document( 'geonames', 'venue', data._id )
-      .setName( 'default', data.name.trim() )
-      .setCentroid({
-        lat: data.latitude,
-        lon: data.longitude
-      });
-
-    try {
-      record.setMeta( 'fcode', data.feature_code );
-    }
-    catch ( err ) {}
-
-    try {
-      record.setAlpha3( resolvers.alpha3(data.country_code) );
-    } catch( err ){}
-
-    try {
-      record.setAdmin( 'admin0', resolvers.country_name( data.country_code ) );
-    } catch( err ){}
-
-    try {
-      record.setAdmin( 'admin1', resolvers.admin1_name( data ) );
-    } catch( err ){}
-
-    try {
-      record.setAdmin( 'admin2', resolvers.admin2_name( data ) );
-    } catch( err ){}
-
-    try {
-      var population = parseInt(data.population, 10);
-      if (population) {
-        record.setPopulation( population );
-      }
-    } catch( err ){}
-
-    if( typeof data.feature_code === 'string' ){
-      var featureCode = data.feature_code.toUpperCase();
-      if( categoryMapping.hasOwnProperty( featureCode ) ){
-        var peliasCategories = categoryMapping[ featureCode ];
-        peliasCategories.forEach( function ( category ){
-          try {
-            record.addCategory( category );
-          } catch ( ex ) {
-            logger.error( 'Failed to set category `%s` with exception `%s`.', category, ex);
-          }
-        });
-      }
-    }
-
-  } catch( e ){
-    logger.warn(
-      'Failed to create a Document from:', data, 'Exception:', e
-    );
-  }
-
-  // copy 'name' object to 'phrase' in order
-  // to allow ES to create seperate indeces
-  // with different analysis techniques.
-  if( record !== undefined ){
-    record.phrase = record.name;
-    this.push( record );
-  }
-  next();
-}
+var peliasDocGenerator = require( 'peliasDocGenerator');
 
 /**
  * Sets values inside Documents' `_meta` objects to indicate that
@@ -114,7 +45,7 @@ var adminLookupDontSet = (function (){
 module.exports = function( filename ){
   var pipeline = resolvers.selectSource( filename )
     .pipe( geonames.pipeline )
-    .pipe( through.obj( mapper ) );
+    .pipe( peliasDocGenerator.createPeliasDocGenerator() );
 
   if( peliasConfig.imports.geonames.adminLookup ){
     pipeline = pipeline
