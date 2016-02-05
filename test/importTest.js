@@ -5,7 +5,7 @@ var tape = require( 'tape' );
 var event_stream = require( 'event-stream' );
 var deep = require( 'deep-diff' );
 
-var importModule = require( '../task/import' );
+var importModule = require( '../lib/tasks/import' );
 
 var basePath = path.resolve(__dirname);
 var expectedPath = basePath + '/data/expected.json';
