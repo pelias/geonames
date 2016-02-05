@@ -1,8 +1,7 @@
 
-var fs = require('fs'),
+var fs = require('fs-extra'),
     util = require('util'),
     request = require('request'),
-    mkdirp = require('mkdirp'),
     _ = require('lodash'),
     progress = require('../util/streamProgressBar'),
     logger = require( 'pelias-logger' ).get( 'geonames' );
@@ -16,8 +15,7 @@ module.exports = function (filename) {
   var remoteFilePath = util.format( 'http://download.geonames.org/export/dump/%s.zip', filename );
   var localFileName = util.format( '%s/%s.zip', basepath, filename );
 
-  mkdirp( 'data', function( error ){
-
+  fs.mkdirs('data', function(error) {
     if( error ){
       logger.error( error );
       return;
