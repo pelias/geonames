@@ -3,7 +3,7 @@ var fs = require('fs'),
     util = require('util'),
     request = require('request'),
     mkdirp = require('mkdirp'),
-    pad = require('pad'),
+    _ = require('lodash'),
     progress = require('../util/streamProgressBar'),
     logger = require( 'pelias-logger' ).get( 'geonames' );
 
@@ -25,7 +25,7 @@ module.exports = function (filename) {
     logger.info( 'downloading datafile from:', remoteFilePath );
 
     request.get( remoteFilePath )
-      .pipe( progress( pad( localFileName, 30 ) ) )
+      .pipe( progress( _.padEnd( localFileName, 30 ) ) )
       .pipe( fs.createWriteStream( localFileName ) );
   });
 
