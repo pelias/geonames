@@ -18,10 +18,5 @@
   "featureCodes_en.txt": {
     "index": "name",
     "columns": ["name","description"]
-  },
-  "timeZones.txt": {
-    "index": "CountryCode",
-    "headerLine": true,
-    "columns": ["CountryCode","TimeZoneId","GMT_offset","DST_offset","rawOffset"]
   }
 }

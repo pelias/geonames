@@ -75,7 +75,6 @@ The metadata shipped with the repo can get out-of-date, to pull the latest metad
 
 ```bash
 $> ./bin/pelias-geonames -m
- timeZones.txt                  [===================] 100% 0.0s
  countryInfo.txt                [===================] 100% 0.0s
  featureCodes_en.txt            [===================] 100% 0.0s
  admin1CodesASCII.txt           [===================] 100% 0.0s
