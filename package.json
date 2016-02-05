@@ -6,7 +6,7 @@
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
-    "test": "node test/test.js | tap-dot",
+    "test": "node test/units.js | tap-dot",
     "functional": "node test/functional.js | tap-dot",
     "import": "./bin/pelias-geonames",
     "lint": "jshint .",
