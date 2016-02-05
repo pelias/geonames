@@ -14,9 +14,5 @@
       "Continent","tld","CurrencyCode","CurrencyName","Phone","Postal_Code_Format","Postal_Code_Regex",
       "Languages","geonameid","neighbours","EquivalentFipsCode"
     ]
-  },
-  "featureCodes_en.txt": {
-    "index": "name",
-    "columns": ["name","description"]
   }
 }
