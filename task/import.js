@@ -1,12 +1,11 @@
+var geonames = require('geonames-stream');
+var peliasConfig = require( 'pelias-config' ).generate();
+var peliasAdminLookup = require( 'pelias-admin-lookup' );
+var dbclient = require('pelias-dbclient');
+var model = require( 'pelias-model' );
 
-var geonames = require('geonames-stream'),
-  resolvers = require('./resolvers'),
-  dbclient = require('pelias-dbclient')(),
-  model = require( 'pelias-model' ),
-  peliasConfig = require( 'pelias-config' ).generate(),
-  peliasAdminLookup = require( 'pelias-admin-lookup' ),
-  adminLookupMetaStream = require('../lib/streams/adminLookupMetaStream');
-
+var resolvers = require('./resolvers');
+var adminLookupMetaStream = require('../lib/streams/adminLookupMetaStream');
 var peliasDocGenerator = require( 'peliasDocGenerator');
 
 module.exports = function( filename ){
@@ -22,5 +21,5 @@ module.exports = function( filename ){
 
   pipeline
     .pipe(model.createDocumentMapperStream())
-    .pipe( dbclient );
+    .pipe( dbclient() );
 };
