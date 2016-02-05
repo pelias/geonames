@@ -6,7 +6,7 @@ var model = require( 'pelias-model' );
 
 var resolvers = require('./resolvers');
 var adminLookupMetaStream = require('../lib/streams/adminLookupMetaStream');
-var peliasDocGenerator = require( 'peliasDocGenerator');
+var peliasDocGenerator = require( '../lib/streams/peliasDocGenerator');
 
 module.exports = function( filename ){
   var pipeline = resolvers.selectSource( filename )
