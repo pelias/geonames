@@ -1,5 +1,5 @@
 var geonames = require('geonames-stream');
-var peliasConfig = require( 'pelias-config' ).generate();
+var peliasConfig = require( 'pelias-config' );
 var peliasAdminLookup = require( 'pelias-admin-lookup' );
 var dbclient = require('pelias-dbclient');
 var model = require( 'pelias-model' );
@@ -7,14 +7,15 @@ var model = require( 'pelias-model' );
 var adminLookupMetaStream = require('../lib/streams/adminLookupMetaStream');
 var peliasDocGenerator = require( '../lib/streams/peliasDocGenerator');
 
-module.exports = function( sourceStream, endStream ){
+module.exports = function( sourceStream, endStream, config ){
   endStream = endStream || dbclient();
+  config = config || peliasConfig.generate();
 
   var pipeline = sourceStream
     .pipe( geonames.pipeline )
     .pipe( peliasDocGenerator.create() );
 
-  if( peliasConfig.imports.geonames.adminLookup ){
+  if( config.imports.geonames.adminLookup ){
     pipeline = pipeline
       .pipe( adminLookupMetaStream.create() )
       .pipe( peliasAdminLookup.stream() );
