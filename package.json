@@ -6,7 +6,8 @@
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
-    "pretest": "mkdir -p metadata && ./bin/pelias-geonames -m",
+    "download_metadata": "mkdir -p metadata && ./bin/pelias-geonames -m",
+    "postinstall": "npm run download_metadata",
     "test": "npm run units",
     "units": "node test/units.js | tap-dot",
     "functional": "node test/functional.js | tap-dot",
