@@ -61,7 +61,33 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setMeta('fcode', 'RNGA');
+      .setMeta('fcode', 'RNGA')
+      .addCategory('government:military')
+      .addCategory('government')
+      .addCategory('natural');
+
+    var docGenerator = peliasDocGenerator.create();
+
+    test_stream([input], docGenerator, function(err, actual) {
+      t.deepEqual(actual, [expected], 'should have returned true');
+      t.end();
+    });
+
+  });
+
+  test.test('unsupported feature_code should set meta fcode but add no categories', function(t) {
+    var input = {
+      _id: 12345,
+      name: 'Record Name',
+      latitude: 12.121212,
+      longitude: 21.212121,
+      feature_code: 'Unsupported feature_code'
+    };
+
+    var expected = new Document( 'geonames', 'venue', 12345 )
+      .setName('default', 'Record Name')
+      .setCentroid({ lat: 12.121212, lon: 21.212121 })
+      .setMeta('fcode', 'Unsupported feature_code');
 
     var docGenerator = peliasDocGenerator.create();
 
