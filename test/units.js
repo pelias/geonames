@@ -1,0 +1,1 @@
+require ('./streams/peliasDocGeneratorTest.js');
