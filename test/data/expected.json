@@ -79040,7 +79040,7 @@
   },
   {
     "_index": "pelias",
-    "_type": "venue",
+    "_type": "region",
     "_id": "7535954",
     "data": {
       "name": {
@@ -79085,7 +79085,7 @@
         "admin"
       ],
       "source": "geonames",
-      "layer": "venue",
+      "layer": "region",
       "source_id": "7535954",
       "alpha3": "SGP",
       "admin0": "Singapore",
@@ -79094,7 +79094,7 @@
   },
   {
     "_index": "pelias",
-    "_type": "venue",
+    "_type": "region",
     "_id": "7535955",
     "data": {
       "name": {
@@ -79139,7 +79139,7 @@
         "admin"
       ],
       "source": "geonames",
-      "layer": "venue",
+      "layer": "region",
       "source_id": "7535955",
       "alpha3": "SGP",
       "admin0": "Singapore",
@@ -79148,7 +79148,7 @@
   },
   {
     "_index": "pelias",
-    "_type": "venue",
+    "_type": "region",
     "_id": "7535956",
     "data": {
       "name": {
@@ -79193,7 +79193,7 @@
         "admin"
       ],
       "source": "geonames",
-      "layer": "venue",
+      "layer": "region",
       "source_id": "7535956",
       "alpha3": "SGP",
       "admin0": "Singapore",
@@ -79202,7 +79202,7 @@
   },
   {
     "_index": "pelias",
-    "_type": "venue",
+    "_type": "region",
     "_id": "7535957",
     "data": {
       "name": {
@@ -79247,7 +79247,7 @@
         "admin"
       ],
       "source": "geonames",
-      "layer": "venue",
+      "layer": "region",
       "source_id": "7535957",
       "alpha3": "SGP",
       "admin0": "Singapore",
@@ -79256,7 +79256,7 @@
   },
   {
     "_index": "pelias",
-    "_type": "venue",
+    "_type": "region",
     "_id": "7535958",
     "data": {
       "name": {
@@ -79301,7 +79301,7 @@
         "admin"
       ],
       "source": "geonames",
-      "layer": "venue",
+      "layer": "region",
       "source_id": "7535958",
       "alpha3": "SGP",
       "admin0": "Singapore",
