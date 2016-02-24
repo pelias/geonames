@@ -25,7 +25,7 @@ tape('functional test importing Singapore', function(t) {
 
     if (diff) {
       t.fail('expected and actual output are the same');
-      console.log(diff);
+      console.error(diff);
     } else {
       t.pass('expected and actual output are the same');
     }
