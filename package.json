@@ -38,27 +38,27 @@
     "elasticsearch": ">=1.1.1"
   },
   "dependencies": {
-    "JSONStream": "^0.7.3",
+    "JSONStream": "^1.0.7",
     "cli-table": "^0.3.0",
     "commander-plus": "0.0.6",
-    "csv-parse": "0.0.5",
+    "csv-parse": "1.0.1",
     "fs-extra": "^0.26.5",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
     "pelias-admin-lookup": "^2.x.x",
     "pelias-config": "latest",
     "pelias-dbclient": "^0.x.x",
-    "pelias-logger": "0.0.4",
+    "pelias-logger": "0.0.8",
     "pelias-model": "1.1.0",
     "progress": "^1.1.5",
-    "progress-stream": "^0.4.0",
+    "progress-stream": "^1.2.0",
     "request": "^2.34.0",
-    "through2": "^0.6.1"
+    "through2": "^2.0.1"
   },
   "devDependencies": {
     "deep-diff": "^0.3.3",
     "event-stream": "^3.3.2",
-    "precommit-hook": "^1.0.7",
+    "precommit-hook": "3.0.0",
     "tap-dot": "^1.0.1",
     "tape": "^4.4.0"
   },
