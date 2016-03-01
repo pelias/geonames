@@ -9,12 +9,11 @@ var settings = {
   total: 0
 };
 
-module.exports = function(title, options){
-
+module.exports = function(title){
   var bar = new ProgressBar(' ' + title + ' [:bar] :percent :etas', settings);
 
   var stat = progress({time:1000}, function(str){
-    bar.total = str.length || options.length || 0;
+    bar.total = str.length || 0;
     bar.tick( str.delta );
   });
 
