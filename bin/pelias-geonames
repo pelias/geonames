@@ -30,6 +30,7 @@ else if( program.import ){
 }
 
 else if( program.download ){
+  var countryInfo = require('../metadata/countryInfo');
   var isocode = validateISOCode( program.download );
   var task = require('../lib/tasks/download');
   task( isocode === 'ALL' ? 'allCountries' : isocode );
