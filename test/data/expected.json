@@ -77731,61 +77731,6 @@
   {
     "_index": "pelias",
     "_type": "venue",
-    "_id": "6951473",
-    "data": {
-      "name": {
-        "default": "Chijmes"
-      },
-      "phrase": {
-        "default": "Chijmes"
-      },
-      "parent": {
-        "country": [],
-        "country_a": [],
-        "country_id": [],
-        "macroregion": [],
-        "macroregion_a": [],
-        "macroregion_id": [],
-        "region": [],
-        "region_a": [],
-        "region_id": [],
-        "macrocounty": [],
-        "macrocounty_a": [],
-        "macrocounty_id": [],
-        "county": [],
-        "county_a": [],
-        "county_id": [],
-        "locality": [],
-        "locality_a": [],
-        "locality_id": [],
-        "localadmin": [],
-        "localadmin_a": [],
-        "localadmin_id": [],
-        "neighbourhood": [],
-        "neighbourhood_a": [],
-        "neighbourhood_id": []
-      },
-      "address": {},
-      "center_point": {
-        "lon": 103.852,
-        "lat": 1.29514
-      },
-      "category": [
-        "finance",
-        "professional",
-        "government",
-        "admin"
-      ],
-      "source": "geonames",
-      "layer": "venue",
-      "source_id": "6951473",
-      "alpha3": "SGP",
-      "admin0": "Singapore"
-    }
-  },
-  {
-    "_index": "pelias",
-    "_type": "venue",
     "_id": "6951474",
     "data": {
       "name": {
