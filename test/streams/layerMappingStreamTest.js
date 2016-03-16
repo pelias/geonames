@@ -27,8 +27,8 @@ tape('featureCodeToLayer', function(test) {
     t.end();
   });
 
-  test.test('ADMD maps to locality', function(t) {
-    t.equal('locality', featureCodeToLayer('ADMD'), 'Geonames ADMD maps to locality layer');
+  test.test('ADMD maps to localadmin', function(t) {
+    t.equal('localadmin', featureCodeToLayer('ADMD'), 'Geonames ADMD maps to localadmin layer');
     t.end();
   });
 });
@@ -47,7 +47,7 @@ tape('layerMappingStream', function(test) {
         return doc.layer;
       });
 
-      var expected = [ 'venue', 'region', 'venue', 'locality' ];
+      var expected = [ 'venue', 'region', 'venue', 'localadmin' ];
       test.deepEqual(actual, expected, 'layers mapped correctly');
       t.end();
     });
