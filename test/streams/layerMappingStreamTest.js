@@ -13,22 +13,22 @@ function test_stream(input, testedStream, callback) {
 
 tape('featureCodeToLayer', function(test) {
   test.test('unusual feature code should map to venue', function(t) {
-    t.equal('venue', featureCodeToLayer('CNL'), 'all codes not handled map to venue');
+    t.equal(featureCodeToLayer('CNL'), 'venue', 'all codes not handled map to venue');
     t.end();
   });
 
   test.test('ADM1 maps to region', function(t) {
-    t.equal('region', featureCodeToLayer('ADM1'), 'Geonames ADM1 maps to region layer');
+    t.equal(featureCodeToLayer('ADM1'), 'region', 'Geonames ADM1 maps to region layer');
     t.end();
   });
 
   test.test('ADM2 maps to county', function(t) {
-    t.equal('county', featureCodeToLayer('ADM2'), 'Geonames ADM2 maps to county layer');
+    t.equal(featureCodeToLayer('ADM2'), 'county', 'Geonames ADM2 maps to county layer');
     t.end();
   });
 
   test.test('ADMD maps to localadmin', function(t) {
-    t.equal('localadmin', featureCodeToLayer('ADMD'), 'Geonames ADMD maps to localadmin layer');
+    t.equal(featureCodeToLayer('ADMD'), 'localadmin', 'Geonames ADMD maps to localadmin layer');
     t.end();
   });
 });
