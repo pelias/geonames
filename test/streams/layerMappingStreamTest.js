@@ -38,6 +38,11 @@ tape('country specific featureCodes', function(test) {
     t.equal(featureCodeToLayer('ADM1', 'GB'), 'macroregion', 'Geonames ADM1 maps to macroregion in Great Britain');
     t.end();
   });
+
+  test.test('RGN in FR maps to macroregion', function(t) {
+    t.equal(featureCodeToLayer('RGN', 'FR'), 'macroregion', 'Geonames RGN maps to macroregion in France');
+    t.end();
+  });
 });
 
 tape('layerMappingStream', function(test) {
