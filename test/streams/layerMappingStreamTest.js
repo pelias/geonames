@@ -33,6 +33,13 @@ tape('featureCodeToLayer', function(test) {
   });
 });
 
+tape('country specific featureCodes', function(test) {
+  test.test('ADM1 in GB maps to macroregion', function(t) {
+    t.equal(featureCodeToLayer('ADM1', 'GB'), 'macroregion', 'Geonames ADM1 maps to macroregion in Great Britain');
+    t.end();
+  });
+});
+
 tape('layerMappingStream', function(test) {
   test.test('stream of raw Geonames entries has layers correctly mapped', function(t) {
     var input = [
