@@ -31,6 +31,11 @@ tape('featureCodeToLayer', function(test) {
     t.equal(featureCodeToLayer('ADMD'), 'localadmin', 'Geonames ADMD maps to localadmin layer');
     t.end();
   });
+
+  test.test('neighborhood is spelled the Queen\'s way', function(t) {
+    t.equal(featureCodeToLayer('PPLX'), 'neighbourhood', 'neighbourhood uses British spelling');
+    t.end();
+  });
 });
 
 tape('country specific featureCodes', function(test) {
