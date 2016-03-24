@@ -1,0 +1,18 @@
+{
+  "admin1CodesASCII.txt": {
+    "index": "code",
+    "columns": ["code","name","asciiname","geonameId"]
+  },
+  "admin2Codes.txt": {
+    "index": "code",
+    "columns": ["code","name","asciiname","geonameId"]
+  },
+  "countryInfo.txt": {
+    "index": "ISO",
+    "columns": [
+      "ISO","ISO3","ISO_Numeric","fips","Country","Capital","Area","Population",
+      "Continent","tld","CurrencyCode","CurrencyName","Phone","Postal_Code_Format","Postal_Code_Regex",
+      "Languages","geonameid","neighbours","EquivalentFipsCode"
+    ]
+  }
+}

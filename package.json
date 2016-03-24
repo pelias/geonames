@@ -6,8 +6,14 @@
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "import": "./bin/pelias-geonames"
+    "download_metadata": "mkdir -p metadata && ./bin/pelias-geonames -m",
+    "postinstall": "npm run download_metadata",
+    "test": "npm run units",
+    "units": "node test/units.js | tap-dot",
+    "functional": "node test/functional.js | tap-dot",
+    "import": "./bin/pelias-geonames",
+    "lint": "jshint .",
+    "validate": "npm ls"
   },
   "bin": {
     "geonames": "./bin/pelias-geonames"
@@ -32,22 +38,34 @@
     "elasticsearch": ">=1.1.1"
   },
   "dependencies": {
-    "JSONStream": "^0.7.3",
+    "JSONStream": "^1.0.7",
     "cli-table": "^0.3.0",
     "commander-plus": "0.0.6",
-    "csv-parse": "0.0.5",
+    "csv-parse": "1.0.2",
+    "fs-extra": "^0.26.5",
     "geonames-stream": "^2.0.3",
-    "mkdirp": "^0.4.0",
-    "pad": "0.0.4",
-    "pelias-admin-lookup": "^2.x.x",
+    "lodash": "^4.2.1",
     "pelias-config": "latest",
-    "pelias-dbclient": "^0.x.x",
-    "pelias-logger": "0.0.4",
-    "pelias-model": "^0.3.0",
-    "precommit-hook": "1.0.7",
+    "pelias-dbclient": "^1.0.0",
+    "pelias-logger": "0.0.8",
+    "pelias-model": "3.0.0",
+    "pelias-wof-admin-lookup": "^1.2.1",
     "progress": "^1.1.5",
-    "progress-stream": "^0.4.0",
+    "progress-stream": "^1.2.0",
     "request": "^2.34.0",
-    "through2": "^0.6.1"
-  }
+    "through2": "^2.0.1",
+    "through2-filter": "^2.0.0"
+  },
+  "devDependencies": {
+    "deep-diff": "^0.3.3",
+    "event-stream": "^3.3.2",
+    "precommit-hook": "3.0.0",
+    "tap-dot": "^1.0.1",
+    "tape": "^4.4.0"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
 }
