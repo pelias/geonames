@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 var program = require('commander-plus'),
-    countryInfo = require('../metadata/countryInfo'),
     logger = require( 'pelias-logger' ).get( 'geonames' );
+
+var resolvers = require( '../lib/tasks/resolvers' );
 
 program
   .version('0.0.0')
@@ -14,24 +15,29 @@ program
   .parse(process.argv);
 
 if( program.countrycodes ){
-  var task = require('../task/countrycodes');
+  var task = require('../lib/tasks/countrycodes');
   task();
 }
 
 else if( program.import ){
+  var countryInfo = require('../metadata/countryInfo');
   var isocode = validateISOCode( program.import );
-  var task = require('../task/import');
-  task( isocode === 'ALL' ? 'allCountries' : isocode );
+  var filename = isocode === 'ALL' ? 'allCountries' : isocode;
+  var source = resolvers.selectSource( filename );
+
+  var task = require('../lib/tasks/import');
+  task( source );
 }
 
 else if( program.download ){
+  var countryInfo = require('../metadata/countryInfo');
   var isocode = validateISOCode( program.download );
-  var task = require('../task/download');
+  var task = require('../lib/tasks/download');
   task( isocode === 'ALL' ? 'allCountries' : isocode );
 }
 
 else if( program.meta ){
-  var task = require('../task/meta');
+  var task = require('../lib/tasks/meta');
   task();
 }
 
