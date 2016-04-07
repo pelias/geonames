@@ -3,4 +3,4 @@ npm-debug.log
 .DS_Store
 data
 esclient.log
-metadata/*.txt
+metadata
