@@ -42,7 +42,7 @@
     "cli-table": "^0.3.0",
     "commander-plus": "0.0.6",
     "csv-parse": "1.0.4",
-    "fs-extra": "^0.26.5",
+    "fs-extra": "^0.27.0",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
     "pelias-config": "latest",
