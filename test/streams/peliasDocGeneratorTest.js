@@ -110,8 +110,7 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA')
-      .setAdmin('admin0', 'United States');
+      .setAlpha3('USA');
 
     var docGenerator = peliasDocGenerator.create();
 
@@ -157,9 +156,7 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA')
-      .setAdmin('admin0', 'United States')
-      .setAdmin('admin1', 'Arkansas');
+      .setAlpha3('USA');
 
     var docGenerator = peliasDocGenerator.create();
 
@@ -183,8 +180,7 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA')
-      .setAdmin('admin0', 'United States');
+      .setAlpha3('USA');
 
     var docGenerator = peliasDocGenerator.create();
 
@@ -232,10 +228,7 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA')
-      .setAdmin('admin0', 'United States')
-      .setAdmin('admin1', 'Arkansas')
-      .setAdmin('admin2', 'Ashley County');
+      .setAlpha3('USA');
 
     var docGenerator = peliasDocGenerator.create();
 
@@ -261,9 +254,7 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA')
-      .setAdmin('admin0', 'United States')
-      .setAdmin('admin1', 'Arkansas');
+      .setAlpha3('USA');
 
     var docGenerator = peliasDocGenerator.create();
 
