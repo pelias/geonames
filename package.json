@@ -12,6 +12,7 @@
     "lint": "jshint .",
     "postinstall": "npm run download_metadata",
     "test": "npm run units",
+    "travis": "npm test && npm run functional",
     "units": "node test/units.js | tap-dot",
     "validate": "npm ls"
   },
