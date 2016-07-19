@@ -7,12 +7,13 @@
   "license": "MIT",
   "scripts": {
     "download_metadata": "mkdir -p metadata && ./bin/pelias-geonames -m",
-    "postinstall": "npm run download_metadata",
-    "test": "npm run units",
-    "units": "node test/units.js | tap-dot",
     "functional": "node test/functional.js | tap-dot",
     "import": "./bin/pelias-geonames",
     "lint": "jshint .",
+    "postinstall": "npm run download_metadata",
+    "test": "npm run units",
+    "travis": "npm test && npm run functional",
+    "units": "node test/units.js | tap-dot",
     "validate": "npm ls"
   },
   "bin": {
