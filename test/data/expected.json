@@ -10,7 +10,17 @@
       "phrase": {
         "default": "Tanjong Pagar"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tanjong Pagar"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880131"
+        ]
+      },
       "center_point": {
         "lon": 103.83333,
         "lat": 1.28333
@@ -62,7 +72,17 @@
       "phrase": {
         "default": "Yio Chu Kang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Yio Chu Kang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880134"
+        ]
+      },
       "center_point": {
         "lon": 103.85389,
         "lat": 1.38972
@@ -87,7 +107,17 @@
       "phrase": {
         "default": "Yio Chu Kang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Yio Chu Kang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880135"
+        ]
+      },
       "center_point": {
         "lon": 103.85139,
         "lat": 1.39111
@@ -135,7 +165,17 @@
       "phrase": {
         "default": "Yew Tee"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Yew Tee"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880137"
+        ]
+      },
       "center_point": {
         "lon": 103.75389,
         "lat": 1.39444
@@ -313,7 +353,17 @@
       "phrase": {
         "default": "West Coast Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "West Coast Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880144"
+        ]
+      },
       "center_point": {
         "lon": 103.75,
         "lat": 1.31667
@@ -695,7 +745,17 @@
       "phrase": {
         "default": "Ulu Bedok"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Ulu Bedok"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880159"
+        ]
+      },
       "center_point": {
         "lon": 103.93333,
         "lat": 1.33333
@@ -1302,7 +1362,17 @@
       "phrase": {
         "default": "Thong Hoe Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Thong Hoe Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880183"
+        ]
+      },
       "center_point": {
         "lon": 103.70194,
         "lat": 1.41806
@@ -1891,7 +1961,17 @@
       "phrase": {
         "default": "Teck Chong Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Teck Chong Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880206"
+        ]
+      },
       "center_point": {
         "lon": 103.76167,
         "lat": 1.41556
@@ -1916,7 +1996,17 @@
       "phrase": {
         "default": "Tay Keng Loon Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tay Keng Loon Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880208"
+        ]
+      },
       "center_point": {
         "lon": 103.79889,
         "lat": 1.45333
@@ -1993,7 +2083,17 @@
       "phrase": {
         "default": "Tan Hua Gek Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tan Hua Gek Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880211"
+        ]
+      },
       "center_point": {
         "lon": 103.69583,
         "lat": 1.40917
@@ -2324,7 +2424,17 @@
       "phrase": {
         "default": "Sungai Unum Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sungai Unum Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880224"
+        ]
+      },
       "center_point": {
         "lon": 104.05028,
         "lat": 1.42139
@@ -2371,7 +2481,17 @@
       "phrase": {
         "default": "Sungai Simpang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sungai Simpang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880226"
+        ]
+      },
       "center_point": {
         "lon": 103.82667,
         "lat": 1.43806
@@ -2750,7 +2870,17 @@
       "phrase": {
         "default": "Song Hah Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Song Hah Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880241"
+        ]
+      },
       "center_point": {
         "lon": 103.66472,
         "lat": 1.35889
@@ -2775,7 +2905,17 @@
       "phrase": {
         "default": "Somapah Serangoon"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Somapah Serangoon"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880242"
+        ]
+      },
       "center_point": {
         "lon": 103.88333,
         "lat": 1.36667
@@ -2851,7 +2991,17 @@
       "phrase": {
         "default": "Sin Watt Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sin Watt Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880245"
+        ]
+      },
       "center_point": {
         "lon": 103.95056,
         "lat": 1.41417
@@ -2902,7 +3052,17 @@
       "phrase": {
         "default": "Singapore United Plantation"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Singapore United Plantation"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880247"
+        ]
+      },
       "center_point": {
         "lon": 103.85778,
         "lat": 1.37917
@@ -3031,7 +3191,17 @@
       "phrase": {
         "default": "Singapore"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Singapore"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880252"
+        ]
+      },
       "center_point": {
         "lon": 103.85007,
         "lat": 1.28967
@@ -3238,7 +3408,17 @@
       "phrase": {
         "default": "Siglap"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Siglap"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880260"
+        ]
+      },
       "center_point": {
         "lon": 103.93639,
         "lat": 1.31417
@@ -3825,7 +4005,17 @@
       "phrase": {
         "default": "Sembawang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sembawang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880283"
+        ]
+      },
       "center_point": {
         "lon": 103.82861,
         "lat": 1.45083
@@ -4027,7 +4217,17 @@
       "phrase": {
         "default": "Seletar Hills Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Seletar Hills Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880291"
+        ]
+      },
       "center_point": {
         "lon": 103.86806,
         "lat": 1.38444
@@ -4103,7 +4303,17 @@
       "phrase": {
         "default": "Seletar"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Seletar"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880294"
+        ]
+      },
       "center_point": {
         "lon": 103.87417,
         "lat": 1.41
@@ -4485,7 +4695,17 @@
       "phrase": {
         "default": "Sarang Rimau"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sarang Rimau"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880309"
+        ]
+      },
       "center_point": {
         "lon": 103.80889,
         "lat": 1.25972
@@ -4613,7 +4833,17 @@
       "phrase": {
         "default": "Sam Heng Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sam Heng Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880314"
+        ]
+      },
       "center_point": {
         "lon": 103.97556,
         "lat": 1.41361
@@ -4992,7 +5222,17 @@
       "phrase": {
         "default": "Saga"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Saga"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880329"
+        ]
+      },
       "center_point": {
         "lon": 103.83333,
         "lat": 1.26667
@@ -5474,7 +5714,17 @@
       "phrase": {
         "default": "Punggol"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Punggol"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880348"
+        ]
+      },
       "center_point": {
         "lon": 103.90694,
         "lat": 1.41444
@@ -5500,7 +5750,17 @@
       "phrase": {
         "default": "Pulau Ubin Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Pulau Ubin Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880349"
+        ]
+      },
       "center_point": {
         "lon": 103.93444,
         "lat": 1.42444
@@ -5551,7 +5811,17 @@
       "phrase": {
         "default": "Pulau Ubin Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Pulau Ubin Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880351"
+        ]
+      },
       "center_point": {
         "lon": 103.97139,
         "lat": 1.40333
@@ -7481,7 +7751,17 @@
       "phrase": {
         "default": "Ong Ting Lye Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Ong Ting Lye Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880427"
+        ]
+      },
       "center_point": {
         "lon": 103.98361,
         "lat": 1.41139
@@ -7506,7 +7786,17 @@
       "phrase": {
         "default": "Ong Lee"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Ong Lee"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880428"
+        ]
+      },
       "center_point": {
         "lon": 103.75,
         "lat": 1.35
@@ -7660,7 +7950,17 @@
       "phrase": {
         "default": "Ng Kay Boon Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Ng Kay Boon Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880434"
+        ]
+      },
       "center_point": {
         "lon": 103.73111,
         "lat": 1.43944
@@ -7735,7 +8035,17 @@
       "phrase": {
         "default": "Nee Soon Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Nee Soon Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880437"
+        ]
+      },
       "center_point": {
         "lon": 103.81778,
         "lat": 1.40278
@@ -7890,7 +8200,17 @@
       "phrase": {
         "default": "Namazie Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Namazie Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880443"
+        ]
+      },
       "center_point": {
         "lon": 103.70694,
         "lat": 1.42194
@@ -8018,7 +8338,17 @@
       "phrase": {
         "default": "Mok Peng Hiang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Mok Peng Hiang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880448"
+        ]
+      },
       "center_point": {
         "lon": 103.79694,
         "lat": 1.44556
@@ -8398,7 +8728,17 @@
       "phrase": {
         "default": "Matilda Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Matilda Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880463"
+        ]
+      },
       "center_point": {
         "lon": 103.90278,
         "lat": 1.39944
@@ -8524,7 +8864,17 @@
       "phrase": {
         "default": "Marsiling Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Marsiling Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880468"
+        ]
+      },
       "center_point": {
         "lon": 103.7675,
         "lat": 1.42972
@@ -8549,7 +8899,17 @@
       "phrase": {
         "default": "Marsiling"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Marsiling"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880469"
+        ]
+      },
       "center_point": {
         "lon": 103.77083,
         "lat": 1.44111
@@ -8982,7 +9342,17 @@
       "phrase": {
         "default": "Lim Chu Kang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Lim Chu Kang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880489"
+        ]
+      },
       "center_point": {
         "lon": 103.67667,
         "lat": 1.41528
@@ -9083,7 +9453,17 @@
       "phrase": {
         "default": "Lam San Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Lam San Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880493"
+        ]
+      },
       "center_point": {
         "lon": 103.73139,
         "lat": 1.37694
@@ -9134,7 +9514,17 @@
       "phrase": {
         "default": "Lam Hong Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Lam Hong Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880495"
+        ]
+      },
       "center_point": {
         "lon": 103.94417,
         "lat": 1.41583
@@ -9696,7 +10086,17 @@
       "phrase": {
         "default": "Keat Hong Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Keat Hong Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880517"
+        ]
+      },
       "center_point": {
         "lon": 103.74417,
         "lat": 1.37778
@@ -9900,7 +10300,17 @@
       "phrase": {
         "default": "Kampong Wak Sekak"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Wak Sekak"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880525"
+        ]
+      },
       "center_point": {
         "lon": 103.7,
         "lat": 1.26667
@@ -9926,7 +10336,17 @@
       "phrase": {
         "default": "Kampong Wak Hassan"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Wak Hassan"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880526"
+        ]
+      },
       "center_point": {
         "lon": 103.83639,
         "lat": 1.46139
@@ -9952,7 +10372,17 @@
       "phrase": {
         "default": "Kampong Wak Dulah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Wak Dulah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880527"
+        ]
+      },
       "center_point": {
         "lon": 103.66667,
         "lat": 1.38333
@@ -9978,7 +10408,17 @@
       "phrase": {
         "default": "Kampong Wak Bechik"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Wak Bechik"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880528"
+        ]
+      },
       "center_point": {
         "lon": 103.71667,
         "lat": 1.28333
@@ -10004,7 +10444,17 @@
       "phrase": {
         "default": "Kampong Unum"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Unum"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880529"
+        ]
+      },
       "center_point": {
         "lon": 104.05972,
         "lat": 1.43139
@@ -10055,7 +10505,17 @@
       "phrase": {
         "default": "Kampong Ulu Jurong"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ulu Jurong"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880531"
+        ]
+      },
       "center_point": {
         "lon": 103.71667,
         "lat": 1.35
@@ -10081,7 +10541,17 @@
       "phrase": {
         "default": "Kampong Ubi"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ubi"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880532"
+        ]
+      },
       "center_point": {
         "lon": 103.9,
         "lat": 1.31667
@@ -10132,7 +10602,17 @@
       "phrase": {
         "default": "Kampong Tongkang Pechah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Tongkang Pechah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880534"
+        ]
+      },
       "center_point": {
         "lon": 103.87639,
         "lat": 1.39
@@ -10158,7 +10638,17 @@
       "phrase": {
         "default": "Kampong Todak"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Todak"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880535"
+        ]
+      },
       "center_point": {
         "lon": 104.02167,
         "lat": 1.42139
@@ -10184,7 +10674,17 @@
       "phrase": {
         "default": "Tengah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tengah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880536"
+        ]
+      },
       "center_point": {
         "lon": 103.70389,
         "lat": 1.37194
@@ -10210,7 +10710,17 @@
       "phrase": {
         "default": "Kampong Telok"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Telok"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880537"
+        ]
+      },
       "center_point": {
         "lon": 103.65,
         "lat": 1.38333
@@ -10236,7 +10746,17 @@
       "phrase": {
         "default": "Kampong Tebing Terjun"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Tebing Terjun"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880538"
+        ]
+      },
       "center_point": {
         "lon": 103.75,
         "lat": 1.33333
@@ -10262,7 +10782,17 @@
       "phrase": {
         "default": "Kampong Teban"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Teban"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880539"
+        ]
+      },
       "center_point": {
         "lon": 103.90778,
         "lat": 1.37861
@@ -10288,7 +10818,17 @@
       "phrase": {
         "default": "Kampong Tanjong Penjuru"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Tanjong Penjuru"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880540"
+        ]
+      },
       "center_point": {
         "lon": 103.75,
         "lat": 1.3
@@ -10314,7 +10854,17 @@
       "phrase": {
         "default": "Kampong Tanjong Irau"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Tanjong Irau"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880541"
+        ]
+      },
       "center_point": {
         "lon": 103.84667,
         "lat": 1.45667
@@ -10390,7 +10940,17 @@
       "phrase": {
         "default": "Kampong Sungai Tengah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sungai Tengah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880544"
+        ]
+      },
       "center_point": {
         "lon": 103.9,
         "lat": 1.38333
@@ -10416,7 +10976,17 @@
       "phrase": {
         "default": "Kampong Sungai Pandan"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sungai Pandan"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880545"
+        ]
+      },
       "center_point": {
         "lon": 103.75,
         "lat": 1.31667
@@ -10442,7 +11012,17 @@
       "phrase": {
         "default": "Kampong Sungai Jurong"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sungai Jurong"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880546"
+        ]
+      },
       "center_point": {
         "lon": 103.73361,
         "lat": 1.35167
@@ -10468,7 +11048,17 @@
       "phrase": {
         "default": "Kampong Sungai Blukar"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sungai Blukar"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880547"
+        ]
+      },
       "center_point": {
         "lon": 103.91833,
         "lat": 1.38806
@@ -10494,7 +11084,17 @@
       "phrase": {
         "default": "Kampong Sungai Belang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sungai Belang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880548"
+        ]
+      },
       "center_point": {
         "lon": 104.06667,
         "lat": 1.42333
@@ -10545,7 +11145,17 @@
       "phrase": {
         "default": "Kampong Sudong"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sudong"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880550"
+        ]
+      },
       "center_point": {
         "lon": 103.72861,
         "lat": 1.20639
@@ -10596,7 +11206,17 @@
       "phrase": {
         "default": "Kampong Sireh"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sireh"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880552"
+        ]
+      },
       "center_point": {
         "lon": 103.88333,
         "lat": 1.35
@@ -10622,7 +11242,17 @@
       "phrase": {
         "default": "Kampong Seraya"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Seraya"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880553"
+        ]
+      },
       "center_point": {
         "lon": 103.73333,
         "lat": 1.28333
@@ -10648,7 +11278,17 @@
       "phrase": {
         "default": "Kampong Serangoon Kechil"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Serangoon Kechil"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880554"
+        ]
+      },
       "center_point": {
         "lon": 103.90722,
         "lat": 1.39
@@ -10674,7 +11314,17 @@
       "phrase": {
         "default": "Kampong Seminei"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Seminei"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880555"
+        ]
+      },
       "center_point": {
         "lon": 104.03944,
         "lat": 1.40694
@@ -10700,7 +11350,17 @@
       "phrase": {
         "default": "Kampong Sanyonkong Parit"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sanyonkong Parit"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880556"
+        ]
+      },
       "center_point": {
         "lon": 104.06583,
         "lat": 1.40611
@@ -10726,7 +11386,17 @@
       "phrase": {
         "default": "Kampong Sanyongkong"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sanyongkong"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880557"
+        ]
+      },
       "center_point": {
         "lon": 104.05778,
         "lat": 1.39833
@@ -10777,7 +11447,17 @@
       "phrase": {
         "default": "Kampong Salabin"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Salabin"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880559"
+        ]
+      },
       "center_point": {
         "lon": 104.03333,
         "lat": 1.41611
@@ -10803,7 +11483,17 @@
       "phrase": {
         "default": "Kampong Saigon"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Saigon"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880560"
+        ]
+      },
       "center_point": {
         "lon": 103.76667,
         "lat": 1.21667
@@ -10829,7 +11519,17 @@
       "phrase": {
         "default": "Kampong Reteh"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Reteh"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880561"
+        ]
+      },
       "center_point": {
         "lon": 103.9,
         "lat": 1.33333
@@ -10880,7 +11580,17 @@
       "phrase": {
         "default": "Kampong Punggol"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Punggol"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880563"
+        ]
+      },
       "center_point": {
         "lon": 103.91028,
         "lat": 1.4125
@@ -10932,7 +11642,17 @@
       "phrase": {
         "default": "Kampong Pulau Kechil"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pulau Kechil"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880565"
+        ]
+      },
       "center_point": {
         "lon": 103.73333,
         "lat": 1.28333
@@ -10983,7 +11703,17 @@
       "phrase": {
         "default": "Kampong Pinang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pinang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880567"
+        ]
+      },
       "center_point": {
         "lon": 103.89417,
         "lat": 1.38111
@@ -11009,7 +11739,17 @@
       "phrase": {
         "default": "Kampong Pesek"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pesek"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880568"
+        ]
+      },
       "center_point": {
         "lon": 103.68333,
         "lat": 1.28333
@@ -11035,7 +11775,17 @@
       "phrase": {
         "default": "Kampong Permatang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Permatang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880569"
+        ]
+      },
       "center_point": {
         "lon": 104.03889,
         "lat": 1.42417
@@ -11061,7 +11811,17 @@
       "phrase": {
         "default": "Kampong Perigi Piau"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Perigi Piau"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880570"
+        ]
+      },
       "center_point": {
         "lon": 103.76667,
         "lat": 1.23333
@@ -11087,7 +11847,17 @@
       "phrase": {
         "default": "Kampong Pengkalan Petai"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pengkalan Petai"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880571"
+        ]
+      },
       "center_point": {
         "lon": 103.85,
         "lat": 1.40333
@@ -11113,7 +11883,17 @@
       "phrase": {
         "default": "Kampong Pengkalan Pakau"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pengkalan Pakau"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880572"
+        ]
+      },
       "center_point": {
         "lon": 104.0725,
         "lat": 1.40944
@@ -11139,7 +11919,17 @@
       "phrase": {
         "default": "Kampong Pengkalan Kundor"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pengkalan Kundor"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880573"
+        ]
+      },
       "center_point": {
         "lon": 103.84444,
         "lat": 1.41
@@ -11165,7 +11955,17 @@
       "phrase": {
         "default": "Kampong Pasir Ris"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pasir Ris"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880574"
+        ]
+      },
       "center_point": {
         "lon": 103.93194,
         "lat": 1.37833
@@ -11191,7 +11991,17 @@
       "phrase": {
         "default": "Kampong Pasir Merah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pasir Merah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880575"
+        ]
+      },
       "center_point": {
         "lon": 104.04694,
         "lat": 1.42917
@@ -11217,7 +12027,17 @@
       "phrase": {
         "default": "Kampong Pasir"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pasir"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880576"
+        ]
+      },
       "center_point": {
         "lon": 104.08417,
         "lat": 1.40833
@@ -11243,7 +12063,17 @@
       "phrase": {
         "default": "Kampong Pahang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pahang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880577"
+        ]
+      },
       "center_point": {
         "lon": 104.03278,
         "lat": 1.40917
@@ -11294,7 +12124,17 @@
       "phrase": {
         "default": "Kampong Pachitan"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Pachitan"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880579"
+        ]
+      },
       "center_point": {
         "lon": 103.91667,
         "lat": 1.31667
@@ -11345,7 +12185,17 @@
       "phrase": {
         "default": "Kampong Noordin"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Noordin"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880581"
+        ]
+      },
       "center_point": {
         "lon": 103.965,
         "lat": 1.41778
@@ -11371,7 +12221,17 @@
       "phrase": {
         "default": "Kampong Melayu"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Melayu"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880582"
+        ]
+      },
       "center_point": {
         "lon": 103.97944,
         "lat": 1.40861
@@ -11397,7 +12257,17 @@
       "phrase": {
         "default": "Kampong Mandai Kechil"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Mandai Kechil"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880583"
+        ]
+      },
       "center_point": {
         "lon": 103.76528,
         "lat": 1.44083
@@ -11423,7 +12293,17 @@
       "phrase": {
         "default": "Kampong Mamam"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Mamam"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880584"
+        ]
+      },
       "center_point": {
         "lon": 103.97611,
         "lat": 1.41722
@@ -11449,7 +12329,17 @@
       "phrase": {
         "default": "Kampong Mak Baok"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Mak Baok"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880585"
+        ]
+      },
       "center_point": {
         "lon": 103.71667,
         "lat": 1.26667
@@ -11475,7 +12365,17 @@
       "phrase": {
         "default": "Kampong Loyang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Loyang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880586"
+        ]
+      },
       "center_point": {
         "lon": 103.95944,
         "lat": 1.37778
@@ -11501,7 +12401,17 @@
       "phrase": {
         "default": "Kampong Lew Lian"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Lew Lian"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880587"
+        ]
+      },
       "center_point": {
         "lon": 103.86667,
         "lat": 1.35
@@ -11527,7 +12437,17 @@
       "phrase": {
         "default": "Kampong Ladang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ladang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880588"
+        ]
+      },
       "center_point": {
         "lon": 104.03333,
         "lat": 1.40444
@@ -11553,7 +12473,17 @@
       "phrase": {
         "default": "Kampong Ladang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ladang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880589"
+        ]
+      },
       "center_point": {
         "lon": 103.9,
         "lat": 1.33333
@@ -11604,7 +12534,17 @@
       "phrase": {
         "default": "Kampong Kranji"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Kranji"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880591"
+        ]
+      },
       "center_point": {
         "lon": 103.75,
         "lat": 1.43333
@@ -11630,7 +12570,17 @@
       "phrase": {
         "default": "Kampong Kopit"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Kopit"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880592"
+        ]
+      },
       "center_point": {
         "lon": 103.83333,
         "lat": 1.26667
@@ -11656,7 +12606,17 @@
       "phrase": {
         "default": "Kampong Kitin"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Kitin"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880593"
+        ]
+      },
       "center_point": {
         "lon": 103.85917,
         "lat": 1.435
@@ -11707,7 +12667,17 @@
       "phrase": {
         "default": "Kampong Kebun Baharu"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Kebun Baharu"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880595"
+        ]
+      },
       "center_point": {
         "lon": 103.86667,
         "lat": 1.36667
@@ -11733,7 +12703,17 @@
       "phrase": {
         "default": "Kampong Jelutong"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Jelutong"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880596"
+        ]
+      },
       "center_point": {
         "lon": 103.95889,
         "lat": 1.40111
@@ -11759,7 +12739,17 @@
       "phrase": {
         "default": "Kampong Java Teban"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Java Teban"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880597"
+        ]
+      },
       "center_point": {
         "lon": 103.73333,
         "lat": 1.33333
@@ -11860,7 +12850,17 @@
       "phrase": {
         "default": "Kampong Cutforth"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Cutforth"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880601"
+        ]
+      },
       "center_point": {
         "lon": 103.73639,
         "lat": 1.38194
@@ -11886,7 +12886,17 @@
       "phrase": {
         "default": "Kampong Che Jevah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Che Jevah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880602"
+        ]
+      },
       "center_point": {
         "lon": 103.98972,
         "lat": 1.41444
@@ -11937,7 +12947,17 @@
       "phrase": {
         "default": "Kampong Changi"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Changi"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880604"
+        ]
+      },
       "center_point": {
         "lon": 104,
         "lat": 1.38333
@@ -11963,7 +12983,17 @@
       "phrase": {
         "default": "Kampong Chai Chee"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Chai Chee"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880605"
+        ]
+      },
       "center_point": {
         "lon": 103.93333,
         "lat": 1.33333
@@ -11989,7 +13019,17 @@
       "phrase": {
         "default": "Kampong Bukit Panjang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Bukit Panjang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880606"
+        ]
+      },
       "center_point": {
         "lon": 103.76,
         "lat": 1.38361
@@ -12065,7 +13105,17 @@
       "phrase": {
         "default": "Kampong Bugis"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Bugis"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880609"
+        ]
+      },
       "center_point": {
         "lon": 103.76667,
         "lat": 1.21667
@@ -12091,7 +13141,17 @@
       "phrase": {
         "default": "Kampong Blukang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Blukang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880610"
+        ]
+      },
       "center_point": {
         "lon": 103.65,
         "lat": 1.35
@@ -12117,7 +13177,17 @@
       "phrase": {
         "default": "Kampong Beremban"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Beremban"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880611"
+        ]
+      },
       "center_point": {
         "lon": 103.91583,
         "lat": 1.38139
@@ -12168,7 +13238,17 @@
       "phrase": {
         "default": "Kampong Belimbing"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Belimbing"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880613"
+        ]
+      },
       "center_point": {
         "lon": 103.69194,
         "lat": 1.37111
@@ -12193,7 +13273,17 @@
       "phrase": {
         "default": "Kampong Batu Koyok"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Batu Koyok"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880614"
+        ]
+      },
       "center_point": {
         "lon": 104.04778,
         "lat": 1.39694
@@ -12219,7 +13309,17 @@
       "phrase": {
         "default": "Kampong Bahru"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Bahru"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880616"
+        ]
+      },
       "center_point": {
         "lon": 103.97028,
         "lat": 1.41861
@@ -12245,7 +13345,17 @@
       "phrase": {
         "default": "Kampong Baharu"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Baharu"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880617"
+        ]
+      },
       "center_point": {
         "lon": 103.73333,
         "lat": 1.26667
@@ -12271,7 +13381,17 @@
       "phrase": {
         "default": "Kampong Ayer Samak Darat"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ayer Samak Darat"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880618"
+        ]
+      },
       "center_point": {
         "lon": 104.07222,
         "lat": 1.41389
@@ -12297,7 +13417,17 @@
       "phrase": {
         "default": "Kampong Ayer Samak"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ayer Samak"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880619"
+        ]
+      },
       "center_point": {
         "lon": 104.07944,
         "lat": 1.42056
@@ -12323,7 +13453,17 @@
       "phrase": {
         "default": "Kampong Ayer Merbau"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ayer Merbau"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880620"
+        ]
+      },
       "center_point": {
         "lon": 103.71667,
         "lat": 1.26667
@@ -12349,7 +13489,17 @@
       "phrase": {
         "default": "Kampong Ayer Limau"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ayer Limau"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880621"
+        ]
+      },
       "center_point": {
         "lon": 103.71667,
         "lat": 1.28333
@@ -12375,7 +13525,17 @@
       "phrase": {
         "default": "Kampong Ayer Gemuruh"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ayer Gemuruh"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880622"
+        ]
+      },
       "center_point": {
         "lon": 103.98333,
         "lat": 1.35
@@ -12401,7 +13561,17 @@
       "phrase": {
         "default": "Kampong Ayer Bajau"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ayer Bajau"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880623"
+        ]
+      },
       "center_point": {
         "lon": 103.65,
         "lat": 1.36667
@@ -12427,7 +13597,17 @@
       "phrase": {
         "default": "Kampong Amoy Quee"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Amoy Quee"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880624"
+        ]
+      },
       "center_point": {
         "lon": 103.85,
         "lat": 1.38333
@@ -12810,7 +13990,17 @@
       "phrase": {
         "default": "Jalan Kayu"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Jalan Kayu"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880639"
+        ]
+      },
       "center_point": {
         "lon": 103.87194,
         "lat": 1.39722
@@ -13597,7 +14787,17 @@
       "phrase": {
         "default": "Geylang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Geylang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880670"
+        ]
+      },
       "center_point": {
         "lon": 103.93194,
         "lat": 1.3275
@@ -14380,7 +15580,17 @@
       "phrase": {
         "default": "Chye Kay"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Chye Kay"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880701"
+        ]
+      },
       "center_point": {
         "lon": 103.82417,
         "lat": 1.42611
@@ -14406,7 +15616,17 @@
       "phrase": {
         "default": "Chong Pang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Chong Pang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880702"
+        ]
+      },
       "center_point": {
         "lon": 103.82389,
         "lat": 1.44444
@@ -14634,7 +15854,17 @@
       "phrase": {
         "default": "Chia Tong Quah Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Chia Tong Quah Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880711"
+        ]
+      },
       "center_point": {
         "lon": 104.05083,
         "lat": 1.40861
@@ -14659,7 +15889,17 @@
       "phrase": {
         "default": "Chia Keng"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Chia Keng"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880712"
+        ]
+      },
       "center_point": {
         "lon": 103.89167,
         "lat": 1.36
@@ -14941,7 +16181,17 @@
       "phrase": {
         "default": "Changi Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Changi Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880723"
+        ]
+      },
       "center_point": {
         "lon": 103.98306,
         "lat": 1.38444
@@ -15224,7 +16474,17 @@
       "phrase": {
         "default": "Buona Vista"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Buona Vista"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880734"
+        ]
+      },
       "center_point": {
         "lon": 103.78806,
         "lat": 1.28056
@@ -15528,7 +16788,17 @@
       "phrase": {
         "default": "Bukit Sembawang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Sembawang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880746"
+        ]
+      },
       "center_point": {
         "lon": 103.85111,
         "lat": 1.44444
@@ -15553,7 +16823,17 @@
       "phrase": {
         "default": "Bukit Sembawang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Sembawang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880747"
+        ]
+      },
       "center_point": {
         "lon": 103.84083,
         "lat": 1.45444
@@ -15578,7 +16858,17 @@
       "phrase": {
         "default": "Bukit Sembawang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Sembawang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880748"
+        ]
+      },
       "center_point": {
         "lon": 103.86917,
         "lat": 1.39556
@@ -15653,7 +16943,17 @@
       "phrase": {
         "default": "Bukit Mandai Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Mandai Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880751"
+        ]
+      },
       "center_point": {
         "lon": 103.75667,
         "lat": 1.41222
@@ -15755,7 +17055,17 @@
       "phrase": {
         "default": "Bright Hill Crescent"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bright Hill Crescent"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880755"
+        ]
+      },
       "center_point": {
         "lon": 103.83333,
         "lat": 1.35
@@ -15906,7 +17216,17 @@
       "phrase": {
         "default": "Boon Lay"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Boon Lay"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880761"
+        ]
+      },
       "center_point": {
         "lon": 103.7,
         "lat": 1.33333
@@ -16772,7 +18092,17 @@
       "phrase": {
         "default": "Banta Tengeh"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Banta Tengeh"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880795"
+        ]
+      },
       "center_point": {
         "lon": 103.65,
         "lat": 1.35
@@ -17456,7 +18786,17 @@
       "phrase": {
         "default": "Ama Keng"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Ama Keng"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880822"
+        ]
+      },
       "center_point": {
         "lon": 103.70667,
         "lat": 1.40444
@@ -17608,7 +18948,17 @@
       "phrase": {
         "default": "Aik Hong and Aik Chiang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Aik Hong and Aik Chiang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1880828"
+        ]
+      },
       "center_point": {
         "lon": 103.72861,
         "lat": 1.39083
@@ -19120,7 +20470,17 @@
       "phrase": {
         "default": "Jurong East New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Jurong East New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1881952"
+        ]
+      },
       "center_point": {
         "lon": 103.73917,
         "lat": 1.34139
@@ -19145,7 +20505,17 @@
       "phrase": {
         "default": "Jurong Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Jurong Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1881953"
+        ]
+      },
       "center_point": {
         "lon": 103.72278,
         "lat": 1.33417
@@ -19196,7 +20566,17 @@
       "phrase": {
         "default": "Jurong West New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Jurong West New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1881955"
+        ]
+      },
       "center_point": {
         "lon": 103.72278,
         "lat": 1.35028
@@ -19638,7 +21018,17 @@
       "phrase": {
         "default": "Aljunied"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Aljunied"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1881998"
+        ]
+      },
       "center_point": {
         "lon": 103.885,
         "lat": 1.33472
@@ -19663,7 +21053,17 @@
       "phrase": {
         "default": "Anson"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Anson"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1881999"
+        ]
+      },
       "center_point": {
         "lon": 103.84944,
         "lat": 1.27056
@@ -19688,7 +21088,17 @@
       "phrase": {
         "default": "Bras Basah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bras Basah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882000"
+        ]
+      },
       "center_point": {
         "lon": 103.85889,
         "lat": 1.29333
@@ -19713,7 +21123,17 @@
       "phrase": {
         "default": "Bukit Batok"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Batok"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882001"
+        ]
+      },
       "center_point": {
         "lon": 103.75639,
         "lat": 1.36111
@@ -19738,7 +21158,17 @@
       "phrase": {
         "default": "Bukit Ho Swee"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Ho Swee"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882002"
+        ]
+      },
       "center_point": {
         "lon": 103.83111,
         "lat": 1.28694
@@ -19763,7 +21193,17 @@
       "phrase": {
         "default": "Bukit Merah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Merah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882003"
+        ]
+      },
       "center_point": {
         "lon": 103.81944,
         "lat": 1.28583
@@ -19788,7 +21228,17 @@
       "phrase": {
         "default": "Bukit Panjang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Panjang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882004"
+        ]
+      },
       "center_point": {
         "lon": 103.7925,
         "lat": 1.39278
@@ -19813,7 +21263,17 @@
       "phrase": {
         "default": "Bukit Timah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Timah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882005"
+        ]
+      },
       "center_point": {
         "lon": 103.75639,
         "lat": 1.32028
@@ -19838,7 +21298,17 @@
       "phrase": {
         "default": "Cairnhill"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Cairnhill"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882006"
+        ]
+      },
       "center_point": {
         "lon": 103.84194,
         "lat": 1.31
@@ -19863,7 +21333,17 @@
       "phrase": {
         "default": "Choa Chu Kang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Choa Chu Kang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882007"
+        ]
+      },
       "center_point": {
         "lon": 103.71139,
         "lat": 1.41083
@@ -19888,7 +21368,17 @@
       "phrase": {
         "default": "Crawford"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Crawford"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882008"
+        ]
+      },
       "center_point": {
         "lon": 103.86806,
         "lat": 1.30222
@@ -19913,7 +21403,17 @@
       "phrase": {
         "default": "Farrer Park"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Farrer Park"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882009"
+        ]
+      },
       "center_point": {
         "lon": 103.85278,
         "lat": 1.31139
@@ -19938,7 +21438,17 @@
       "phrase": {
         "default": "Geylang East"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Geylang East"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882010"
+        ]
+      },
       "center_point": {
         "lon": 103.88861,
         "lat": 1.31583
@@ -19963,7 +21473,17 @@
       "phrase": {
         "default": "Geylang Serai"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Geylang Serai"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882011"
+        ]
+      },
       "center_point": {
         "lon": 103.895,
         "lat": 1.325
@@ -19988,7 +21508,17 @@
       "phrase": {
         "default": "Geylang West"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Geylang West"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882012"
+        ]
+      },
       "center_point": {
         "lon": 103.87778,
         "lat": 1.315
@@ -20013,7 +21543,17 @@
       "phrase": {
         "default": "Henderson"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Henderson"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882013"
+        ]
+      },
       "center_point": {
         "lon": 103.82556,
         "lat": 1.28222
@@ -20038,7 +21578,17 @@
       "phrase": {
         "default": "Jalan Besar"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Jalan Besar"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882014"
+        ]
+      },
       "center_point": {
         "lon": 103.86444,
         "lat": 1.30944
@@ -20063,7 +21613,17 @@
       "phrase": {
         "default": "Jalan Kayu"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Jalan Kayu"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882015"
+        ]
+      },
       "center_point": {
         "lon": 103.89,
         "lat": 1.40167
@@ -20088,7 +21648,17 @@
       "phrase": {
         "default": "Joo Chiat"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Joo Chiat"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882016"
+        ]
+      },
       "center_point": {
         "lon": 103.91111,
         "lat": 1.30667
@@ -20113,7 +21683,17 @@
       "phrase": {
         "default": "Jurong"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Jurong"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882017"
+        ]
+      },
       "center_point": {
         "lon": 103.69361,
         "lat": 1.32028
@@ -20138,7 +21718,17 @@
       "phrase": {
         "default": "Kallang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kallang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882018"
+        ]
+      },
       "center_point": {
         "lon": 103.86444,
         "lat": 1.32028
@@ -20163,7 +21753,17 @@
       "phrase": {
         "default": "Kampong Chai Chee"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Chai Chee"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882019"
+        ]
+      },
       "center_point": {
         "lon": 103.91389,
         "lat": 1.33833
@@ -20188,7 +21788,17 @@
       "phrase": {
         "default": "Kampong Glam"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Glam"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882020"
+        ]
+      },
       "center_point": {
         "lon": 103.86444,
         "lat": 1.30222
@@ -20213,7 +21823,17 @@
       "phrase": {
         "default": "Kampong Kapor"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Kapor"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882021"
+        ]
+      },
       "center_point": {
         "lon": 103.85667,
         "lat": 1.30583
@@ -20238,7 +21858,17 @@
       "phrase": {
         "default": "Kampong Kembangan"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Kembangan"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882022"
+        ]
+      },
       "center_point": {
         "lon": 103.9075,
         "lat": 1.32583
@@ -20263,7 +21893,17 @@
       "phrase": {
         "default": "Kampong Ubi"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Ubi"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882023"
+        ]
+      },
       "center_point": {
         "lon": 103.89861,
         "lat": 1.32583
@@ -20288,7 +21928,17 @@
       "phrase": {
         "default": "Katong"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Katong"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882024"
+        ]
+      },
       "center_point": {
         "lon": 103.88694,
         "lat": 1.29778
@@ -20313,7 +21963,17 @@
       "phrase": {
         "default": "Kim Keat"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kim Keat"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882025"
+        ]
+      },
       "center_point": {
         "lon": 103.86194,
         "lat": 1.33472
@@ -20338,7 +21998,17 @@
       "phrase": {
         "default": "Kim Seng"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kim Seng"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882026"
+        ]
+      },
       "center_point": {
         "lon": 103.83389,
         "lat": 1.28972
@@ -20363,7 +22033,17 @@
       "phrase": {
         "default": "Kreta Ayer"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kreta Ayer"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882027"
+        ]
+      },
       "center_point": {
         "lon": 103.84556,
         "lat": 1.28194
@@ -20388,7 +22068,17 @@
       "phrase": {
         "default": "Kuo Chuan"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kuo Chuan"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882028"
+        ]
+      },
       "center_point": {
         "lon": 103.84444,
         "lat": 1.33611
@@ -20413,7 +22103,17 @@
       "phrase": {
         "default": "Leng Kee"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Leng Kee"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882029"
+        ]
+      },
       "center_point": {
         "lon": 103.81278,
         "lat": 1.28833
@@ -20515,7 +22215,17 @@
       "phrase": {
         "default": "MacPherson"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "MacPherson"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882033"
+        ]
+      },
       "center_point": {
         "lon": 103.88413,
         "lat": 1.32713
@@ -20688,7 +22398,17 @@
       "phrase": {
         "default": "Moulmein"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Moulmein"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882040"
+        ]
+      },
       "center_point": {
         "lon": 103.85167,
         "lat": 1.32028
@@ -20713,7 +22433,17 @@
       "phrase": {
         "default": "Mountbatten"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Mountbatten"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882041"
+        ]
+      },
       "center_point": {
         "lon": 103.88222,
         "lat": 1.30583
@@ -20764,7 +22494,17 @@
       "phrase": {
         "default": "Nee Soon"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Nee Soon"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882043"
+        ]
+      },
       "center_point": {
         "lon": 103.83722,
         "lat": 1.41972
@@ -20865,7 +22605,17 @@
       "phrase": {
         "default": "Pasir Panjang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Pasir Panjang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882047"
+        ]
+      },
       "center_point": {
         "lon": 103.77444,
         "lat": 1.25694
@@ -20890,7 +22640,17 @@
       "phrase": {
         "default": "Paya Lebar"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Paya Lebar"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882048"
+        ]
+      },
       "center_point": {
         "lon": 103.9,
         "lat": 1.3475
@@ -20967,7 +22727,17 @@
       "phrase": {
         "default": "Potong Pasir"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Potong Pasir"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882073"
+        ]
+      },
       "center_point": {
         "lon": 103.86639,
         "lat": 1.33639
@@ -21018,7 +22788,17 @@
       "phrase": {
         "default": "Punggol"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Punggol"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882075"
+        ]
+      },
       "center_point": {
         "lon": 103.9,
         "lat": 1.39278
@@ -21068,7 +22848,17 @@
       "phrase": {
         "default": "Queenstown"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Queenstown"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882077"
+        ]
+      },
       "center_point": {
         "lon": 103.80583,
         "lat": 1.29944
@@ -21140,7 +22930,17 @@
       "phrase": {
         "default": "River Valley"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "River Valley"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882080"
+        ]
+      },
       "center_point": {
         "lon": 103.83278,
         "lat": 1.29778
@@ -21165,7 +22965,17 @@
       "phrase": {
         "default": "Rochor"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Rochor"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882081"
+        ]
+      },
       "center_point": {
         "lon": 103.85528,
         "lat": 1.30139
@@ -21551,7 +23361,17 @@
       "phrase": {
         "default": "Sembawang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sembawang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882097"
+        ]
+      },
       "center_point": {
         "lon": 103.81944,
         "lat": 1.465
@@ -21601,7 +23421,17 @@
       "phrase": {
         "default": "Sepoy Lines"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sepoy Lines"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882099"
+        ]
+      },
       "center_point": {
         "lon": 103.83917,
         "lat": 1.27861
@@ -21626,7 +23456,17 @@
       "phrase": {
         "default": "Serangoon Garden"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Serangoon Garden"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882100"
+        ]
+      },
       "center_point": {
         "lon": 103.85972,
         "lat": 1.36111
@@ -21801,7 +23641,17 @@
       "phrase": {
         "default": "Saint Michael’s Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Saint Michael’s Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882107"
+        ]
+      },
       "center_point": {
         "lon": 103.86083,
         "lat": 1.32778
@@ -21852,7 +23702,17 @@
       "phrase": {
         "default": "Stamford"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Stamford"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882109"
+        ]
+      },
       "center_point": {
         "lon": 103.85083,
         "lat": 1.29333
@@ -21968,7 +23828,17 @@
       "phrase": {
         "default": "Tampines"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tampines"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882114"
+        ]
+      },
       "center_point": {
         "lon": 103.94528,
         "lat": 1.37472
@@ -22044,7 +23914,17 @@
       "phrase": {
         "default": "Tanglin"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tanglin"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882117"
+        ]
+      },
       "center_point": {
         "lon": 103.82833,
         "lat": 1.32944
@@ -22069,7 +23949,17 @@
       "phrase": {
         "default": "Tanglin Halt"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tanglin Halt"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882118"
+        ]
+      },
       "center_point": {
         "lon": 103.7975,
         "lat": 1.30139
@@ -22095,7 +23985,17 @@
       "phrase": {
         "default": "Tanjong Pagar"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tanjong Pagar"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882119"
+        ]
+      },
       "center_point": {
         "lon": 103.84389,
         "lat": 1.27694
@@ -22120,7 +24020,17 @@
       "phrase": {
         "default": "Telok Ayer"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Telok Ayer"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882120"
+        ]
+      },
       "center_point": {
         "lon": 103.85528,
         "lat": 1.27944
@@ -22145,7 +24055,17 @@
       "phrase": {
         "default": "Telok Blangah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Telok Blangah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882121"
+        ]
+      },
       "center_point": {
         "lon": 103.8375,
         "lat": 1.24806
@@ -22656,7 +24576,17 @@
       "phrase": {
         "default": "Thomson"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Thomson"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882145"
+        ]
+      },
       "center_point": {
         "lon": 103.8375,
         "lat": 1.35667
@@ -22681,7 +24611,17 @@
       "phrase": {
         "default": "Tiong Bahru"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Tiong Bahru"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882146"
+        ]
+      },
       "center_point": {
         "lon": 103.83278,
         "lat": 1.28139
@@ -22706,7 +24646,17 @@
       "phrase": {
         "default": "Toa Payoh"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Toa Payoh"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882147"
+        ]
+      },
       "center_point": {
         "lon": 103.85028,
         "lat": 1.33611
@@ -22781,7 +24731,17 @@
       "phrase": {
         "default": "Ulu Pandan"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Ulu Pandan"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882150"
+        ]
+      },
       "center_point": {
         "lon": 103.80139,
         "lat": 1.32944
@@ -22806,7 +24766,17 @@
       "phrase": {
         "default": "Upper Serangoon"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Upper Serangoon"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882151"
+        ]
+      },
       "center_point": {
         "lon": 103.88333,
         "lat": 1.35778
@@ -22856,7 +24826,17 @@
       "phrase": {
         "default": "Whampoa"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Whampoa"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882153"
+        ]
+      },
       "center_point": {
         "lon": 103.85861,
         "lat": 1.32389
@@ -22906,7 +24886,17 @@
       "phrase": {
         "default": "Yishun New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Yishun New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882155"
+        ]
+      },
       "center_point": {
         "lon": 103.83111,
         "lat": 1.43333
@@ -23086,7 +25076,17 @@
       "phrase": {
         "default": "Lim Chu Kang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Lim Chu Kang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882253"
+        ]
+      },
       "center_point": {
         "lon": 103.70944,
         "lat": 1.43667
@@ -23185,7 +25185,17 @@
       "phrase": {
         "default": "Woodlands New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Woodlands New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882316"
+        ]
+      },
       "center_point": {
         "lon": 103.77667,
         "lat": 1.44444
@@ -23233,7 +25243,17 @@
       "phrase": {
         "default": "Sungai Mandai Village"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sungai Mandai Village"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882318"
+        ]
+      },
       "center_point": {
         "lon": 103.77694,
         "lat": 1.41056
@@ -23310,7 +25330,17 @@
       "phrase": {
         "default": "Bukit Panjang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Panjang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882324"
+        ]
+      },
       "center_point": {
         "lon": 103.7525,
         "lat": 1.38167
@@ -23379,7 +25409,17 @@
       "phrase": {
         "default": "Aik Hong and Aik Chiang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Aik Hong and Aik Chiang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882327"
+        ]
+      },
       "center_point": {
         "lon": 103.77472,
         "lat": 1.38639
@@ -23646,7 +25686,17 @@
       "phrase": {
         "default": "Springleaf Park"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Springleaf Park"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882342"
+        ]
+      },
       "center_point": {
         "lon": 103.82139,
         "lat": 1.39528
@@ -23693,7 +25743,17 @@
       "phrase": {
         "default": "Teacher’s Housing Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Teacher’s Housing Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882344"
+        ]
+      },
       "center_point": {
         "lon": 103.82861,
         "lat": 1.38333
@@ -23718,7 +25778,17 @@
       "phrase": {
         "default": "Bukit Sembawang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Sembawang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882345"
+        ]
+      },
       "center_point": {
         "lon": 103.82861,
         "lat": 1.39889
@@ -23911,7 +25981,17 @@
       "phrase": {
         "default": "Bukit Sembawang Estate"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Sembawang Estate"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882399"
+        ]
+      },
       "center_point": {
         "lon": 103.895,
         "lat": 1.38611
@@ -23936,7 +26016,17 @@
       "phrase": {
         "default": "Serangoon"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Serangoon"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882401"
+        ]
+      },
       "center_point": {
         "lon": 103.8723,
         "lat": 1.35119
@@ -23962,7 +26052,17 @@
       "phrase": {
         "default": "Kangkar"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kangkar"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882402"
+        ]
+      },
       "center_point": {
         "lon": 103.90167,
         "lat": 1.37611
@@ -27338,7 +29438,17 @@
       "phrase": {
         "default": "Kampong Siren"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Siren"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882749"
+        ]
+      },
       "center_point": {
         "lon": 103.89806,
         "lat": 1.35222
@@ -28038,7 +30148,17 @@
       "phrase": {
         "default": "Marine Parade"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Marine Parade"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882778"
+        ]
+      },
       "center_point": {
         "lon": 103.90778,
         "lat": 1.30306
@@ -28272,7 +30392,17 @@
       "phrase": {
         "default": "Kampong Sakeng"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kampong Sakeng"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1882788"
+        ]
+      },
       "center_point": {
         "lon": 103.77778,
         "lat": 1.20778
@@ -31573,7 +33703,17 @@
       "phrase": {
         "default": "Ang Mo Kio New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Ang Mo Kio New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1884365"
+        ]
+      },
       "center_point": {
         "lon": 103.83972,
         "lat": 1.38028
@@ -31624,7 +33764,17 @@
       "phrase": {
         "default": "Bukit Panjang New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Panjang New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1884367"
+        ]
+      },
       "center_point": {
         "lon": 103.76472,
         "lat": 1.37972
@@ -31747,7 +33897,17 @@
       "phrase": {
         "default": "Bedok New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bedok New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1884382"
+        ]
+      },
       "center_point": {
         "lon": 103.94167,
         "lat": 1.32639
@@ -32198,7 +34358,17 @@
       "phrase": {
         "default": "Choa Chu Kang New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Choa Chu Kang New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1884737"
+        ]
+      },
       "center_point": {
         "lon": 103.74972,
         "lat": 1.3825
@@ -32224,7 +34394,17 @@
       "phrase": {
         "default": "Changi"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Changi"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1885152"
+        ]
+      },
       "center_point": {
         "lon": 103.99028,
         "lat": 1.39278
@@ -32417,7 +34597,17 @@
       "phrase": {
         "default": "Bedok Ville"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bedok Ville"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1885161"
+        ]
+      },
       "center_point": {
         "lon": 103.95444,
         "lat": 1.32444
@@ -32665,7 +34855,17 @@
       "phrase": {
         "default": "City"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "City"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1885251"
+        ]
+      },
       "center_point": {
         "lon": 103.83222,
         "lat": 1.28583
@@ -33030,7 +35230,17 @@
       "phrase": {
         "default": "Chua Chu Kang"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Chua Chu Kang"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1885272"
+        ]
+      },
       "center_point": {
         "lon": 103.69806,
         "lat": 1.42778
@@ -33055,7 +35265,17 @@
       "phrase": {
         "default": "Serangoon"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Serangoon"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1885278"
+        ]
+      },
       "center_point": {
         "lon": 103.84389,
         "lat": 1.39583
@@ -33080,7 +35300,17 @@
       "phrase": {
         "default": "Serangoon Garden"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Serangoon Garden"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1885280"
+        ]
+      },
       "center_point": {
         "lon": 103.86528,
         "lat": 1.37778
@@ -33669,7 +35899,17 @@
       "phrase": {
         "default": "Kam Wak Hassan"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Kam Wak Hassan"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "1903712"
+        ]
+      },
       "center_point": {
         "lon": 103.83056,
         "lat": 1.4375
@@ -33855,7 +36095,17 @@
       "phrase": {
         "default": "Gamat-eMas Network (Singapore) Blk 34, Whampoa West"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Gamat-eMas Network (Singapore) Blk 34, Whampoa West"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "6355174"
+        ]
+      },
       "center_point": {
         "lon": 103.86245,
         "lat": 1.31989
@@ -37270,7 +39520,17 @@
       "phrase": {
         "default": "Blk 822 Jurong West Street 81"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Blk 822 Jurong West Street 81"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "6690793"
+        ]
+      },
       "center_point": {
         "lon": 103.69357,
         "lat": 1.347
@@ -37318,7 +39578,17 @@
       "phrase": {
         "default": "Johor"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Johor"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "6695743"
+        ]
+      },
       "center_point": {
         "lon": 103.91041,
         "lat": 1.48265
@@ -37419,7 +39689,17 @@
       "phrase": {
         "default": "Night Safari"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Night Safari"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "6942030"
+        ]
+      },
       "center_point": {
         "lon": 103.78789,
         "lat": 1.40226
@@ -37707,7 +39987,17 @@
       "phrase": {
         "default": "Novena"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Novena"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7281987"
+        ]
+      },
       "center_point": {
         "lon": 103.8438,
         "lat": 1.31697
@@ -37733,7 +40023,17 @@
       "phrase": {
         "default": "Eunos"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Eunos"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7289731"
+        ]
+      },
       "center_point": {
         "lon": 103.89822,
         "lat": 1.32252
@@ -37784,7 +40084,17 @@
       "phrase": {
         "default": "Bugis"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bugis"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7289737"
+        ]
+      },
       "center_point": {
         "lon": 103.85493,
         "lat": 1.30056
@@ -37835,7 +40145,17 @@
       "phrase": {
         "default": "Orchard"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Orchard"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7289740"
+        ]
+      },
       "center_point": {
         "lon": 103.83469,
         "lat": 1.30256
@@ -37887,7 +40207,17 @@
       "phrase": {
         "default": "Bukit Timah"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Bukit Timah"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7289743"
+        ]
+      },
       "center_point": {
         "lon": 103.77394,
         "lat": 1.34184
@@ -37938,7 +40268,17 @@
       "phrase": {
         "default": "Newton"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Newton"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7289746"
+        ]
+      },
       "center_point": {
         "lon": 103.83757,
         "lat": 1.30902
@@ -37989,7 +40329,17 @@
       "phrase": {
         "default": "Sengkang New Town"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "Sengkang New Town"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7289760"
+        ]
+      },
       "center_point": {
         "lon": 103.89444,
         "lat": 1.39167
@@ -38015,7 +40365,17 @@
       "phrase": {
         "default": "HarbourFront"
       },
-      "parent": {},
+      "parent": {
+        "locality": [
+          "HarbourFront"
+        ],
+        "locality_a": [
+          null
+        ],
+        "locality_id": [
+          "7289766"
+        ]
+      },
       "center_point": {
         "lon": 103.8201,
         "lat": 1.2652
