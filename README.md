@@ -88,7 +88,7 @@ The importer can be configured from your local `pelias-config` in the `imports.g
 	"imports": {
 		"geonames": {
 			"datapath": "/path/to/geonames/data",
-			"adminLookup": true
+			"adminLookup": false
 		}
 	}
 }
