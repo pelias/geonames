@@ -97,7 +97,4 @@ The importer can be configured from your local `pelias-config` in the `imports.g
 The following are all *optional*:
 
   * `datapath`: the path to geonames data. Defaults to a directory inside the importer.
-  * `adminLookup` - some GeoNames data doesn't have a full administrative hierarchy (ie, country, state,
-  county, etc. names), but you can optionally create it via the
-  [`pelias/admin-lookup`](https://github.com/pelias/admin-lookup) plugin; just set this property to `true`.  Consult
-  the `admin-lookup` README for setup documentation (namely just downloading the Quattroshapes dataset).
+  * `adminLookup` - set this to true to fill in the administrative hierarchy (ie, country, state, county, etc. names), at the cost of higher memory requirements and slower import times. See the [`pelias/wof-admin-lookup`](https://github.com/pelias/wof-admin-lookup) readme for more information on how this works and setup documentation (note: this will require downloading the full [Who's on First](http://whosonfirst.mapzen.com/) dataset)
