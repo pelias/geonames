@@ -80,3 +80,26 @@ tape('layerMappingStream', function(test) {
     });
   });
 });
+
+tape('IDtoLayer', function(test){
+  test.test('special cases: the nyc boroughs', function(t){
+    var input = [
+    {_id: 5110302, feature_code: 'PPLA2'},
+    {_id: 5125771, feature_code: 'PPLA2'},
+    {_id: 5133273, feature_code: 'PPLA2'},
+    {_id: 5110266, feature_code: 'PPLA2'},
+    {_id: 5139568, feature_code: 'PPLA2'},
+    {_id: 5112223, feature_code: 'PPLA'}];
+    var stream = layerMappingStream.create();
+
+    test_stream(input,stream,function(err, results){
+      var actual = results.map(function(doc){
+        return doc.layer;
+      });
+      var expected = ['borough','borough','borough','borough','borough','locality'];
+
+      test.deepEqual(actual,expected,'special case: NYC handled');
+      t.end();
+    });
+  });
+});
