@@ -1,6 +1,8 @@
 node_modules
 npm-debug.log
 .DS_Store
-data
 esclient.log
-metadata
+/data/*
+!/data/specialCases.json
+/metadata/*
+!/metadata/category_mapping.json
