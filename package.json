@@ -3,6 +3,9 @@
   "version": "0.0.0-semantic-release",
   "author": "mapzen",
   "description": "Open-source geo-coder & reverse geo-coder",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
