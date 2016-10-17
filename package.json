@@ -50,7 +50,7 @@
     "fs-extra": "^0.30.0",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
-    "pelias-config": "2.1.0",
+    "pelias-config": "2.3.0",
     "pelias-dbclient": "2.0.0",
     "pelias-logger": "0.0.8",
     "pelias-model": "4.2.0",
