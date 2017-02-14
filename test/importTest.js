@@ -4,14 +4,14 @@ var path = require( 'path');
 var tape = require( 'tape' );
 var event_stream = require( 'event-stream' );
 var deep = require( 'deep-diff' );
-
-var importModule = require( '../lib/tasks/import' );
-
-var basePath = path.resolve(__dirname);
-var expectedPath = basePath + '/data/expected.json';
-var inputFile = basePath + '/data/SG.zip';
+const proxyquire = require('proxyquire').noCallThru();
+const through = require('through2');
 
 tape('functional test importing Singapore', function(t) {
+  var basePath = path.resolve(__dirname);
+  var expectedPath = path.join(basePath, 'data', 'expected.json');
+  var inputFile = path.join(basePath, 'data', 'SG.zip');
+
   var sourceStream = fs.createReadStream(inputFile);
   var expected = JSON.parse(fs.readFileSync(expectedPath));
 
@@ -19,7 +19,7 @@ tape('functional test importing Singapore', function(t) {
     // uncomment this to write the actual results to the expected file
     // make sure they look ok though. comma left off so jshint reminds you
     // not to commit this line
-    //fs.writeFileSync(expectedPath, JSON.stringify(results, null, 2))
+    // fs.writeFileSync(expectedPath, JSON.stringify(results, null, 2))
 
     var diff = deep(expected, results);
 
@@ -32,13 +32,15 @@ tape('functional test importing Singapore', function(t) {
     t.end();
   });
 
-  var fakePeliasConfig = {
-    imports: {
-      geonames: {
-        adminLookup: false // its not currently feasible to do admin lookup in this test
+  // need to mock out pelias-wof-admin-lookup because it reads its own config
+  // and we don't want an actual adminLookup stream
+  const importModule = proxyquire( '../lib/tasks/import', {
+    'pelias-wof-admin-lookup': {
+      create: () => {
+        return through.obj();
       }
     }
-  };
+  } );
 
-  importModule(sourceStream, endStream, fakePeliasConfig);
+  importModule(sourceStream, endStream);
 });
