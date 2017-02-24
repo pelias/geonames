@@ -1,7 +1,6 @@
 node_modules
-npm-debug.log
+*.log
 .DS_Store
-esclient.log
 /data/*
 !/data/specialCases.json
 /metadata/*
