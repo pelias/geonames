@@ -50,7 +50,7 @@
     "pelias-dbclient": "2.0.0",
     "pelias-logger": "0.1.0",
     "pelias-model": "4.4.0",
-    "pelias-wof-admin-lookup": "3.0.0",
+    "pelias-wof-admin-lookup": "3.1.2",
     "proxyquire": "^1.7.11",
     "request": "^2.34.0",
     "through2": "^2.0.1",
