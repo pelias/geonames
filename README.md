@@ -77,4 +77,4 @@ $> npm run countryCodes
 
 The metadata shipped with the repo can get out-of-date, to pull the latest metadata run
 
-`npm run updateMetadata`
+`npm run download_metadata`
