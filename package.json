@@ -6,7 +6,7 @@
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
-    "download_metadata": "mkdir -p metadata && node bin/updateMetadata.js",
+    "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
     "download": "node bin/download_data.js",
     "countryCodes": "node bin/viewCountryCodes.js",
     "functional": "node test/functional.js | tap-dot",
@@ -46,6 +46,7 @@
     "fs-extra": "^2.0.0",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
+    "mkdirp": "^0.5.1",
     "pelias-config": "2.7.1",
     "pelias-dbclient": "2.0.0",
     "pelias-logger": "0.1.0",
@@ -62,9 +63,9 @@
     "deep-diff": "^0.3.3",
     "event-stream": "^3.3.2",
     "precommit-hook": "3.0.0",
+    "semantic-release": "^6.3.2",
     "tap-dot": "^1.0.1",
-    "tape": "^4.4.0",
-    "semantic-release": "^6.3.2"
+    "tape": "^4.4.0"
   },
   "pre-commit": [
     "lint",
