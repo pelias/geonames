@@ -6,7 +6,7 @@
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
-    "download_metadata": "mkdir -p metadata && node bin/updateMetadata.js",
+    "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
     "download": "node bin/download_data.js",
     "countryCodes": "node bin/viewCountryCodes.js",
     "functional": "node test/functional.js | tap-dot",
@@ -47,6 +47,7 @@
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
     "pelias-config": "2.8.0",
+    "mkdirp": "^0.5.1",
     "pelias-dbclient": "2.0.0",
     "pelias-logger": "0.1.0",
     "pelias-model": "4.5.1",
