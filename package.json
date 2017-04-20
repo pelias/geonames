@@ -6,7 +6,7 @@
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
-    "download_metadata": "mkdir -p metadata && node bin/updateMetadata.js",
+    "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
     "download": "node bin/download_data.js",
     "countryCodes": "node bin/viewCountryCodes.js",
     "functional": "node test/functional.js | tap-dot",
@@ -15,10 +15,11 @@
     "postinstall": "npm run download_metadata",
     "start": "node import.js",
     "test": "npm run units",
-    "travis": "npm test && npm run functional",
+    "travis": "npm run check-dependencies && npm test && npm run functional",
     "units": "node test/units.js | tap-dot",
     "validate": "npm ls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "check-dependencies": "node_modules/.bin/npm-check --production"
   },
   "repository": {
     "type": "git",
@@ -43,14 +44,14 @@
     "JSONStream": "^1.0.7",
     "cli-table": "^0.3.0",
     "csv-parse": "^1.1.7",
-    "fs-extra": "^2.0.0",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
-    "pelias-config": "2.7.1",
+    "pelias-config": "2.9.0",
+    "mkdirp": "^0.5.1",
     "pelias-dbclient": "2.0.0",
-    "pelias-logger": "0.1.0",
-    "pelias-model": "4.4.0",
-    "pelias-wof-admin-lookup": "3.1.2",
+    "pelias-logger": "0.2.0",
+    "pelias-model": "4.6.0",
+    "pelias-wof-admin-lookup": "3.4.0",
     "proxyquire": "^1.7.11",
     "request": "^2.34.0",
     "through2": "^2.0.1",
@@ -61,14 +62,16 @@
   "devDependencies": {
     "deep-diff": "^0.3.3",
     "event-stream": "^3.3.2",
+    "npm-check": "git://github.com/orangejulius/npm-check.git#disable-update-check",
     "precommit-hook": "3.0.0",
+    "semantic-release": "^6.3.2",
     "tap-dot": "^1.0.1",
-    "tape": "^4.4.0",
-    "semantic-release": "^6.3.2"
+    "tape": "^4.4.0"
   },
   "pre-commit": [
     "lint",
     "validate",
-    "test"
+    "test",
+    "check-dependencies"
   ]
 }
