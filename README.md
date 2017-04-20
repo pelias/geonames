@@ -28,12 +28,11 @@ npm install
 The importer can be configured from your local [pelias-config](https://github.com/pelias/config)
 (defaults to `~/pelias.json`) in the `imports.geonames` object:
 
-```javascript
+```json
 {
 	"imports": {
 		"geonames": {
 			"datapath": "/path/to/geonames/data",
-			"adminLookup": false,
 			"countryCode": "MX"
 		}
 	}
@@ -43,13 +42,17 @@ The importer can be configured from your local [pelias-config](https://github.co
 The following are all *optional*:
 
   * `datapath`: the path to geonames data. Defaults to a directory inside the importer.
-  * `adminLookup` - set this to true to fill in the administrative hierarchy (country, state,
-    county, etc. names), at the cost of higher memory requirements and slower import times. See the
-    [pelias/wof-admin-lookup](https://github.com/pelias/wof-admin-lookup) readme for more information on
-    how this works and setup documentation (note: this will require downloading the full
-    [Who's on First](http://whosonfirst.mapzen.com/) dataset).
   * `countryCode`: the two digit ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1)) country code
     for the country for which data will be downloaded and imported. Use `ALL` for all countries.
+
+#### Admin Lookup
+Pelias has the ability to compute the admin hierarchy (county, region, country, etc)
+from [Who's on First](http://whosonfirst.mapzen.com/) data.
+For more info on how admin lookup works, see the documentation for
+[pelias/wof-admin-lookup](https://github.com/pelias/wof-admin-lookup). By default,
+adminLookup is enabled.  To disable, set `imports.adminLookup.enabled` to `false` in Pelias config.
+
+**Note:** Admin lookup requires loading around 5GB of data into memory.
 
 ### Usage
 
