@@ -2,6 +2,7 @@ var tape = require('tape');
 var Document = require('pelias-model').Document;
 var peliasDocGenerator = require('../../lib/streams/peliasDocGenerator');
 var event_stream = require('event-stream');
+const proxyquire = require('proxyquire').noCallThru();
 
 function test_stream(input, testedStream, callback) {
     var input_stream = event_stream.readArray(input);
@@ -34,16 +35,21 @@ tape('peliasDocGenerator', function(test) {
   });
 
   test.test('record throwing exception on basic setup should push nothing to next', function(t) {
-    var input = {
+    const logger = require('pelias-mock-logger')();
+
+    const docGenerator = proxyquire('../../lib/streams/peliasDocGenerator', {
+      'pelias-logger': logger
+    }).create();
+
+    const input = {
       _id: 12345,
       latitude: 12.121212,
       longitude: 21.212121
     };
 
-    var docGenerator = peliasDocGenerator.create();
-
     test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [], 'should have returned true');
+      t.deepEqual(actual, [], 'should not have passed anything thru');
+      t.ok(logger.isWarnMessage(/Failed to create a Document from.*/));
       t.end();
     });
 
@@ -88,173 +94,6 @@ tape('peliasDocGenerator', function(test) {
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
       .setMeta('fcode', 'Unsupported feature_code');
-
-    var docGenerator = peliasDocGenerator.create();
-
-    test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [expected], 'should have returned true');
-      t.end();
-    });
-
-  });
-
-  test.test('alpha3 and admin0 should be set when country_code is available and known', function(t) {
-    var input = {
-      _id: 12345,
-      name: 'Record Name',
-      latitude: 12.121212,
-      longitude: 21.212121,
-      country_code: 'US'
-    };
-
-    var expected = new Document( 'geonames', 'venue', 12345 )
-      .setName('default', 'Record Name')
-      .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA');
-
-    var docGenerator = peliasDocGenerator.create();
-
-    test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [expected], 'should have returned true');
-      t.end();
-    });
-
-  });
-
-  test.test('alpha3 and admin0 should not be set when country_code is available and unknown', function(t) {
-    var input = {
-      _id: 12345,
-      name: 'Record Name',
-      latitude: 12.121212,
-      longitude: 21.212121,
-      country_code: 'Unknown ISO2'
-    };
-
-    var expected = new Document( 'geonames', 'venue', 12345 )
-      .setName('default', 'Record Name')
-      .setCentroid({ lat: 12.121212, lon: 21.212121 });
-
-    var docGenerator = peliasDocGenerator.create();
-
-    test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [expected], 'should have returned true');
-      t.end();
-    });
-
-  });
-
-  test.test('supported country_code and admin1_code should populate admin1', function(t) {
-    var input = {
-      _id: 12345,
-      name: 'Record Name',
-      latitude: 12.121212,
-      longitude: 21.212121,
-      country_code: 'US',
-      admin1_code: 'AR'
-    };
-
-    var expected = new Document( 'geonames', 'venue', 12345 )
-      .setName('default', 'Record Name')
-      .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA');
-
-    var docGenerator = peliasDocGenerator.create();
-
-    test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [expected], 'should have returned true');
-      t.end();
-    });
-
-  });
-
-  test.test('supported country_code and unsupported admin1_code should not populate admin1', function(t) {
-    var input = {
-      _id: 12345,
-      name: 'Record Name',
-      latitude: 12.121212,
-      longitude: 21.212121,
-      country_code: 'US',
-      admin1_code: 'Unknown admin1_cde'
-    };
-
-    var expected = new Document( 'geonames', 'venue', 12345 )
-      .setName('default', 'Record Name')
-      .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA');
-
-    var docGenerator = peliasDocGenerator.create();
-
-    test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [expected], 'should have returned true');
-      t.end();
-    });
-
-  });
-
-  test.test('unsupported country_code and supported admin1_code should not populate admin1', function(t) {
-    var input = {
-      _id: 12345,
-      name: 'Record Name',
-      latitude: 12.121212,
-      longitude: 21.212121,
-      country_code: 'Unknown ISO2',
-      admin1_code: 'PA'
-    };
-
-    var expected = new Document( 'geonames', 'venue', 12345 )
-      .setName('default', 'Record Name')
-      .setCentroid({ lat: 12.121212, lon: 21.212121 });
-
-    var docGenerator = peliasDocGenerator.create();
-
-    test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [expected], 'should have returned true');
-      t.end();
-    });
-
-  });
-
-  test.test('supported country_code, admin1_code, and admin2_code should populate admin2', function(t) {
-    var input = {
-      _id: 12345,
-      name: 'Record Name',
-      latitude: 12.121212,
-      longitude: 21.212121,
-      country_code: 'US',
-      admin1_code: 'AR',
-      admin2_code: '003'
-    };
-
-    var expected = new Document( 'geonames', 'venue', 12345 )
-      .setName('default', 'Record Name')
-      .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA');
-
-    var docGenerator = peliasDocGenerator.create();
-
-    test_stream([input], docGenerator, function(err, actual) {
-      t.deepEqual(actual, [expected], 'should have returned true');
-      t.end();
-    });
-
-  });
-
-  test.test('supported country_code and admin1_code but unsupported admin2_code ' +
-              'should not populate admin2', function(t) {
-    var input = {
-      _id: 12345,
-      name: 'Record Name',
-      latitude: 12.121212,
-      longitude: 21.212121,
-      country_code: 'US',
-      admin1_code: 'AR',
-      admin2_code: 'Unknown admin2_code'
-    };
-
-    var expected = new Document( 'geonames', 'venue', 12345 )
-      .setName('default', 'Record Name')
-      .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setAlpha3('USA');
 
     var docGenerator = peliasDocGenerator.create();
 
