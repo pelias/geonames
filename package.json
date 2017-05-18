@@ -52,7 +52,6 @@
     "pelias-logger": "0.2.0",
     "pelias-model": "4.6.0",
     "pelias-wof-admin-lookup": "3.4.0",
-    "proxyquire": "^1.7.11",
     "request": "^2.34.0",
     "through2": "^2.0.1",
     "through2-filter": "^2.0.0",
@@ -63,7 +62,9 @@
     "deep-diff": "^0.3.3",
     "event-stream": "^3.3.2",
     "npm-check": "git://github.com/orangejulius/npm-check.git#disable-update-check",
+    "pelias-mock-logger": "^1.1.0",
     "precommit-hook": "3.0.0",
+    "proxyquire": "^1.7.11",
     "semantic-release": "^6.3.2",
     "tap-dot": "^1.0.1",
     "tape": "^4.4.0"
