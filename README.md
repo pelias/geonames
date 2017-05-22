@@ -9,8 +9,6 @@
 [![Build Status](https://travis-ci.org/pelias/geonames.png?branch=master)](https://travis-ci.org/pelias/geonames)
 [![Greenkeeper badge](https://badges.greenkeeper.io/pelias/geonames.svg)](https://greenkeeper.io/)
 
-`pelias-geonames` comes with a command-line tool to make it easier to download/parse and import country data in to Pelias.
-
 This Node.js package imports data from [Geonames](http://geonames.org/) into
 [Pelias](http://pelias.io). It includes utilities for downloading and cleaning up the data before
 import.
