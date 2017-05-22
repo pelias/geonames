@@ -44,7 +44,6 @@
     "JSONStream": "^1.0.7",
     "cli-table": "^0.3.0",
     "csv-parse": "^1.1.7",
-    "fs-extra": "^2.0.0",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
     "pelias-config": "2.9.0",
