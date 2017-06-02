@@ -7,6 +7,7 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pelias/gitter)
 [![Build Status](https://travis-ci.org/pelias/geonames.png?branch=master)](https://travis-ci.org/pelias/geonames)
+[![Greenkeeper badge](https://badges.greenkeeper.io/pelias/geonames.svg)](https://greenkeeper.io/)
 
 This Node.js package imports data from [Geonames](http://geonames.org/) into
 [Pelias](http://pelias.io). It includes utilities for downloading and cleaning up the data before
