@@ -13,7 +13,7 @@
     "import": "npm run start",
     "lint": "jshint .",
     "postinstall": "npm run download_metadata",
-    "start": "node import.js",
+    "start": "node --max_old_space_size=4096 import.js",
     "test": "npm run units",
     "travis": "npm run check-dependencies && npm test && npm run functional",
     "units": "node test/units.js | tap-dot",
