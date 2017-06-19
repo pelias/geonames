@@ -70,7 +70,7 @@ $> npm run countryCodes
 ```
 
 #### Download the data
-
+The data cooresponding to the countryCode in the pelias config file will be downloaded.
 `npm run download`
 
 #### Import the downloaded data
