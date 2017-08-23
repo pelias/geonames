@@ -8,17 +8,12 @@ RUN mkdir -p '/data/geonames'
 # note: this is done in one command in order to keep down the size of intermediate containers
 RUN apt-get update && apt-get install -y bzip2 && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 
-# clone repo
-RUN git clone https://github.com/pelias/geonames.git /code/pelias/geonames
-
 # change working dir
-WORKDIR /code/pelias/geonames
+ENV WORK=/code/pelias/geonames
+WORKDIR $WORK
 
-# consume the build variables
-ARG REVISION=production
-
-# switch to desired revision
-RUN git checkout $REVISION
+# Copy code into image
+ADD . $WORK
 
 # install npm dependencies
 RUN npm install
