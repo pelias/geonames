@@ -50,7 +50,7 @@
     "mkdirp": "^0.5.1",
     "pelias-dbclient": "2.2.3",
     "pelias-logger": "0.2.0",
-    "pelias-model": "5.0.1",
+    "pelias-model": "5.1.0",
     "pelias-wof-admin-lookup": "3.10.8",
     "request": "^2.34.0",
     "through2": "^2.0.1",
