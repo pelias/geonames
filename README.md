@@ -23,6 +23,7 @@ import.
 git clone https://github.com/pelias/geonames
 cd geonames
 npm install
+npm run download_metadata
 ```
 
 ### Configuration
@@ -79,6 +80,6 @@ The data corresponding to the countryCode in the pelias config file will be down
 
 ### Updating Metadata
 
-The metadata shipped with the repo can get out-of-date, to pull the latest metadata run
+The metadata is not shipped with the repo, to pull the latest metadata run
 
 `npm run download_metadata`
