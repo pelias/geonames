@@ -9,13 +9,13 @@ const config = require('pelias-config').generate();
 const basepath = config.imports.geonames.datapath;
 const isocode = validateISOCode(config.imports.geonames.countryCode);
 
-var filenames = [isocode]
+var filenames = [isocode];
 if (isocode === 'ALL') {
-  var filenames = require("./data/isocodes.json")["isocodes"];
+  var filenames = require('../metadata/isocodes.json').isocodes;
 }
 
 for (var i = 0; i < filenames.length; i++) {
-  const filename = filenames[i]
+  const filename = filenames[i];
   const remoteFilePath = `http://geonames.nga.mil/gns/html/cntyfile/${filename}.zip`;
   const localFileName = `${basepath}/${filename}.zip`;
 
@@ -26,15 +26,15 @@ for (var i = 0; i < filenames.length; i++) {
   const job = child_process.exec(command);
 
   job.stdout.on('data', (data) => {
-    process.stdout.write(data);
+      process.stdout.write(data);
   });
 
   job.stderr.on('data', (data) => {
-    process.stderr.write(data);
+      process.stderr.write(data);
   });
 
   job.on('close', (code) => {
-    console.log(`Geonames download finished with exit code ${code}`);
-    process.exitCode = code;
+      console.log(`Geonames download finished with exit code ${code}`);
+      process.exitCode = code;
   });
 }
