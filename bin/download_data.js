@@ -24,6 +24,7 @@ for (var i = 0; i < filenames.length; i++) {
   const command = `curl ${remoteFilePath} > ${localFileName}`;
 
   const job = child_process.exec(command);
+  var data;
 
   job.stdout.on('data', (data) => {
       process.stdout.write(data);
