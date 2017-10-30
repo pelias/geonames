@@ -12,7 +12,16 @@ const task = require('./lib/tasks/import');
 const validateISOCode = require('./lib/validateISOCode');
 
 const isocode = validateISOCode( config.imports.geonames.countryCode );
-const filename = isocode === 'ALL' ? 'allCountries' : isocode;
-const source = resolvers.selectSource( filename );
+var filenames = [isocode];
+if (isocode === 'ALL') {
+  var filenames = require('./metadata/isocodes.json').isocodes;
+}
 
-task( source );
+for (var i = 0; i < filenames.length; i++) {
+  const filename = filenames[i];
+
+  logger.info( 'importing datafile:', filename );
+
+  const source = resolvers.selectSource( filename );
+  task( source );
+}
