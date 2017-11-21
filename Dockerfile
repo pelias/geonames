@@ -18,5 +18,8 @@ ADD . $WORK
 # install npm dependencies
 RUN npm install
 
+# Explicitly download metadata (it will not be downloaded automatically in noninteractive sessions)
+RUN npm run download_metadata
+
 # run tests
 RUN npm test
