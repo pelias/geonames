@@ -23,7 +23,6 @@ import.
 git clone https://github.com/pelias/geonames
 cd geonames
 npm install
-npm run download_metadata
 ```
 
 ### Configuration
@@ -80,6 +79,12 @@ The data corresponding to the countryCode in the pelias config file will be down
 
 ### Updating Metadata
 
-The metadata is not shipped with the repo, to pull the latest metadata run
+The metadata is not shipped with the repo, however, during normal usagage running `npm install` will also trigger a script that updates the metadata.
 
-`npm run download_metadata`
+__However__ this hook will not trigger in non-interactive sessions such as many shell scripts. To explicitly download the metadata or refresh it (it changes very infrequently, perhaps every few months), run:
+
+```
+npm run download_metadata
+```
+
+The metadata _is_ packaged in our Docker images, so using an up to date docker image should guarantee recent enough metadata.
