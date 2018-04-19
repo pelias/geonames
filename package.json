@@ -58,7 +58,7 @@
     "unzipper": "^0.8.3"
   },
   "devDependencies": {
-    "deep-diff": "^0.3.3",
+    "deep-diff": "^1.0.0",
     "event-stream": "^3.3.2",
     "pelias-mock-logger": "^1.1.0",
     "precommit-hook": "3.0.0",
