@@ -34,7 +34,8 @@ The importer can be configured from your local [pelias-config](https://github.co
 	"imports": {
 		"geonames": {
 			"datapath": "/path/to/geonames/data",
-			"countryCode": "MX"
+			"countryCode": "MX",
+			"sourceURL": "http://example.com/geonames/${countryCode}.zip"
 		}
 	}
 }
@@ -45,6 +46,9 @@ The following are all *optional*:
   * `datapath`: the path to geonames data. Defaults to a directory inside the importer.
   * `countryCode`: the two digit ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1)) country code
     for the country for which data will be downloaded and imported. Use `ALL` for all countries.
+  * `sourceURL`: allows for specification of an alternate url for downloads as a
+	  string or template literal containing `${countryCode}`. If sourceURL is undefined
+		or an empty string the code defaults to the official Geonames dumps.
 
 #### Admin Lookup
 Pelias has the ability to compute the admin hierarchy (county, region, country, etc)
