@@ -1,6 +1,6 @@
 {
   "name": "pelias-geonames",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-development",
   "author": "mapzen",
   "description": "Open-source geo-coder & reverse geo-coder",
   "homepage": "https://github.com/mapzen/pelias-geonames",
