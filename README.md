@@ -15,7 +15,7 @@ import.
 
 ## Requirements
 
-- Node.js '4.0' or greater
+- Node.js '6.0' or greater
 
 ### Installation
 
