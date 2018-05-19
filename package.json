@@ -15,11 +15,10 @@
     "postinstall": "npm run download_metadata",
     "start": "node --max_old_space_size=4096 import.js",
     "test": "NODE_ENV=test npm run units",
-    "travis": "npm run check-dependencies && npm test && npm run functional",
+    "travis": "npm test && npm run functional",
     "units": "node test/units.js | tap-dot",
     "validate": "npm ls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "check-dependencies": "node_modules/.bin/npm-check --production"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -61,7 +60,6 @@
   "devDependencies": {
     "deep-diff": "^0.3.3",
     "event-stream": "^3.3.2",
-    "npm-check": "git://github.com/orangejulius/npm-check.git#disable-update-check",
     "pelias-mock-logger": "^1.1.0",
     "precommit-hook": "3.0.0",
     "proxyquire": "^2.0.0",
@@ -72,7 +70,6 @@
   "pre-commit": [
     "lint",
     "validate",
-    "test",
-    "check-dependencies"
+    "test"
   ]
 }
