@@ -48,7 +48,7 @@
     "pelias-config": "3.0.2",
     "mkdirp": "^0.5.1",
     "pelias-dbclient": "2.5.4",
-    "pelias-logger": "0.4.1",
+    "pelias-logger": "0.4.2",
     "pelias-model": "5.5.1",
     "pelias-wof-admin-lookup": "4.6.5",
     "request": "^2.34.0",
