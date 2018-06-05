@@ -1,13 +1,13 @@
 {
   "name": "pelias-geonames",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-development",
   "author": "mapzen",
   "description": "Open-source geo-coder & reverse geo-coder",
   "homepage": "https://github.com/mapzen/pelias-geonames",
   "license": "MIT",
   "scripts": {
     "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
-    "download": "node bin/download_data.js",
+    "download": "node bin/downloadData.js",
     "countryCodes": "node bin/viewCountryCodes.js",
     "functional": "NODE_ENV=test node test/functional.js | tap-dot",
     "import": "npm run start",
@@ -15,11 +15,10 @@
     "postinstall": "npm run download_metadata",
     "start": "node --max_old_space_size=4096 import.js",
     "test": "NODE_ENV=test npm run units",
-    "travis": "npm run check-dependencies && npm test && npm run functional",
+    "travis": "npm test && npm run functional",
     "units": "node test/units.js | tap-dot",
     "validate": "npm ls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "check-dependencies": "node_modules/.bin/npm-check --production"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -36,22 +35,22 @@
     "url": "https://github.com/mapzen/pelias-geonames/issues"
   },
   "engines": {
-    "node": ">=4.0.0",
+    "node": ">=6.0.0",
     "npm": ">=1.4.3",
     "elasticsearch": ">=1.1.1"
   },
   "dependencies": {
     "JSONStream": "^1.0.7",
     "cli-table": "^0.3.0",
-    "csv-parse": "^1.3.3",
+    "csv-parse": "^2.0.2",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
-    "pelias-config": "2.14.0",
+    "pelias-config": "3.0.2",
     "mkdirp": "^0.5.1",
-    "pelias-dbclient": "2.4.0",
-    "pelias-logger": "0.3.1",
-    "pelias-model": "5.3.2",
-    "pelias-wof-admin-lookup": "4.5.4",
+    "pelias-dbclient": "2.5.6",
+    "pelias-logger": "0.4.2",
+    "pelias-model": "5.5.2",
+    "pelias-wof-admin-lookup": "4.6.5",
     "request": "^2.34.0",
     "through2": "^2.0.1",
     "through2-filter": "^2.0.0",
@@ -59,20 +58,22 @@
     "unzipper": "^0.8.3"
   },
   "devDependencies": {
-    "deep-diff": "^0.3.3",
+    "deep-diff": "^1.0.0",
     "event-stream": "^3.3.2",
-    "npm-check": "git://github.com/orangejulius/npm-check.git#disable-update-check",
     "pelias-mock-logger": "^1.1.0",
     "precommit-hook": "3.0.0",
-    "proxyquire": "^1.7.11",
-    "semantic-release": "^8.0.0",
+    "proxyquire": "^2.0.0",
+    "semantic-release": "^15.0.0",
     "tap-dot": "^1.0.1",
     "tape": "^4.4.0"
   },
   "pre-commit": [
     "lint",
     "validate",
-    "test",
-    "check-dependencies"
-  ]
+    "test"
+  ],
+  "release": {
+    "branch": "production",
+    "success": []
+  }
 }
