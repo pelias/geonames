@@ -47,7 +47,7 @@
     "lodash": "^4.2.1",
     "pelias-config": "3.0.1",
     "mkdirp": "^0.5.1",
-    "pelias-dbclient": "2.4.0",
+    "pelias-dbclient": "2.4.1",
     "pelias-logger": "0.4.1",
     "pelias-model": "5.4.0",
     "pelias-wof-admin-lookup": "4.5.6",
