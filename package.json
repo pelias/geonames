@@ -17,8 +17,7 @@
     "test": "NODE_ENV=test npm run units",
     "travis": "npm test && npm run functional",
     "units": "node test/units.js | tap-dot",
-    "validate": "npm ls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "validate": "npm ls"
   },
   "repository": {
     "type": "git",
@@ -64,7 +63,6 @@
     "pelias-mock-logger": "^1.1.0",
     "precommit-hook": "^3.0.0",
     "proxyquire": "^2.0.0",
-    "semantic-release": "^15.0.0",
     "tap-dot": "^2.0.0",
     "tape": "^4.4.0"
   },
