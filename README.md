@@ -1,7 +1,7 @@
->This repository is part of the [Pelias](http://pelias.io)
->project. Pelias is an open-source, open-data geocoder built by
->[Mapzen](https://www.mapzen.com/) that also powers [Mapzen Search](https://mapzen.com/projects/search). Our
->official user documentation is [here](https://mapzen.com/documentation/search/).
+>This repository is part of the [Pelias](https://github.com/pelias/pelias)
+>project. Pelias is an open-source, open-data geocoder originally sponsored by
+>[Mapzen](https://www.mapzen.com/). Our official user documentation is
+>[here](https://github.com/pelias/documentation).
 
 # Pelias Geonames importer
 
@@ -15,7 +15,7 @@ import.
 
 ## Requirements
 
-- Node.js '4.0' or greater
+- Node.js '6.0' or greater
 
 ### Installation
 
@@ -34,7 +34,8 @@ The importer can be configured from your local [pelias-config](https://github.co
 	"imports": {
 		"geonames": {
 			"datapath": "/path/to/geonames/data",
-			"countryCode": "MX"
+			"countryCode": "MX",
+			"sourceURL": "http://example.com/geonames/"
 		}
 	}
 }
@@ -45,6 +46,9 @@ The following are all *optional*:
   * `datapath`: the path to geonames data. Defaults to a directory inside the importer.
   * `countryCode`: the two digit ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1)) country code
     for the country for which data will be downloaded and imported. Use `ALL` for all countries.
+  * `sourceURL`: allows for specification of an alternate url prefix for downloads.
+	  Will be appended with your specified countryCode and `.zip`.
+	  If the field is undefined or an empty string then the code defaults to the official Geonames dumps.
 
 #### Admin Lookup
 Pelias has the ability to compute the admin hierarchy (county, region, country, etc)
