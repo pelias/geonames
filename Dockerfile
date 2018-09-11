@@ -23,3 +23,6 @@ RUN npm run download_metadata
 
 # run tests
 RUN npm test
+
+# run as the pelias user
+USER pelias
