@@ -9,11 +9,11 @@ RUN mkdir -p '/data/geonames'
 RUN apt-get update && apt-get install -y bzip2 && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
 
 # change working dir
-ENV WORK=/code/pelias/geonames
-WORKDIR $WORK
+ENV WORKDIR=/code/pelias/geonames
+WORKDIR $WORKDIR
 
 # Copy code into image
-ADD . $WORK
+ADD . $WORKDIR
 
 # install npm dependencies
 RUN npm install
