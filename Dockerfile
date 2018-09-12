@@ -12,11 +12,12 @@ RUN apt-get update && apt-get install -y bzip2 unzip && rm -rf /var/lib/apt/list
 ENV WORKDIR=/code/pelias/geonames
 WORKDIR $WORKDIR
 
+# copy package.json first to prevent npm install being rerun when only code changes
+COPY ./package.json ${WORKDIR}
+RUN npm install
+
 # Copy code into image
 ADD . $WORKDIR
-
-# install npm dependencies
-RUN npm install
 
 # Explicitly download metadata (it will not be downloaded automatically in noninteractive sessions)
 RUN npm run download_metadata
