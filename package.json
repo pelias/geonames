@@ -9,14 +9,14 @@
     "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
     "download": "node bin/downloadData.js",
     "countryCodes": "node bin/viewCountryCodes.js",
-    "functional": "NODE_ENV=test node test/functional.js | tap-dot",
+    "functional": "./bin/functional",
     "import": "npm run start",
     "lint": "jshint .",
     "postinstall": "npm run download_metadata",
     "start": "node --max_old_space_size=4096 import.js",
     "test": "NODE_ENV=test npm run units",
     "travis": "npm test && npm run functional",
-    "units": "node test/units.js | tap-dot",
+    "units": "./bin/units",
     "validate": "npm ls"
   },
   "repository": {
