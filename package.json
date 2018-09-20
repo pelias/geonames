@@ -41,7 +41,7 @@
   "dependencies": {
     "JSONStream": "^1.0.7",
     "cli-table": "^0.3.0",
-    "csv-parse": "^2.0.2",
+    "csv-parse": "^3.0.0",
     "geonames-stream": "^2.0.3",
     "lodash": "^4.2.1",
     "mkdirp": "^0.5.1",
