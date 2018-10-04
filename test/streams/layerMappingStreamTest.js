@@ -44,8 +44,28 @@ tape('country specific featureCodes', function(test) {
     t.end();
   });
 
-  test.test('RGN in FR maps to macroregion', function(t) {
-    t.equal(featureCodeToLayer('RGN', 'FR'), 'macroregion', 'Geonames RGN maps to macroregion in France');
+  test.test('ADM1 in FR maps to macroregion', function(t) {
+    t.equal(featureCodeToLayer('ADM1', 'FR'), 'macroregion', 'Geonames ADM1 maps to macroregion in France');
+    t.end();
+  });
+
+  test.test('ADM2 in FR maps to region', function(t) {
+    t.equal(featureCodeToLayer('ADM2', 'FR'), 'region', 'Geonames ADM2 maps to region in France');
+    t.end();
+  });
+
+  test.test('ADM3 in FR maps to macrocounty', function(t) {
+    t.equal(featureCodeToLayer('ADM3', 'FR'), 'macrocounty', 'Geonames ADM3 maps to macrocounty in France');
+    t.end();
+  });
+
+  test.test('ADM4 in FR maps to locality', function(t) {
+    t.equal(featureCodeToLayer('ADM4', 'FR'), 'locality', 'Geonames ADM4 maps to locality in France');
+    t.end();
+  });
+
+  test.test('LCTY in FR maps to venue', function(t) {
+    t.equal(featureCodeToLayer('LCTY', 'FR'), 'venue', 'Geonames LCTY maps to venue in France');
     t.end();
   });
 
