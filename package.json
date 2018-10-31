@@ -72,7 +72,7 @@
     "test"
   ],
   "release": {
-    "branch": "production",
+    "branch": "master",
     "success": []
   }
 }
