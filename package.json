@@ -34,7 +34,7 @@
     "url": "https://github.com/mapzen/pelias-geonames/issues"
   },
   "engines": {
-    "node": ">=6.0.0",
+    "node": ">=8.0.0",
     "npm": ">=1.4.3",
     "elasticsearch": ">=1.1.1"
   },
@@ -72,7 +72,7 @@
     "test"
   ],
   "release": {
-    "branch": "production",
+    "branch": "master",
     "success": []
   }
 }

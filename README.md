@@ -15,7 +15,7 @@ import.
 
 ## Requirements
 
-- Node.js '6.0' or greater
+- Node.js. See [Pelias Software requirements](https://github.com/pelias/documentation/blob/master/requirements.md) for supported versions.
 
 ### Installation
 
