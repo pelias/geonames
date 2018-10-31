@@ -32658,10 +32658,10 @@
     "_id": "1885258",
     "data": {
       "name": {
-        "default": "Police National Service Headquarters / Public Affairs Department"
+        "default": ["Police National Service Headquarters", "Public Affairs Department"]
       },
       "phrase": {
-        "default": "Police National Service Headquarters / Public Affairs Department"
+        "default": ["Police National Service Headquarters", "Public Affairs Department"]
       },
       "center_point": {
         "lon": 103.84111,
@@ -33634,14 +33634,15 @@
     "_id": "6355174",
     "data": {
       "name": {
-        "default": "Gamat-eMas Network (Singapore) Blk 34, Whampoa West"
+        "default": ["Gamat-eMas Network (Singapore) Blk 34", "Whampoa West"]
       },
       "phrase": {
-        "default": "Gamat-eMas Network (Singapore) Blk 34, Whampoa West"
+        "default": ["Gamat-eMas Network (Singapore) Blk 34", "Whampoa West"]
       },
       "parent": {
         "locality": [
-          "Gamat-eMas Network (Singapore) Blk 34, Whampoa West"
+          "Gamat-eMas Network (Singapore) Blk 34",
+          "Whampoa West"
         ],
         "locality_a": [
           null
@@ -35256,10 +35257,10 @@
     "_id": "6481476",
     "data": {
       "name": {
-        "default": "Traders Hotel Singapore, by Shangri-la"
+        "default": ["Traders Hotel Singapore", "by Shangri-la"]
       },
       "phrase": {
-        "default": "Traders Hotel Singapore, by Shangri-la"
+        "default": ["Traders Hotel Singapore", "by Shangri-la"]
       },
       "center_point": {
         "lon": 103.824,
@@ -35509,10 +35510,10 @@
     "_id": "6487979",
     "data": {
       "name": {
-        "default": "Raffles The Plaza, Singapore"
+        "default": ["Raffles The Plaza", "Singapore"]
       },
       "phrase": {
-        "default": "Raffles The Plaza, Singapore"
+        "default": ["Raffles The Plaza", "Singapore"]
       },
       "center_point": {
         "lon": 103.8527,
@@ -35532,10 +35533,10 @@
     "_id": "6488230",
     "data": {
       "name": {
-        "default": "Swissotel The Stamford, Singapore"
+        "default": ["Swissotel The Stamford", "Singapore"]
       },
       "phrase": {
-        "default": "Swissotel The Stamford, Singapore"
+        "default": ["Swissotel The Stamford", "Singapore"]
       },
       "center_point": {
         "lon": 103.8529,
@@ -35808,10 +35809,10 @@
     "_id": "6502100",
     "data": {
       "name": {
-        "default": "Bayview Hotel, Singapore"
+        "default":[ "Bayview Hotel", "Singapore"]
       },
       "phrase": {
-        "default": "Bayview Hotel, Singapore"
+        "default":[ "Bayview Hotel", "Singapore"]
       },
       "center_point": {
         "lon": 103.8498,
@@ -36878,10 +36879,10 @@
     "_id": "6940488",
     "data": {
       "name": {
-        "default": "Ministry of Information, Communications and the Arts"
+        "default": ["Ministry of Information", "Communications and the Arts"]
       },
       "phrase": {
-        "default": "Ministry of Information, Communications and the Arts"
+        "default": ["Ministry of Information", "Communications and the Arts"]
       },
       "center_point": {
         "lon": 103.84809,
@@ -37998,10 +37999,10 @@
     "_id": "9882676",
     "data": {
       "name": {
-        "default": "Pan Pacific Orchard, Singapore"
+        "default": ["Pan Pacific Orchard", "Singapore"]
       },
       "phrase": {
-        "default": "Pan Pacific Orchard, Singapore"
+        "default": ["Pan Pacific Orchard", "Singapore"]
       },
       "center_point": {
         "lon": 103.83012,
