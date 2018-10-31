@@ -149,4 +149,70 @@ tape('peliasDocGenerator', function(test) {
 
   });
 
+  test.test('add name aliases for forward slash delimited names', function(t) {
+    var input = {
+      _id: 12345,
+      name: ' / Something / Else/Two Words ',
+      latitude: 1,
+      longitude: 1
+    };
+
+    var expected = new Document( 'geonames', 'venue', 12345 )
+      .setName('default', 'Something')
+      .setNameAlias('default', 'Else')
+      .setNameAlias('default', 'Two Words')
+      .setCentroid({ lat: 1, lon: 1 });
+
+    var docGenerator = peliasDocGenerator.create();
+
+    test_stream([input], docGenerator, function(err, actual) {
+      t.deepEqual(actual, [expected], 'should have returned true');
+      t.end();
+    });
+  });
+
+  test.test('add name aliases for comma delimited names', function(t) {
+    var input = {
+      _id: 12345,
+      name: ' , Something , Else,Two Words ',
+      latitude: 1,
+      longitude: 1
+    };
+
+    var expected = new Document( 'geonames', 'venue', 12345 )
+      .setName('default', 'Something')
+      .setNameAlias('default', 'Else')
+      .setNameAlias('default', 'Two Words')
+      .setCentroid({ lat: 1, lon: 1 });
+
+    var docGenerator = peliasDocGenerator.create();
+
+    test_stream([input], docGenerator, function(err, actual) {
+      t.deepEqual(actual, [expected], 'should have returned true');
+      t.end();
+    });
+  });
+
+  test.test('add name aliases for hash delimited names', function(t) {
+    var input = {
+      _id: 12345,
+      name: ' # Something # Else#Two Words ',
+      latitude: 1,
+      longitude: 1
+    };
+
+    var expected = new Document( 'geonames', 'venue', 12345 )
+      .setName('default', 'Something')
+      .setNameAlias('default', 'Else')
+      .setNameAlias('default', 'Two Words')
+      .setCentroid({ lat: 1, lon: 1 });
+
+    var docGenerator = peliasDocGenerator.create();
+
+    test_stream([input], docGenerator, function(err, actual) {
+      t.deepEqual(actual, [expected], 'should have returned true');
+      t.end();
+    });
+  });
+
 });
