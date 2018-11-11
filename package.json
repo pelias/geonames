@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
-    "download": "node bin/downloadData.js",
+    "download": "./bin/download",
     "countryCodes": "node bin/viewCountryCodes.js",
     "functional": "./bin/functional",
     "import": "./bin/start",
