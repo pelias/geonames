@@ -64,7 +64,7 @@
     "precommit-hook": "^3.0.0",
     "proxyquire": "^2.0.0",
     "tap-dot": "^2.0.0",
-    "tape": "^4.4.0"
+    "tape": "^4.10.1"
   },
   "pre-commit": [
     "lint",
