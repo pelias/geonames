@@ -55,7 +55,7 @@
     "through2": "^3.0.0",
     "through2-filter": "^3.0.0",
     "through2-sink": "^1.0.0",
-    "unzipper": "^0.9.0"
+    "unzipper": "^0.10.0"
   },
   "devDependencies": {
     "deep-diff": "^1.0.0",
