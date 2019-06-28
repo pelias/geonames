@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "deep-diff": "^1.0.0",
-    "event-stream": "^4.0.0",
+    "stream-mock": "^2.0.3",
     "pelias-mock-logger": "^1.1.0",
     "precommit-hook": "^3.0.0",
     "proxyquire": "^2.0.0",
