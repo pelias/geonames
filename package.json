@@ -34,9 +34,7 @@
     "url": "https://github.com/mapzen/pelias-geonames/issues"
   },
   "engines": {
-    "node": ">=8.0.0",
-    "npm": ">=1.4.3",
-    "elasticsearch": ">=1.1.1"
+    "node": ">=8.0.0"
   },
   "dependencies": {
     "JSONStream": "^1.0.7",
