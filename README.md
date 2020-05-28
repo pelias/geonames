@@ -1,7 +1,7 @@
 <p align="center">
->project. Pelias is an open-source, open-data geocoder originally sponsored by	  <img height="100" src="https://raw.githubusercontent.com/pelias/design/master/logo/pelias_github/Github_markdown_hero.png">
->[Mapzen](https://www.mapzen.com/). Our official user documentation is	</p>
->[here](https://github.com/pelias/documentation).	<h3 align="center">A modular, open-source search engine for our world.</h3>
+  <img height="100" src="https://raw.githubusercontent.com/pelias/design/master/logo/pelias_github/Github_markdown_hero.png">
+</p>
+<h3 align="center">A modular, open-source search engine for our world.</h3>
 <p align="center">Pelias is a geocoder powered completely by open data, available freely to everyone.</p>
 <p align="center">
 <a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/github/license/pelias/api?style=flat&color=orange" /></a>
