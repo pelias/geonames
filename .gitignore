@@ -5,3 +5,4 @@ node_modules
 !/data/specialCases.json
 /metadata/*
 !/metadata/category_mapping.json
+!/metadata/popularity_mapping.json

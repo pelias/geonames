@@ -70,6 +70,7 @@ tape('peliasDocGenerator', function(test) {
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
       .setMeta('fcode', 'RNGA')
+      .setAddendum('geonames', { feature_code: 'RNGA' })
       .addCategory('government:military')
       .addCategory('government')
       .addCategory('natural');
@@ -95,7 +96,8 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 })
-      .setMeta('fcode', 'Unsupported feature_code');
+      .setMeta('fcode', 'UNSUPPORTED FEATURE_CODE')
+      .setAddendum('geonames', { feature_code: 'UNSUPPORTED FEATURE_CODE' });
 
     var docGenerator = peliasDocGenerator.create();
 
@@ -141,6 +143,31 @@ tape('peliasDocGenerator', function(test) {
     var expected = new Document( 'geonames', 'venue', 12345 )
       .setName('default', 'Record Name')
       .setCentroid({ lat: 12.121212, lon: 21.212121 });
+
+    var docGenerator = peliasDocGenerator.create();
+
+    test_stream([input], docGenerator, function(err, actual) {
+      t.deepEqual(actual, [expected], 'should have returned true');
+      t.end();
+    });
+
+  });
+
+  test.test('popularity should be set when mapping available', function(t) {
+    var input = {
+      _id: 12345,
+      name: 'Record Name',
+      latitude: 12.121212,
+      longitude: 21.212121,
+      feature_code: ' hsts '
+    };
+
+    var expected = new Document( 'geonames', 'venue', 12345 )
+      .setName('default', 'Record Name')
+      .setCentroid({ lat: 12.121212, lon: 21.212121 })
+      .setAddendum('geonames', { feature_code: 'HSTS' })
+      .addCategory('historic')
+      .setPopularity(5000);
 
     var docGenerator = peliasDocGenerator.create();
 
