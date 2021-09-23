@@ -14,7 +14,7 @@ WORKDIR $WORKDIR
 
 # copy package.json first to prevent npm install being rerun when only code changes
 COPY ./package.json ${WORKDIR}
-RUN npm install
+RUN npm install --ignore-scripts
 
 # Copy code into image
 ADD . $WORKDIR
