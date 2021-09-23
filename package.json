@@ -15,7 +15,7 @@
     "postinstall": "npm run download_metadata",
     "start": "./bin/start",
     "test": "NODE_ENV=test npm run units",
-    "travis": "npm test && npm run functional",
+    "ci": "npm test && npm run functional",
     "units": "./bin/units",
     "validate": "npm ls"
   },
