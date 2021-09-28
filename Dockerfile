@@ -12,15 +12,16 @@ RUN apt-get update && apt-get install -y bzip2 unzip && rm -rf /var/lib/apt/list
 ENV WORKDIR=/code/pelias/geonames
 WORKDIR $WORKDIR
 
+# copy files needed to update metadata, as it's called with NPM install
+COPY ./bin/updateMetadata.js $WORKDIR/bin/updateMetadata.js
+COPY ./lib/tasks/meta.js ./lib/tasks/metafiles.json $WORKDIR/lib/tasks/
+
 # copy package.json first to prevent npm install being rerun when only code changes
 COPY ./package.json ${WORKDIR}
-RUN npm install --ignore-scripts
+RUN npm install
 
 # Copy code into image
 ADD . $WORKDIR
-
-# Explicitly download metadata (it will not be downloaded automatically in noninteractive sessions)
-RUN npm run download_metadata
 
 # run tests
 RUN npm test
