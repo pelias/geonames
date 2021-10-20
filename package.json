@@ -2,8 +2,8 @@
   "name": "pelias-geonames",
   "version": "0.0.0-development",
   "author": "mapzen",
-  "description": "Open-source geo-coder & reverse geo-coder",
-  "homepage": "https://github.com/mapzen/pelias-geonames",
+  "description": "Import pipleine to bring Geonames data into the Pelias Geocoder",
+  "homepage": "https://pelias.io",
   "license": "MIT",
   "scripts": {
     "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
@@ -21,20 +21,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mapzen/pelias-geonames.git"
+    "url": "https://github.com/pelias/geonames.git"
   },
   "keywords": [
     "pelias",
     "geonames",
     "geocoder",
-    "osm",
     "maps"
   ],
   "bugs": {
-    "url": "https://github.com/mapzen/pelias-geonames/issues"
+    "url": "https://github.com/pelias/geonames/issues"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=l2.0.0"
   },
   "dependencies": {
     "JSONStream": "^1.0.7",
