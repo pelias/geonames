@@ -24,6 +24,11 @@ tape('featureCodeToLayer', function(test) {
     t.end();
   });
 
+  test.test('PCLIX maps to dependency', function (t) {
+    t.equal(featureCodeToLayer('PCLIX'), 'dependency', 'Geonames PCLIX maps to dependency layer');
+    t.end();
+  });
+
   test.test('PCLD maps to dependency', function (t) {
     t.equal(featureCodeToLayer('PCLD'), 'dependency', 'Geonames PCLD maps to dependency layer');
     t.end();
