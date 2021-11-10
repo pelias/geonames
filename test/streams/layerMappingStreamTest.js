@@ -19,6 +19,16 @@ tape('featureCodeToLayer', function(test) {
     t.end();
   });
 
+  test.test('PCLI maps to country', function (t) {
+    t.equal(featureCodeToLayer('PCLI'), 'country', 'Geonames PCLI maps to country layer');
+    t.end();
+  });
+
+  test.test('PCLD maps to dependency', function (t) {
+    t.equal(featureCodeToLayer('PCLD'), 'dependency', 'Geonames PCLD maps to dependency layer');
+    t.end();
+  });
+
   test.test('ADM1 maps to region', function(t) {
     t.equal(featureCodeToLayer('ADM1'), 'region', 'Geonames ADM1 maps to region layer');
     t.end();
