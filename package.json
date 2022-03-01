@@ -6,7 +6,7 @@
   "homepage": "https://pelias.io",
   "license": "MIT",
   "scripts": {
-    "download_metadata": "mkdirp metadata && node bin/updateMetadata.js",
+    "download_metadata": "mkdir -p metadata && node bin/updateMetadata.js",
     "download": "./bin/download",
     "countryCodes": "node bin/viewCountryCodes.js",
     "functional": "./bin/functional",
@@ -33,15 +33,14 @@
     "url": "https://github.com/pelias/geonames/issues"
   },
   "engines": {
-    "node": ">=l2.0.0"
+    "node": ">=12.0.0"
   },
   "dependencies": {
-    "JSONStream": "^1.0.7",
     "cli-table": "^0.3.0",
-    "csv-parse": "^4.8.2",
+    "csv-parse": "^5.0.4",
     "geonames-stream": "^2.0.3",
+    "JSONStream": "^1.0.7",
     "lodash": "^4.17.15",
-    "mkdirp": "^1.0.0",
     "pelias-blacklist-stream": "^1.2.0",
     "pelias-config": "^4.12.0",
     "pelias-dbclient": "^2.13.0",
@@ -49,6 +48,7 @@
     "pelias-model": "^9.0.0",
     "pelias-wof-admin-lookup": "^7.3.0",
     "request": "^2.34.0",
+    "split2": "^4.1.0",
     "through2": "^3.0.0",
     "through2-filter": "^3.0.0",
     "through2-sink": "^1.0.0",
