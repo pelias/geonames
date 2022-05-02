@@ -24,7 +24,7 @@ We think open data, open source, and open strategy win over proprietary solution
 
 # Pelias Geonames importer
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pelias/gitter)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pelias/pelias)
 [![Greenkeeper badge](https://badges.greenkeeper.io/pelias/geonames.svg)](https://greenkeeper.io/)
 
 This Node.js package imports data from [Geonames](http://geonames.org/) into
@@ -70,7 +70,7 @@ The following are all *optional*:
 
 #### Admin Lookup
 Pelias has the ability to compute the admin hierarchy (county, region, country, etc)
-from [Who's on First](http://whosonfirst.mapzen.com/) data.
+from [Who's on First](https://whosonfirst.org) data.
 For more info on how admin lookup works, see the documentation for
 [pelias/wof-admin-lookup](https://github.com/pelias/wof-admin-lookup). By default,
 adminLookup is enabled.  To disable, set `imports.adminLookup.enabled` to `false` in Pelias config.
