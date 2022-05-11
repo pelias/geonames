@@ -46,7 +46,7 @@
     "pelias-dbclient": "^2.13.0",
     "pelias-logger": "^1.4.1",
     "pelias-model": "^9.0.0",
-    "pelias-wof-admin-lookup": "^7.3.0",
+    "pelias-wof-admin-lookup": "pelias/wof-admin-lookup#dependency-country-code",
     "request": "^2.34.0",
     "split2": "^4.1.0",
     "through2": "^3.0.0",
