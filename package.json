@@ -43,7 +43,7 @@
     "lodash": "^4.17.15",
     "pelias-blacklist-stream": "^1.2.0",
     "pelias-config": "^6.0.0",
-    "pelias-dbclient": "^3.0.0",
+    "pelias-dbclient": "^3.1.0",
     "pelias-logger": "^1.4.1",
     "pelias-model": "^10.0.0",
     "pelias-wof-admin-lookup": "^7.3.0",
