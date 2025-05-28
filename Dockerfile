@@ -1,5 +1,5 @@
 # base image
-FROM pelias/baseimage
+FROM pelias/baseimage:ubuntu-24-noble
 
 # ensure data dirs exists
 RUN mkdir -p '/data/geonames'
