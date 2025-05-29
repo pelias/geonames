@@ -1,5 +1,5 @@
 # base image
-FROM pelias/baseimage
+FROM pelias/baseimage:nodejs-20
 
 # ensure data dirs exists
 RUN mkdir -p '/data/geonames'
