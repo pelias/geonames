@@ -1,11 +1,13 @@
 'use strict';
 
 const config = require('pelias-config').generate();
-const validateISOCode = require('../lib/validateISOCode');
+const countryCodeArrayCreator = require('../lib/countryCodeArrayCreator');
 
-const countryCode = validateISOCode(config.imports.geonames.countryCode);
 
-const filename = countryCode === 'ALL' ? 'allCountries' : countryCode;
+const countrycode = countryCodeArrayCreator(config.imports.geonames.countryCode);
 
 const task = require('../lib/tasks/download');
-task(filename);
+for (var i in countrycode) {
+    //No ISO code validation required, already done in countryCodeArrayCreator
+    task(countrycode[i]);
+}
