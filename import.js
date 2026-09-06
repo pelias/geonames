@@ -11,8 +11,20 @@ const resolvers = require( './lib/tasks/resolvers' );
 const task = require('./lib/tasks/import');
 const validateISOCode = require('./lib/validateISOCode');
 
-const isocode = validateISOCode( config.imports.geonames.countryCode );
-const filename = isocode === 'ALL' ? 'allCountries' : isocode;
-const source = resolvers.selectSource( filename );
+const countrycode = config.imports.geonames.countryCode;
 
-task( source );
+if (typeof countrycode === 'string') {
+  const isocode = validateISOCode( countrycode );
+  const filename = isocode === 'ALL' ? 'allCountries' : isocode;
+  const source = resolvers.selectSource( filename );
+  task( source );    
+} else if (Array.isArray(countrycode)) {
+    for (var i in countrycode) {
+      const filename = validateISOCode( countrycode[i] );
+      const source = resolvers.selectSource( filename );
+      task( source );
+    }
+} else {
+    throw new Error('imports.geonames.countryCode must be either a string ' +
+                    'or an array of strings.');
+}
