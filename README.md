@@ -24,8 +24,8 @@ We think open data, open source, and open strategy win over proprietary solution
 
 # Pelias Geonames importer
 
-This Node.js package imports data from [Geonames](http://geonames.org/) into
-[Pelias](http://pelias.io). It includes utilities for downloading and cleaning up the data before
+This Node.js package imports data from [Geonames](https://www.geonames.org/) into
+[Pelias](https://pelias.io). It includes utilities for downloading and cleaning up the data before
 import.
 
 ## Requirements
@@ -50,7 +50,7 @@ The importer can be configured from your local [pelias-config](https://github.co
 		"geonames": {
 			"datapath": "/path/to/geonames/data",
 			"countryCode": "MX",
-			"sourceURL": "http://example.com/geonames/"
+			"sourceURL": "https://example.com/geonames/"
 		}
 	}
 }
